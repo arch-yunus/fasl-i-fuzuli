@@ -1,0 +1,225 @@
+{
+  "sair": {
+    "ad": "Molla Muhammed bin Süleyman Fuzûlî",
+    "dogum": "1483 / Hille - Bağdat",
+    "vefat": "1556 / Kerbela",
+    "unvan": "Şâir-i Âzam, Sultân-ı Şuarâ-yı Aşk"
+  },
+  "gazeller": [
+    {
+      "id": "beni-candan-usandirdi",
+      "baslik": "Beni Candan Usandırdı Cefâdan Yâr Usanmaz mı",
+      "vezin": "Mef'ûlü / Mefâ'îlü / Mefâ'îlü / Fâ'ûlün",
+      "redif": "...usanmaz mı / ...yanmaz mı",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Beni cândan usandırdı cefâdan yâr usanmaz mı / Felekler yandı âhımdan murâdım şem'i yanmaz mı",
+          "sadelesmis": "Sevgili bana eziyet ederek canımdan bezdirdi, kendisi cefa etmekten usanmaz mı? Âhımın ateşinden felekler tutuştu da bir tek muradımın mumu yanmaz mı?",
+          "sanatlar": ["Tezat", "Mübalağa", "İstifham"]
+        },
+        {
+          "no": 2,
+          "turkce": "Kamu bîmârına cânân devâ-yı derd eder ihsân / Niçin kılmaz bana dermân beni bîmâr sanmaz mı",
+          "sadelesmis": "Sevgili bütün hastalarına dertlerinin devasını bağışlar; peki niçin bana bir derman kılmaz, yoksa beni hasta saymaz mı?",
+          "sanatlar": ["Tenasüp"]
+        },
+        {
+          "no": 3,
+          "turkce": "Şeb-i hicrân yanar cânım döker kan çeşm-i giryânım / Uyârır halkı efgānım karâ bahtım uyanmaz mı",
+          "sadelesmis": "Ayrılık gecesinde canım yanar, ağlayan gözlerim kan döker; feryadım cümle âlemi uyandırır da bir tek kara bahtım uyanmaz mı?",
+          "sanatlar": ["Teşhis", "Tezat"]
+        },
+        {
+          "no": 4,
+          "turkce": "Gül-i ruhsârına karşu gözümden kanlu akar su / Habîbim fasl-ı güldür bu akar sular bulanmaz mı",
+          "sadelesmis": "Gül yanağına karşı gözümden kanlı yaşlar akar; ey sevgilim, bu mevsim ilkbahardır, gül mevsiminde coşan sular bulanıp kızıl akmaz mı?",
+          "sanatlar": ["Hüsn-i Ta'lil", "Tenasüp"]
+        },
+        {
+          "no": 5,
+          "turkce": "Değildim ben sana mâil sen ettin aklımı zâil / Bana ta'n eyleyen gāfil seni görgeç utanmaz mı",
+          "sadelesmis": "Ben önceden sana meyledip tutkun değildim, aklımı başımdan sen aldın. Beni aşkından ötürü kınayan gafil, seni bir kez görse ayıplamaktan utanmaz mı?",
+          "sanatlar": ["Tecâhül-i Ârif"]
+        },
+        {
+          "no": 6,
+          "turkce": "Fuzûlî rind-i şeydâdır hemîşe halka rüsvâdır / Sorun kim bu ne sevdâdır bu sevdâdan usanmaz mı",
+          "sadelesmis": "Fuzûlî çılgın bir âşıktır, daima halkın diline düşüp rüsvadır; ona sorun bakalım, bu ne biçim bir sevdadır ve o bu sevdadan hiç usanmaz mı?",
+          "sanatlar": ["Tecrid", "İrade"]
+        }
+      ]
+    },
+    {
+      "id": "oyle-sermestem",
+      "baslik": "Öyle Sermestem ki İdrâk Etmezem Dünyâ Nedür",
+      "vezin": "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+      "redif": "...nedür",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Öyle sermestem ki idrâk etmezem dünyâ nedür / Ben kimem sâkî olan kimdür mey ü sahbâ nedür",
+          "sadelesmis": "Öyle sarhoş ve kendimden geçmişim ki dünyanın ne olduğunu anlamıyorum; ben kimim, kadehi sunan sâkî kimdir, şarap ve kadeh nedir bilmem!",
+          "sanatlar": ["Tecâhül-i Ârif", "Tenasüp"]
+        },
+        {
+          "no": 2,
+          "turkce": "Gerçi cânândan dil-i şeydâ içün kâm isterem / Sorsa cânân bilmezem kâm-ı dil-i şeydâ nedür",
+          "sadelesmis": "Gerçi çılgın gönlüm için sevgiliden bir murat dilerim; fakat sevgili sorsa bu divane gönlün muradı nedir söyleyemem.",
+          "sanatlar": ["Tezat"]
+        },
+        {
+          "no": 3,
+          "turkce": "Vasldan çün âkıbet bîm-i zevâl eyler gamı / Gamzesi cevrin heves eyler dil-i bî-kes nedür",
+          "sadelesmis": "Kavuşmanın ardından hemen ayrılık korkusu başladığından, yapayalnız gönlüm onun eziyetini ve cefasını arzular.",
+          "sanatlar": ["Hikemî Tasavvur"]
+        },
+        {
+          "no": 4,
+          "turkce": "Hikmet-i dünyâ vü mâfîhâ bilen ârif değül / Ârif oldur bilmeye dünyâ vü mâfîhâ nedür",
+          "sadelesmis": "Dünyayı ve içindekilerin hikmetini bilip akıl yürüten arif değildir; gerçek arif Hak aşkıyla dünyayı ve içindekileri tamamen unutandır.",
+          "sanatlar": ["Tezat", "Cinas"]
+        },
+        {
+          "no": 5,
+          "turkce": "Âh u feryâdın Fuzûlî incidüpdür âlemi / Ger belâ-yı aşk ile hoşnûd isen gavgā nedür",
+          "sadelesmis": "Ey Fuzûlî! Âh ve iniltilerin bütün âlemi incitti; madem aşk belasından memnunsun o halde bu gürültü ve kavga nedir?",
+          "sanatlar": ["Tecrid"]
+        }
+      ]
+    },
+    {
+      "id": "mende-mecnundan-fuzun",
+      "baslik": "Mende Mecnûn'dan Füzûn Âşıklık İsti'dâdı Var",
+      "vezin": "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+      "redif": "...var",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Mende Mecnûn'dan füzûn âşıklık isti'dâdı var / Âşık-ı sâdık menem Mecnûn'un ancak adı var",
+          "sadelesmis": "Bende Mecnûn'dan daha fazla âşıklık kabiliyeti vardır; gerçek ve vefalı âşık benim, Mecnûn'un ise sadece adı kalmıştır!",
+          "sanatlar": ["Fahriye", "Telmih"]
+        },
+        {
+          "no": 2,
+          "turkce": "Kıl tefâhür kim senün hem var men tek âşıkun / Leylî'nün Mecnûn'u Şîrîn'ün eger Ferhâd'ı var",
+          "sadelesmis": "Ey sevgili! Sen de benim gibi bir âşığın olduğu için övün; Leylâ'nın Mecnûn'u, Şîrîn'in Ferhâd'ı varsa senin de ben varım!",
+          "sanatlar": ["Telmih", "Leff ü Neşr"]
+        },
+        {
+          "no": 3,
+          "turkce": "Ehl-i temkînem meni benzetme ey gül bülbüle / Derde yoh sabrı anun her lâhza min feryâdı var",
+          "sadelesmis": "Ey gül! Ben vakarlı, temkin ehli bir âşığım, beni bülbüle benzetme; onun derde sabrı yoktur, her an binlerce feryat koparır.",
+          "sanatlar": ["Teşhis", "Tenasüp"]
+        },
+        {
+          "no": 4,
+          "turkce": "Ey Fuzûlî aşk men'in kılma nâsıhden kabûl / Akl tedbîridür ol sanma ki bir bünyâdı var",
+          "sadelesmis": "Ey Fuzûlî! Aşkı terk etmeni söyleyen nasihatçiyi dinleme; onun söyledikleri aklın tedbiridir, zannetme ki hakikat yolunda bir temeli vardır!",
+          "sanatlar": ["Hikmet"]
+        }
+      ]
+    },
+    {
+      "id": "dost-bi-vefa",
+      "baslik": "Dost Bî-Vefâ Felek Bî-Rahm Devrân Bî-Sükûn",
+      "vezin": "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+      "redif": "...zebûn / ...sükûn",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Dost bî-vefâ felek bî-rahm devrân bî-sükûn / Dert çoh hem-dert yoh düşmen kavî tâli' zebûn",
+          "sadelesmis": "Dost vefasız, felek merhametsiz, dünya ise huzursuz ve kararsız. Dert çok, dert ortağı yok; düşman güçlü, talihim ise âciz ve yeniktir!",
+          "sanatlar": ["Tersî", "Tezat", "Siyâkatü'l-A'dâd"]
+        },
+        {
+          "no": 2,
+          "turkce": "Ey Fuzûlî dehr bünyâdın harâb etmiş meğer / Kimsenün görmez nazar kıldukça bir şâd olduğun",
+          "sadelesmis": "Ey Fuzûlî! Galiba bu feleğin temeli baştan haraptır ki, baktıkça kimsenin bir an olsun mutlu olduğunu göremezsin!",
+          "sanatlar": ["Hikmet", "Şikâyet"]
+        }
+      ]
+    },
+    {
+      "id": "ask-derdiyle-hosem",
+      "baslik": "Aşk Derdiyle Hoşem El Çek İlâcımdan Tabîb",
+      "vezin": "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+      "redif": "...dermândadır / ...ihsândır",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Aşk derdiyle hoşem el çek ilâcımdan tabîb / Kılma dermân kim helâkim zehri dermândadır",
+          "sadelesmis": "Ben aşk derdinden son derece memnunum, ey tabip bana ilaç vermekten el çek! Bana derman sunma ki benim helak olmam asıl o dermanın zehrindedir!",
+          "sanatlar": ["Tezat", "Paradoks"]
+        },
+        {
+          "no": 2,
+          "turkce": "Yârdan cevr ü cefâ gelmez kamu lutf u kerem / Aşka düşvâr olmasa her cevr bir ihsândır",
+          "sadelesmis": "Sevgiliden cefa ve eziyet gelmez, onun her yaptığı lütuftur; aşk yolunda zorluk olmasaydı onun her cefası başlı başına bir ihsandı.",
+          "sanatlar": ["Tasavvufî Aşk"]
+        }
+      ]
+    }
+  ],
+  "su_kasidesi": {
+    "baslik": "Su Kasîdesi (Kasîde der-Na't-ı Hazret-i Nebevî)",
+    "vezin": "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+    "redif": "su",
+    "toplam_beyit": 32,
+    "secme_beyitler": [
+      {
+        "no": 1,
+        "metin": "Sâçma ey göz eşkden gönlümdeki odlara su / Kim bu denlü tutuşan odlara kılmaz fâide su",
+        "anlam": "Ey gözüm! Gönlümdeki aşk yangınlarına gözyaşından su saçma; çünkü bu denli tutuşmuş ateşlere su fayda vermez!"
+      },
+      {
+        "no": 7,
+        "metin": "Hâk-i pâyine yetem dir ömrlerdir muttasıl / Başını daşdan daşa urup gezer âvâre su",
+        "anlam": "Su, senin ayağının toprağına kavuşayım diye ömürlerdir başını taştan taşa vurarak avare gezer."
+      },
+      {
+        "no": 16,
+        "metin": "Mu'ciz-i peygamberî çün zahir oldu dehrde / Eyledi parmaklarından fışkıran enhâra su",
+        "anlam": "Peygamberlik mucizesi dünyada aşikâr olduğunda, mübarek parmaklarından fışkıran ırmaklara sular teslim oldu."
+      },
+      {
+        "no": 31,
+        "metin": "Dest-bûsi ârzûsiyle ger ölsem dostlar / Kûze eylen toprağım sunun anunla yâra su",
+        "anlam": "Ey dostlar! Eğer onun elini öpme hasretiyle ölürsem, toprağımdan bir testi yapın ve onunla sevgiliye su sunun!"
+      }
+    ]
+  },
+  "hikmetli_sozler": [
+    {
+      "soz": "Şi'r-i bî-ilm esâssız dîvâr olur ve esâssız dîvâr gâyetde bî-i'tibâr olur.",
+      "kaynak": "Türkçe Dîvân Dîbâcesi",
+      "anlam": "İlimsiz şiir temelsiz duvara benzer; temelsiz duvar ise nihayetinde bütünüyle itibarsız ve yıkılmaya mahkûmdur."
+    },
+    {
+      "soz": "Selâm verdim rüşvet değildür deyu almadılar. Hüküm gösterdim fâidesüzdür deyu mültefit olmadılar.",
+      "kaynak": "Şikâyetnâme",
+      "anlam": "Selam verdim rüşvet değildir diye almadılar. Padişah fermanını gösterdim işe yaramaz diye yüzüme bakmadılar."
+    },
+    {
+      "soz": "Yâ Rab belâ-yı aşk ile kıl âşinâ beni / Bir dem belâ-yı aşkdan etme cüdâ beni",
+      "kaynak": "Leylâ vü Mecnûn Mesnevîsi",
+      "anlam": "Ey Rabbim! Beni aşk belasına aşina eyle, beni bir an bile aşk derdinden ayrı düşürme!"
+    },
+    {
+      "soz": "Cehl ile kimesne bulmadı kâm / İlm iledir rif'at-i makām",
+      "kaynak": "Kıt'alar",
+      "anlam": "Cehaletle hiç kimse muradına eremedi; mevkilerin en yücesi ancak ilim iledir."
+    }
+  ],
+  "lugat": {
+    "Rind": "Dünya gösterişine ve kuru kurallara aldırmayan, hakiki gönül ve ihlas ehli.",
+    "Zâhid": "Kuru ibadeti menfaat gibi gören, şekilci din adamı tipi.",
+    "Şeb-i Hicrân": "Ayrılık gecesi; âşığın ızdırap ve gözyaşı dolu uzun gecesi.",
+    "Sâkî": "Kadehlere şarap sunan; tasavvufta feyiz ve marifet dağıtan kâmil mürşit.",
+    "Fenâfillâh": "Kulun kendi nefis ve benliğinden geçerek Hakk'ın varlığında yok olması.",
+    "Âb-ı Hayât": "Dirilik suyu; tasavvufta manevi hayat ve Hz. Peygamber'in feyzi.",
+    "Kûze": "Testi; âşığın toprağından yapılıp sevgilinin dudaklarına değen kap.",
+    "Gamze": "Yan bakış; sevgilinin âşığın kalbini vuran ok ve hançeri.",
+    "Sehl-i Mümteni": "Kolay gibi görünen ancak benzeri söylenemeyecek kadar derin ve zor sanat üslubu."
+  }
+}
