@@ -133,6 +133,10 @@ Asırlar boyunca Doğu ve Batı edebiyat dünyasının en büyük şairleri, tez
 
 ---
 
+<p align="center">
+  <img src="assets/su_kasidesi_banner.jpg" alt="Su Kasîdesi Banner" width="100%"/>
+</p>
+
 ### 🌊 2. Şaheser: Su Kasîdesi'nden Na't-ı Şerif İncileri
 
 > **Sâçma ey göz eşkden gönlümdeki odlara su**  
@@ -169,6 +173,10 @@ Asırlar boyunca Doğu ve Batı edebiyat dünyasının en büyük şairleri, tez
 
 ---
 
+<p align="center">
+  <img src="assets/leyla_mecnun_banner.jpg" alt="Leylâ vü Mecnûn Banner" width="100%"/>
+</p>
+
 ### 🏜️ 3. Leylâ vü Mecnûn Mesnevîsi'nden Edebi Doruklar
 
 > **Yâ Rab belâ-yı aşk ile kıl âşinâ beni**  
@@ -200,6 +208,10 @@ Asırlar boyunca Doğu ve Batı edebiyat dünyasının en büyük şairleri, tez
 > Mecnûn: *"Ger sen Leylî isen bendeki kimdir? Bendeki Leylâ bana yeter; fâni surete ve cisme artık mecalim yoktur!"*
 
 ---
+
+<p align="center">
+  <img src="assets/sikayetname_banner.jpg" alt="Şikâyetnâme ve İlim Meclisi Banner" width="100%"/>
+</p>
 
 ### 📜 4. Şikâyetnâme'den Bürokrasi ve Toplum Hicvi
 
