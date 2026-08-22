@@ -61,7 +61,7 @@ Katkılar memnuniyetle karşılanır. Aşağıdaki basit akışı öneriyoruz:
 Lütfen katkı yapmadan önce projenin mevcut katkı rehberine (CONTRIBUTING.md) ve kod biçimlendirme kurallarına göz atın.
 
 ## Lisans
-Projeyi uygun gördüğünüz bir lisansla koruyun (örn. MIT, Apache‑2.0). Henüz lisans eklenmemişse bir `LICENSE` dosyası eklemenizi öneririm.
+Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için bakınız: [LICENSE](LICENSE)
 
 ## İletişim
 Projeyle ilgili sorular veya katkı teklifleri için repository sahibiyle iletişime geçin: https://github.com/arch-yunus
