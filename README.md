@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="assets/fuzuli_banner.jpg" alt="Fasl-ı Fuzûlî Sanat Bannerı" width="100%"/>
+</p>
+
+<p align="center">
   <img src="assets/banner.svg" alt="Fasl-ı Fuzûlî Külliyâtı" width="100%"/>
 </p>
 
