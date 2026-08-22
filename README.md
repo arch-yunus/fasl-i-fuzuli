@@ -1,5 +1,6 @@
-# Fasl-ı Fuzûlî (فصل فضولی)
-### Molla Muhammed bin Süleyman Fuzûlî Dijital Külliyâtı & Edebiyat Platformu
+<p align="center">
+  <img src="assets/banner.svg" alt="Fasl-ı Fuzûlî Külliyâtı" width="100%"/>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Edebiyat-Dîvân_Şiiri-darkred?style=for-the-badge" alt="Divan Edebiyati"/>
