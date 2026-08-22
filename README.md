@@ -12,15 +12,143 @@
 ---
 
 > ### *"Şi'r-i bî-ilm esâssız dîvâr olur ve esâssız dîvâr gâyetde bî-i'tibâr olur."*  
-> — **Fuzûlî (Türkçe Dîvân Dîbâcesi)**
+> — **Molla Fuzûlî (Türkçe Dîvân Dîbâcesi)**
 
 ---
 
-## 📜 Külliyât Hakkında
+## 🏛️ Fuzûlî Hakkında Söylenenler (Şuarâ ve Münekkitlerin Gözüyle)
 
-**Fasl-ı Fuzûlî**, klasik Türk edebiyatının ve Doğu dünyasının en büyük lirik şairi olan **Molla Muhammed bin Süleyman Fuzûlî**'nin (1483–1556) manzum, mensur ve mektup türündeki başyapıtlarını; akademik tenkitli metinler, beyit beyit şerhler, aruz vezinleri, edebi sanatlar ve açıklamalı sözlükler eşliğinde dijital ortama taşıyan kapsamlı bir açık kaynak edebiyat deposu ve sorgulama platformudur.
+Klasik edebiyattan Cumhuriyet devrine kadar Doğu ve Batı edebiyatının büyük mütefekkirleri Fuzûlî'nin dehasını şu sözlerle teslim etmişlerdir:
 
-Bu depo hem klasik edebiyat araştırmacıları ve edebiyatseverler hem de dijital beşeri bilimler (digital humanities) ve yazılım geliştiriciler için yaşayan bir başvuru kaynağı olarak inşa edilmiştir.
+> *"Fuzûlî, Türk edebiyatının ve bütün Doğu âleminin gelmiş geçmiş en büyük aşk ve ıstırap şairidir. Fakat onun bahsettiği ıstırap insanı küçülten veya ezen bir keder değil; insan ruhunu kâinat derecesinde büyüten, onu saflaştırıp mutlak hakikate yükselten ilahi bir ateştir. Türkçe onun nefesinde musikinin ve samimiyetin zirvesine ulaşmıştır."*  
+> — **Ahmet Hamdi Tanpınar**
+
+> *"Fuzûlî yalnız Türk edebiyatının değil, bütün İslâm ve Şark edebiyatlarının en büyük lirik dehalarından biridir. Üç dilde (Türkçe, Farsça, Arapça) dîvân tertip etmiş ve her birinde sahasının en yüksek zirvesine bayrak dikmiştir."*  
+> — **Prof. Dr. Mehmet Fuad Köprülü**
+
+> *"Gör zümre-i nâzımân-ı Rûm'u / Fâik mi değil Fuzûlî ma'lûm...  
+> Söz söylemek ol güher-feşândan / Kalmış bize mülk-i Bağdâd'dan!"*  
+> *(Anadolu şairleri zümresine bir bak; Fuzûlî'nin hepsinden üstün olduğu malum değil midir? Şiirde inci saçmak, Bağdat mülkünden bize o eşsiz üstaddan miras kalmıştır.)*  
+> — **Ziyâ Paşa (Harâbât Mukaddimesi)**
+
+> *"Fuzûlî, Türkçe şiir semâsının asırlardır sönmeyen ve her devirde yeni bir feyizle parıldayan kutup yıldızıdır. Bizim dilimiz onun divanında kendi kalbini ve en samimi feryadını bulmuştur."*  
+> — **Yahya Kemal Beyatlı**
+
+> *"Fuzûlî'nin her beyti, bir tefekkür ve duygu ummanıdır. Onda lafız ile mana, beden ile can gibi birbirinden ayrılmaz bir bütün haline gelmiştir."*  
+> — **Prof. Dr. Ali Nihad Tarlan**
+
+> *"Fuzûlî, aşkı bir din, ızdırabı bir ibadet ve vefayı bir varoluş gayesi mertebesine yükselten benzersiz bir âşık-ı sâdıktır."*  
+> — **Abdülbâki Gölpınarlı**
+
+> *"Fuzûlî-i bî-bedel, ol allâme-i dehr ve mûcid-i ma'ânî-i bikr..."*  
+> *(Eşi benzeri olmayan Fuzûlî, çağının en büyük âlimi ve daha önce söylenmemiş bakir manaların kâşifidir.)*  
+> — **Ahdî (Gülşen-i Şuarâ Tezkiresi, 1563)**
+
+---
+
+## 💎 Fuzûlî Külliyâtından Seçkin İnciler ve Alıntılar
+
+### 🔥 1. Aşk, Hicran ve Felsefe Beyitleri (Gazellerden)
+
+> **Beni cândan usandırdı cefâdan yâr usanmaz mı**  
+> **Felekler yandı âhımdan murâdım şem'i yanmaz mı**  
+> ↳ *Sevgili bana eziyet ederek canımdan bezdirdi; kendisi cefa etmekten usanmaz mı? Âhımın alevinden gökler tutuştu da bir tek muradımın mumu yanmaz mı?*
+
+> **Aşk derdiyle hoşem el çek ilâcımdan tabîb**  
+> **Kılma dermân kim helâkim zehri dermândadır**  
+> ↳ *Ben bu aşk derdinden son derece memnunum, ey tabip bana ilaç vermekten el çek! Bana derman sunma ki, benim helak olmam asıl o dermanın zehrindedir (aşkımın bitmesindedir).*
+
+> **Mende Mecnûn'dan füzûn âşıklık isti'dâdı var**  
+> **Âşık-ı sâdık menem Mecnûn'un ancak adı var**  
+> ↳ *Bende Mecnûn'dan kat kat fazla âşıklık kabiliyeti vardır; gerçek ve vefalı âşık benim, Mecnûn'un ise sadece adı çıkmıştır!*
+
+> **Öyle sermestem ki idrâk etmezem dünyâ nedür**  
+> **Ben kimem sâkî olan kimdür mey ü sahbâ nedür**  
+> ↳ *Öyle sarhoş ve kendimden geçmişim ki dünyanın ne olduğunu anlamıyorum; ben kimim, kadehi sunan sâkî kimdir, şarap ve kadeh nedir bilmem!*
+
+> **Dost bî-vefâ felek bî-rahm devrân bî-sükûn**  
+> **Dert çoh hem-dert yoh düşmen kavî tâli' zebûn**  
+> ↳ *Dost vefasız, felek merhametsiz, dünya ise bir an olsun durup dinlenmiyor. Dert çok, dert ortağı yok; düşman güçlü, talihim ise âciz ve yenik!*
+
+> **Ne yanar kimse bana âteş-i dilden özge**  
+> **Ne açar kimse kapım bâd-ı sabâdan gayrı**  
+> ↳ *Gönlümün aşk ateşinden başka kimse benim halime yanmaz; kapımı sabah rüzgârından başka hiç kimse açmaz!*
+
+> **Cânı cânân dilemiş vermemek olmaz ey dil**  
+> **Ne nizâ' eyleyelim ol yâr ile cân mülküdür**  
+> ↳ *Sevgili senin canını istemiş, ey gönül vermemek olur mu? O sevgiliyle ne diye kavgaya tutuşalım; can zaten onun kendi mülküdür!*
+
+> **Hikmet-i dünyâ vü mâfîhâ bilen ârif değül**  
+> **Ârif oldur bilmeye dünyâ vü mâfîhâ nedür**  
+> ↳ *Dünyanın ve içindekilerin hikmetini bilip akıl yürüten gerçek arif değildir; gerçek arif Hak aşkından ötürü dünyayı ve içindekilerin ne olduğunu dahi unutandır.*
+
+---
+
+### 🌊 2. Şaheser: Su Kasîdesi'nden Na't Alıntıları
+
+> **Sâçma ey göz eşkden gönlümdeki odlara su**  
+> **Kim bu denlü tutuşan odlara kılmaz fâide su**  
+> ↳ *Ey gözüm! Gönlümdeki aşk yangınlarına gözyaşından su saçma; çünkü bu derece alevlenip tutuşmuş yangınlara su fayda vermez!*
+
+> **Hâk-i pâyine yetem dir ömrlerdir muttasıl**  
+> **Başını daşdan daşa urup gezer âvâre su**  
+> ↳ *Su, senin ayağının toprağına ulaşayım diyerek asırlardır durmaksızın başını taştan taşa vurarak avare bir halde akıp gezmektedir.*
+
+> **Âb-gûndur günbed-i devvâr rengi bilmezem**  
+> **Yâ muhît olmuş gözümden günbed-i devvâra su**  
+> ↳ *Dönen feleğin (gökyüzünün) rengi kendiliğinden mi su rengindedir (mavidir), yoksa gözümden dökülen yaşlar bütün gök kubbeyi mi kaplamıştır, bilemiyorum!*
+
+> **Dest-bûsi ârzûsiyle ger ölsem dostlar**  
+> **Kûze eylen toprağım sunun anunla yâra su**  
+> ↳ *Ey dostlar! Eğer onun elini öpme arzusu ve hasretiyle ölürsem; mezarımın toprağından bir testi (kûze) yapın ve o testiyle o sevgiliye su sunun!*
+
+---
+
+### 🏜️ 3. Leylâ vü Mecnûn Mesnevîsi'nden
+
+> **Yâ Rab belâ-yı aşk ile kıl âşinâ beni**  
+> **Bir dem belâ-yı aşkdan etme cüdâ beni**  
+> **Az eyleme in'âmını ehl-i kereminden**  
+> **Yâni ki çok eyle gam ü derd ü belânı**  
+> ↳ *(Kâbe'deki Münâcât)*: *Ey Rabbim! Beni aşk belasına aşina eyle, beni bir an bile aşk derdinden ayrı düşürme! Kerem ehli katından lütfunu sakın eksik etme; yani bana olan gamı, derdi ve aşk belasını katbekat artır!*
+
+> **Ey şem' senünle menem hemdem**  
+> **İkimiz de yanaruz dem-be-dem**  
+> **Sen başından dökersün yaşını**  
+> **Ben sînemden çıkaruram âteşimi**  
+> **Farkımız oldur ki ey nûr-ı safâ**  
+> **Sen giceler yanarsun ben subh u mesâ**  
+> ↳ *(Mecnûn'un Mumla Söyleşisi)*: *Ey mum! Seninle dert ortağıyız, ikimiz de durmaksızın yanıyoruz. Sen başından yaş dökersin, ben ise bağrımdan ateş püskürürüm. Tek farkımız şudur: Sen sadece geceleri yanarsın, ben ise hem sabah hem akşam yanmaktayım!*
+
+---
+
+### 📜 4. Şikâyetnâme'den Bürokrasi ve Hakikat Hicvi
+
+> *"Evkāf ta'ayyün eyleyen gürûh-ı nâ-kesânın yanına vardım:  
+> **Selâm verdim rüşvet değildür deyu almadılar.**  
+> **Hüküm gösterdim fâidesüzdür deyu mültefit olmadılar.**  
+> 
+> Dedim: 'Bu hüccet-i şer'îye i'tibâr yok mudur?'  
+> Dediler: 'Bizim meclisimizde fuzûlî sözün i'tibârı yokdur!'  
+> 
+> Dedim: 'Vakf malı mültefit-i zâyi' olmak revâ mıdır?'  
+> Dediler: 'Zemânede hak budur ki, hıfz-ı emânet eden bî-kâm ola!'"*
+
+---
+
+### ⚖️ 5. Hikmetli Kıt'alar ve Rübâilerden
+
+> **Cehl ile kimesne bulmadı kâm**  
+> **İlm iledir rif'at-i makām**  
+> **Ger zerre kadar olursa ilmin**  
+> **Âlemde seni kılur muazzam**  
+> ↳ *Cehaletle hiçbir kimse muradına eremedi; mevkilerin en yücesi ancak ilim iledir. Zerre kadar da olsa ilmin varsa, o ilim seni bütün cihanda aziz ve saygın kılar.*
+
+> **Dünyâ talebiyle ömrün etme zâyi'**  
+> **Bir zevk içün eyleme cihânı tâyi'**  
+> **Kânî' olasın dâima her nâzile kim**  
+> **Rızkı vericidir ol Cenâb-ı Sâni'**  
+> ↳ *Dünya hırsı peşinde ömrünü heba etme; fâni bir zevk için dünyaya boyun eğme. Başına gelen her hâle kanaat eyle; çünkü bütün yaratılmışların rızkını veren O Yüce Yaratıcı'dır.*
 
 ---
 
