@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fasl-i-fuzuli"
+version = "2.0.0"
+description = "Molla Fuzûlî Dijital Külliyâtı, Aruz Analiz Motoru, Lugat ve Edebiyat Platformu"
+readme = "README.md"
+authors = [{ name = "Yunus", email = "author@fasl-i-fuzuli.local" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Education"
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+fuzuli = "araclar.fuzuli_cli:main"
+
+[tool.setuptools.package-data]
+"araclar" = ["*.json"]

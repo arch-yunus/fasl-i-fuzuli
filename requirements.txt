@@ -1,0 +1,3 @@
+# Fasl-ı Fuzûlî standart kütüphane odaklıdır (sıfır harici bağımlılık)
+# İsteğe bağlı geliştirme ve test araçları:
+pytest>=7.0.0

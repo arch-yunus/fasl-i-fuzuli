@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fasl-ı Fuzûlî | Molla Fuzûlî Dijital Külliyâtı & Edebiyat Motoru</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <!-- Header & Hero -->
+  <header class="hero-header">
+    <div class="header-overlay"></div>
+    <div class="container hero-content">
+      <div class="header-top">
+        <span class="badge-gold">فصل فضولی • FASL-I FUZÛLÎ</span>
+        <button id="themeToggle" class="btn-theme" title="Tema Değiştir">🌙 / ☀️</button>
+      </div>
+      <h1 class="main-title">FASL-I FUZÛLÎ</h1>
+      <p class="arabic-sub">« شِعْرِ بِي عِلْمْ أَسَاسْسِز دِيوَارْ أُولُورْ وَأَسَاسْسِز دِيوَارْ غَايَتْدَه بِي اعْتِبَارْ أُولُورْ »</p>
+      <blockquote class="hero-quote">
+        "Şi'r-i bî-ilm esâssız dîvâr olur ve esâssız dîvâr gâyetde bî-i'tibâr olur."
+        <span>— Molla Fuzûlî (1483 - 1556)</span>
+      </blockquote>
+      <div class="quick-stats-bar">
+        <div class="stat-pill"><strong>6</strong> Başyapıt Gazel</div>
+        <div class="stat-pill"><strong>32</strong> Su Kasîdesi Beyti</div>
+        <div class="stat-pill"><strong>2</strong> Mesnevî Şaheseri</div>
+        <div class="stat-pill"><strong>50+</strong> Lügat Kavramı</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="main-nav sticky-nav">
+    <div class="container nav-container">
+      <button class="nav-btn active" data-tab="fal">🎴 Fâl-i Fuzûlî</button>
+      <button class="nav-btn" data-tab="kulliyat">📜 Külliyât Okuyucu</button>
+      <button class="nav-btn" data-tab="arama">🔍 Canlı Arama</button>
+      <button class="nav-btn" data-tab="aruz">⚖️ Aruz Analizörü</button>
+      <button class="nav-btn" data-tab="lugat">📖 Dîvân Lügati</button>
+      <button class="nav-btn" data-tab="yarisma">🎯 Bilgi Yarışması</button>
+      <button class="nav-btn" data-tab="istatistik">📊 İstatistik & Biyografi</button>
+    </div>
+  </nav>
+
+  <!-- Main App Container -->
+  <main class="container app-body">
+
+    <!-- Tab 1: Fâl-i Fuzûlî -->
+    <section id="tab-fal" class="tab-pane active">
+      <div class="section-card fal-card text-center">
+        <div class="card-ornament">✦ ﷽ ✦</div>
+        <h2>Fâl-i Fuzûlî (Tefe'ül-i Şi'r)</h2>
+        <p class="desc-text">Niyetinizi tutunuz ve Fuzûlî'nin hikmet ve irfan dolu deryasından günün beytini ve manevi nasibinizi çekiniz.</p>
+        
+        <button id="btnFalCek" class="btn-gold-pulse">✨ Fâl-i Fuzûlî Çek ✨</button>
+
+        <div id="falSonuc" class="fal-result-box hidden">
+          <div class="fal-badge" id="falTur">Gazel Beyti</div>
+          <div class="fal-couplet" id="falMetin">"..."</div>
+          <div class="fal-source" id="falKaynak">—</div>
+          <div class="fal-meter" id="falVezin"><strong>Vezin:</strong> —</div>
+          <div class="fal-arts" id="falSanatlar"><strong>Sanatlar:</strong> —</div>
+          <hr class="gold-divider">
+          <div class="fal-meaning">
+            <h4>Şerh ve Günümüz Türkçesi</h4>
+            <p id="falAnlam">—</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 2: Külliyât Okuyucu -->
+    <section id="tab-kulliyat" class="tab-pane">
+      <div class="sub-nav-bar">
+        <button class="sub-nav-btn active" data-sub="gazeller">Gazeller</button>
+        <button class="sub-nav-btn" data-sub="su-kasidesi">Su Kasîdesi (32 Beyit)</button>
+        <button class="sub-nav-btn" data-sub="mesneviler">Mesnevîler</button>
+        <button class="sub-nav-btn" data-sub="mensur">Mensur Eserler</button>
+        <button class="sub-nav-btn" data-sub="rubailer">Rübâiler & Kıt'alar</button>
+      </div>
+
+      <div id="kulliyatContent" class="kulliyat-render-area">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- Tab 3: Canlı Arama Motoru -->
+    <section id="tab-arama" class="tab-pane">
+      <div class="section-card">
+        <h2>🔍 Külliyât Genelinde Arama</h2>
+        <p class="desc-text">Beyitler, anlamlar, mazmunlar, edebî sanatlar veya lügat kavramları arasında anlık arama yapın.</p>
+        <div class="search-input-wrap">
+          <input type="text" id="searchInput" placeholder="Örn: mecnun, ab-ı hayat, canan, felek, istifham..." autocomplete="off">
+          <span class="search-icon">🔍</span>
+        </div>
+        <div id="searchCount" class="search-count-label">Aramaya başlamak için bir kelime yazınız.</div>
+        <div id="searchResults" class="search-results-grid"></div>
+      </div>
+    </section>
+
+    <!-- Tab 4: Aruz Vezni Analizörü -->
+    <section id="tab-aruz" class="tab-pane">
+      <div class="section-card">
+        <h2>⚖️ Aruz Vezni Sezgisel Çözümleyici</h2>
+        <p class="desc-text">İncelemek istediğiniz bir mısrayı yazın; motor açık (.) ve kapalı (-) hece yapısını çıkarıp en yakın klasik Aruz kalıbını eşleştirsin.</p>
+        
+        <div class="aruz-presets">
+          <span>Örnek Mısralar:</span>
+          <button class="btn-preset" data-text="Beni cândan usandırdı cefâdan yâr usanmaz mı">Beni Candan Usandırdı</button>
+          <button class="btn-preset" data-text="Sâçma ey göz eşkden gönlümdeki odlara su">Su Kasîdesi Matla</button>
+          <button class="btn-preset" data-text="Öyle sermestem ki idrâk etmezem dünyâ nedür">Öyle Sermestem</button>
+          <button class="btn-preset" data-text="Yâ Rab belâ-yı aşk ile kıl âşinâ beni">Leylâ vü Mecnûn Münâcât</button>
+        </div>
+
+        <div class="search-input-wrap">
+          <input type="text" id="aruzInput" placeholder="Bir mısra yazın veya yukarıdaki örneklerden seçin...">
+          <button id="btnAruzHesapla" class="btn-gold">Hesapla</button>
+        </div>
+
+        <div id="aruzSonuc" class="aruz-result-card hidden">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 5: Dîvân Lügati -->
+    <section id="tab-lugat" class="tab-pane">
+      <div class="section-card">
+        <h2>📖 Fuzûlî Dîvân Lügati & Edebî Istılahlar</h2>
+        <p class="desc-text">Dîvân şiirinde geçen tasavvufi remizler, arkaik kavramlar ve mazmunlar rehberi.</p>
+        <input type="text" id="lugatSearch" class="filter-input" placeholder="Lügatte filtrele (örn: Rind, Fenâ, Sâkî, Gamze)...">
+        <div id="lugatGrid" class="lugat-grid"></div>
+      </div>
+    </section>
+
+    <!-- Tab 6: Bilgi Yarışması -->
+    <section id="tab-yarisma" class="tab-pane">
+      <div class="section-card quiz-card text-center">
+        <h2>🎯 Fuzûlî Edebiyat Bilgi Yarışması</h2>
+        <p class="desc-text">Molla Fuzûlî'nin hayatı, eserleri, aruz vezinleri ve edebi sanatları hakkındaki bilginizi test edin!</p>
+        
+        <div id="quizStartView">
+          <div class="quiz-info-box">
+            <p>📌 5 rastgele soru • Her soru 20 puan • Anlık açıklamalar</p>
+          </div>
+          <button id="btnQuizBaslat" class="btn-gold-pulse">Yarışmayı Başlat</button>
+        </div>
+
+        <div id="quizGameView" class="hidden">
+          <div class="quiz-progress-bar">
+            <div id="quizProgressFill" class="progress-fill" style="width: 20%;"></div>
+          </div>
+          <div class="quiz-header-meta">
+            <span id="quizQuestionNumber">Soru 1 / 5</span>
+            <span id="quizScore">Puan: 0</span>
+          </div>
+          <h3 id="quizQuestionText" class="quiz-question-title">...</h3>
+          <div id="quizOptionsList" class="quiz-options-container"></div>
+          <div id="quizFeedback" class="quiz-feedback-box hidden">
+            <div id="quizFeedbackStatus"></div>
+            <p id="quizFeedbackExplanation"></p>
+            <button id="btnQuizNext" class="btn-gold">Sonraki Soru ➔</button>
+          </div>
+        </div>
+
+        <div id="quizEndView" class="hidden">
+          <div class="quiz-trophy">🏆</div>
+          <h3 id="quizFinalTitle">Yarışma Tamamlandı!</h3>
+          <div class="final-score-display" id="quizFinalScore">80 / 100</div>
+          <p id="quizFinalMessage">Harika bir sonuç!</p>
+          <button id="btnQuizTekrar" class="btn-gold">Yeniden Oyna</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 7: İstatistik & Biyografi -->
+    <section id="tab-istatistik" class="tab-pane">
+      <div class="section-card">
+        <h2>📊 Külliyât İstatistikleri & Biyografi</h2>
+        <div class="stats-grid" id="statsGrid">
+          <!-- Rendered via JS -->
+        </div>
+
+        <hr class="gold-divider">
+
+        <div class="biography-box">
+          <h3>Molla Fuzûlî (1483 - 1556) Portresi</h3>
+          <p>Klasik Türk edebiyatının ve Doğu dünyasının en büyük lirik şairi olan Fuzûlî, Irak muhitinde (Hille/Bağdat) doğmuş ve Kerbelâ'da veba salgınında vefat etmiştir. Türkçe, Arapça ve Farsça olmak üzere üç dilde dîvân tertip etmiş ve her birinde şairliğin en yüksek mertebesine ulaşmıştır.</p>
+          <div class="bio-highlights">
+            <div class="bio-item"><strong>Doğum & Muhit:</strong> 1483 / Hille - Bağdat - Necef - Kerbelâ</div>
+            <div class="bio-item"><strong>Edebi Akım:</strong> Âşıkâne Gazel Zirvesi, Tasavvufî Lirizm, Sehl-i Mümteni</div>
+            <div class="bio-item"><strong>Başyapıtlar:</strong> Türkçe Dîvân, Su Kasîdesi, Leylâ vü Mecnûn, Şikâyetnâme, Hadîkatü's-Süedâ, Beng ü Bâde, Rind ü Zâhid</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <p><strong>Fasl-ı Fuzûlî</strong> • Molla Muhammed Fuzûlî Dijital Külliyâtı & Edebiyat Motoru</p>
+      <p class="footer-sub">Açık Kaynak Kodlu Edebiyat & Yazılım İnisiyatifi • MIT Lisansı</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

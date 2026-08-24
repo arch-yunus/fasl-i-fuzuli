@@ -1,4 +1,6 @@
-{
+// Fasl-ı Fuzûlî - Modern Web Uygulaması ve Edebiyat Motoru
+
+const CORPUS = {
   "sair": {
     "ad": "Molla Muhammed bin Süleyman Fuzûlî",
     "unvan": "Şâir-i Âzam, Sultân-ı Şuarâ-yı Aşk, Hekîm-i Şuarâ",
@@ -903,4 +905,610 @@
       "aciklama": "Fuzûlî'nin şiirleri Sehl-i Mümteni sanatının en mükemmel örneklerini oluşturur."
     }
   ]
+};
+
+// Theme Toggle
+const themeToggle = document.getElementById("themeToggle");
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("theme-light");
+  themeToggle.textContent = document.body.classList.contains("theme-light") ? "☀️ / 🌙" : "🌙 / ☀️";
+});
+
+// Tab Navigation
+const navBtns = document.querySelectorAll(".nav-btn");
+const tabPanes = document.querySelectorAll(".tab-pane");
+
+navBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const targetTab = btn.getAttribute("data-tab");
+    navBtns.forEach(b => b.classList.remove("active"));
+    tabPanes.forEach(p => p.classList.remove("active"));
+
+    btn.classList.add("active");
+    const activePane = document.getElementById(`tab-${targetTab}`);
+    if (activePane) activePane.classList.add("active");
+  });
+});
+
+// ==========================================
+// 1. FÂL-I FUZÛLÎ
+// ==========================================
+const btnFalCek = document.getElementById("btnFalCek");
+const falSonuc = document.getElementById("falSonuc");
+const falTur = document.getElementById("falTur");
+const falMetin = document.getElementById("falMetin");
+const falKaynak = document.getElementById("falKaynak");
+const falVezin = document.getElementById("falVezin");
+const falSanatlar = document.getElementById("falSanatlar");
+const falAnlam = document.getElementById("falAnlam");
+
+btnFalCek.addEventListener("click", () => {
+  const havuz = [];
+
+  // Gazellerden
+  (CORPUS.gazeller || []).forEach(g => {
+    (g.beyitler || []).forEach(b => {
+      havuz.push({
+        tur: "Gazel Beyti",
+        kaynak: `${g.baslik} (Beyit #${b.no})`,
+        vezin: g.vezin || "",
+        metin: b.turkce,
+        anlam: b.sadelesmis,
+        sanatlar: b.sanatlar || []
+      });
+    });
+  });
+
+  // Su Kasidesinden
+  (CORPUS.su_kasidesi?.beyitler || []).forEach(b => {
+    havuz.push({
+      tur: "Su Kasîdesi",
+      kaynak: `Su Kasîdesi (Beyit #${b.no})`,
+      vezin: CORPUS.su_kasidesi.vezin || "",
+      metin: b.metin,
+      anlam: b.anlam,
+      sanatlar: b.sanatlar || ["Na't-ı Şerif"]
+    });
+  });
+
+  // Hikmetli Sözler
+  (CORPUS.hikmetli_sozler || []).forEach(s => {
+    havuz.push({
+      tur: "Hikmetli Söz",
+      kaynak: s.kaynak,
+      vezin: "Hikemî / İrşad",
+      metin: s.soz,
+      anlam: s.anlam,
+      sanatlar: ["Hikmet", "İrşad"]
+    });
+  });
+
+  // Rübâiler
+  (CORPUS.rubailer_ve_kitalar || []).forEach(r => {
+    havuz.push({
+      tur: r.tur || "Rübâi",
+      kaynak: `${r.tur} #${r.no}`,
+      vezin: r.vezin || "",
+      metin: r.metin,
+      anlam: r.anlam,
+      sanatlar: ["Hikmet", "Tasavvuf"]
+    });
+  });
+
+  const secilen = havuz[Math.floor(Math.random() * havuz.length)];
+
+  falTur.textContent = secilen.tur;
+  falMetin.textContent = `"${secilen.metin}"`;
+  falKaynak.textContent = `— ${secilen.kaynak}`;
+  falVezin.innerHTML = `<strong>Aruz Vezni:</strong> ${secilen.vezin || "Serbest"}`;
+  falSanatlar.innerHTML = `<strong>Sanatlar:</strong> ${secilen.sanatlar.join(", ") || "Hikmet"}`;
+  falAnlam.textContent = secilen.anlam;
+
+  falSonuc.classList.remove("hidden");
+  falSonuc.scrollIntoView({ behavior: "smooth", block: "nearest" });
+});
+
+// ==========================================
+// 2. KÜLLİYÂT OKUYUCU
+// ==========================================
+const subNavBtns = document.querySelectorAll(".sub-nav-btn");
+const kulliyatContent = document.getElementById("kulliyatContent");
+
+function renderKulliyat(kategori) {
+  kulliyatContent.innerHTML = "";
+
+  if (kategori === "gazeller") {
+    (CORPUS.gazeller || []).forEach(g => {
+      const card = document.createElement("div");
+      card.className = "kulliyat-card";
+      card.innerHTML = `
+        <div class="kulliyat-header">
+          <h3>${g.baslik}</h3>
+          <span class="kulliyat-meta">${g.vezin || ""}</span>
+        </div>
+        <div class="beyitler-list">
+          ${g.beyitler.map(b => `
+            <div class="beyit-row">
+              <div class="beyit-arabic"><strong>[${b.no}]</strong> ${b.turkce}</div>
+              <div class="beyit-meaning">➔ <em>Anlamı:</em> ${b.sadelesmis}</div>
+              ${b.sanatlar ? `<div class="beyit-arts">✦ Sanatlar: ${b.sanatlar.join(", ")}</div>` : ""}
+            </div>
+          `).join("")}
+        </div>
+      `;
+      kulliyatContent.appendChild(card);
+    });
+  } else if (kategori === "su-kasidesi") {
+    const sk = CORPUS.su_kasidesi || {};
+    const card = document.createElement("div");
+    card.className = "kulliyat-card";
+    card.innerHTML = `
+      <div class="kulliyat-header">
+        <h3>${sk.baslik || "Su Kasîdesi"}</h3>
+        <span class="kulliyat-meta">${sk.vezin || ""} • Toplam ${sk.toplam_beyit || 32} Beyit</span>
+      </div>
+      <p class="desc-text">${sk.aciklama || ""}</p>
+      <div class="beyitler-list">
+        ${(sk.beyitler || []).map(b => `
+          <div class="beyit-row">
+            <div class="beyit-arabic"><strong>[${b.no}]</strong> ${b.metin}</div>
+            <div class="beyit-meaning">➔ <em>Anlamı:</em> ${b.anlam}</div>
+            ${b.sanatlar ? `<div class="beyit-arts">✦ Sanatlar: ${b.sanatlar.join(", ")}</div>` : ""}
+          </div>
+        `).join("")}
+      </div>
+    `;
+    kulliyatContent.appendChild(card);
+  } else if (kategori === "mesneviler") {
+    (CORPUS.mesneviler || []).forEach(m => {
+      const card = document.createElement("div");
+      card.className = "kulliyat-card";
+      card.innerHTML = `
+        <div class="kulliyat-header">
+          <h3>${m.baslik}</h3>
+          <span class="kulliyat-meta">${m.vezin || ""} • ${m.toplam_beyit} Beyit</span>
+        </div>
+        <p class="desc-text">${m.konu || ""}</p>
+        <div class="beyitler-list">
+          ${(m.pasajlar || []).map(p => `
+            <div class="beyit-row">
+              <h4 style="color: var(--gold-primary); margin-bottom: 6px;">${p.baslik}</h4>
+              <div class="beyit-arabic" style="white-space: pre-line;">${p.metin}</div>
+              <div class="beyit-meaning">➔ <em>Şerh:</em> ${p.anlam}</div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+      kulliyatContent.appendChild(card);
+    });
+  } else if (kategori === "mensur") {
+    (CORPUS.mensur_eserler || []).forEach(me => {
+      const card = document.createElement("div");
+      card.className = "kulliyat-card";
+      card.innerHTML = `
+        <div class="kulliyat-header">
+          <h3>${me.baslik}</h3>
+          <span class="kulliyat-meta">${me.tur || ""}</span>
+        </div>
+        <p class="desc-text" style="color: var(--gold-light);">${me.ozet || ""}</p>
+        <div class="beyit-row" style="white-space: pre-line; line-height: 1.8; font-size: 1.05rem;">
+          ${me.metin}
+        </div>
+      `;
+      kulliyatContent.appendChild(card);
+    });
+  } else if (kategori === "rubailer") {
+    (CORPUS.rubailer_ve_kitalar || []).forEach(r => {
+      const card = document.createElement("div");
+      card.className = "kulliyat-card";
+      card.innerHTML = `
+        <div class="kulliyat-header">
+          <h3>${r.tur} #${r.no}</h3>
+          <span class="kulliyat-meta">${r.vezin || ""}</span>
+        </div>
+        <div class="beyit-row">
+          <div class="beyit-arabic" style="white-space: pre-line;">${r.metin}</div>
+          <div class="beyit-meaning" style="margin-top: 10px;">➔ <em>Şerh:</em> ${r.anlam}</div>
+        </div>
+      `;
+      kulliyatContent.appendChild(card);
+    });
+  }
 }
+
+subNavBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    subNavBtns.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    renderKulliyat(btn.getAttribute("data-sub"));
+  });
+});
+
+// İlk yükleme
+renderKulliyat("gazeller");
+
+// ==========================================
+// 3. CANLI ARAMA MOTORU
+// ==========================================
+const searchInput = document.getElementById("searchInput");
+const searchCount = document.getElementById("searchCount");
+const searchResults = document.getElementById("searchResults");
+
+searchInput.addEventListener("input", (e) => {
+  const query = e.target.value.toLowerCase().trim();
+  searchResults.innerHTML = "";
+
+  if (!query) {
+    searchCount.textContent = "Aramaya başlamak için bir kelime yazınız.";
+    return;
+  }
+
+  const results = [];
+
+  // Gazeller
+  (CORPUS.gazeller || []).forEach(g => {
+    (g.beyitler || []).forEach(b => {
+      if (b.turkce.toLowerCase().includes(query) || b.sadelesmis.toLowerCase().includes(query)) {
+        results.push({
+          type: "Gazel Beyti",
+          title: `${g.baslik} (Beyit #${b.no})`,
+          text: b.turkce,
+          desc: b.sadelesmis
+        });
+      }
+    });
+  });
+
+  // Su Kasidesi
+  (CORPUS.su_kasidesi?.beyitler || []).forEach(b => {
+    if (b.metin.toLowerCase().includes(query) || b.anlam.toLowerCase().includes(query)) {
+      results.push({
+        type: "Su Kasîdesi",
+        title: `Su Kasîdesi #${b.no}`,
+        text: b.metin,
+        desc: b.anlam
+      });
+    }
+  });
+
+  // Lügat
+  for (const [kavram, aciklama] of Object.entries(CORPUS.lugat || {})) {
+    if (kavram.toLowerCase().includes(query) || aciklama.toLowerCase().includes(query)) {
+      results.push({
+        type: "Lügat Kavramı",
+        title: `Kavram: ${kavram}`,
+        text: kavram,
+        desc: aciklama
+      });
+    }
+  }
+
+  // Mesneviler
+  (CORPUS.mesneviler || []).forEach(m => {
+    (m.pasajlar || []).forEach(p => {
+      if (p.metin.toLowerCase().includes(query) || p.anlam.toLowerCase().includes(query)) {
+        results.push({
+          type: "Mesnevî Pasajı",
+          title: `${m.baslik} (${p.baslik})`,
+          text: p.metin,
+          desc: p.anlam
+        });
+      }
+    });
+  });
+
+  searchCount.textContent = `Toplam ${results.length} sonuç bulundu:`;
+
+  if (results.length === 0) {
+    searchResults.innerHTML = `<div class="search-result-item" style="text-align: center; color: var(--text-muted);">Sonuç bulunamadı.</div>`;
+    return;
+  }
+
+  results.forEach(r => {
+    const div = document.createElement("div");
+    div.className = "search-result-item";
+    div.innerHTML = `
+      <div class="search-result-type">${r.type} • ${r.title}</div>
+      <div style="font-family: var(--font-poetic); font-size: 1.15rem; color: var(--text-primary); margin-bottom: 6px;">${r.text}</div>
+      <div style="font-size: 0.92rem; color: var(--text-secondary);">${r.desc}</div>
+    `;
+    searchResults.appendChild(div);
+  });
+});
+
+// ==========================================
+// 4. ARUZ VEZNİ ANALİZÖRÜ
+// ==========================================
+function jsHecele(kelime) {
+  const unluler = new Set("aeıioöuüAEIİOÖUÜâîûÂÎÛ");
+  if (!kelime) return [];
+
+  const vIndices = [];
+  for (let i = 0; i < kelime.length; i++) {
+    if (unluler.has(kelime[i])) vIndices.push(i);
+  }
+  if (vIndices.length === 0) return [kelime];
+
+  const heceler = [];
+  let start = 0;
+  for (let idx = 0; idx < vIndices.length; idx++) {
+    const vCurr = vIndices[idx];
+    if (idx === vIndices.length - 1) {
+      heceler.push(kelime.slice(start));
+    } else {
+      const vNext = vIndices[idx + 1];
+      const consCount = vNext - vCurr - 1;
+      const splitPoint = (consCount <= 1) ? vCurr + 1 : vNext - 1;
+      heceler.push(kelime.slice(start, splitPoint));
+      start = splitPoint;
+    }
+  }
+  return heceler;
+}
+
+function analizAruz(misra) {
+  if (!misra.trim()) return null;
+  const unluler = new Set("aeıioöuüAEIİOÖUÜâîûÂÎÛ");
+  const uzunUnluler = new Set("âîûÂÎÛ");
+
+  const kelimeler = misra.replace(/[^\w\sâîûÂÎÛ']/g, "").split(/\s+/).filter(Boolean);
+  const heceListesi = [];
+  const semboller = [];
+
+  kelimeler.forEach((kelime, kIdx) => {
+    const wHeceler = jsHecele(kelime);
+    wHeceler.forEach((hece, hIdx) => {
+      const isLast = (kIdx === kelimeler.length - 1 && hIdx === wHeceler.length - 1);
+      let sembol = "-";
+      if (isLast) {
+        sembol = "-";
+      } else if ([...hece].some(c => uzunUnluler.has(c))) {
+        sembol = "-";
+      } else if (unluler.has(hece[hece.length - 1])) {
+        sembol = ".";
+      } else {
+        sembol = "-";
+      }
+      heceListesi.push(hece);
+      semboller.push(sembol);
+    });
+  });
+
+  let enIyi = null;
+  let maxSkor = -1;
+  const heceStr = semboller.join("");
+
+  (CORPUS.aruz_kaliplari || []).forEach(k => {
+    const sembolStr = k.sembol.replace(/ \/ /g, " ").replace(/\s+/g, "");
+    const minL = Math.min(sembolStr.length, heceStr.length);
+    let esit = 0;
+    for (let i = 0; i < minL; i++) {
+      if (sembolStr[i] === heceStr[i]) esit++;
+    }
+    const skor = (esit / Math.max(sembolStr.length, heceStr.length)) * 100;
+    if (skor > maxSkor) {
+      maxSkor = skor;
+      enIyi = k;
+    }
+  });
+
+  return {
+    misra,
+    heceler: heceListesi,
+    semboller,
+    kalip: enIyi ? enIyi.kalip : "Bilinmiyor",
+    ad: enIyi ? enIyi.ad : "Serbest",
+    skor: maxSkor.toFixed(1)
+  };
+}
+
+const aruzInput = document.getElementById("aruzInput");
+const btnAruzHesapla = document.getElementById("btnAruzHesapla");
+const aruzSonuc = document.getElementById("aruzSonuc");
+
+function renderAruzResult(res) {
+  if (!res) return;
+  aruzSonuc.innerHTML = `
+    <h3 style="color: var(--gold-primary); font-family: var(--font-title); margin-bottom: 12px;">Analiz Sonucu</h3>
+    <div style="font-size: 0.95rem; margin-bottom: 8px;"><strong>Mısra:</strong> ${res.misra}</div>
+    <div class="aruz-pattern-box">
+      ${res.heceler.map((h, i) => `
+        <div class="syllable-pill">
+          <span class="text">${h}</span>
+          <span class="symbol">${res.semboller[i]}</span>
+        </div>
+      `).join("")}
+    </div>
+    <div style="margin-top: 16px; font-size: 1.05rem;">
+      <strong>Tahmin Edilen Vezin:</strong> <span style="color: #22c55e; font-weight: 700;">${res.kalip}</span>
+    </div>
+    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px;">
+      Kalıp: ${res.ad} • Benzerlik: %${res.skor}
+    </div>
+  `;
+  aruzSonuc.classList.remove("hidden");
+}
+
+btnAruzHesapla.addEventListener("click", () => {
+  const res = analizAruz(aruzInput.value);
+  if (res) renderAruzResult(res);
+});
+
+document.querySelectorAll(".btn-preset").forEach(btn => {
+  btn.addEventListener("click", () => {
+    aruzInput.value = btn.getAttribute("data-text");
+    const res = analizAruz(aruzInput.value);
+    if (res) renderAruzResult(res);
+  });
+});
+
+// ==========================================
+// 5. DÎVÂN LÜGATİ
+// ==========================================
+const lugatGrid = document.getElementById("lugatGrid");
+const lugatSearch = document.getElementById("lugatSearch");
+
+function renderLugat(filter = "") {
+  lugatGrid.innerHTML = "";
+  const q = filter.toLowerCase().trim();
+
+  for (const [kavram, aciklama] of Object.entries(CORPUS.lugat || {})) {
+    if (!q || kavram.toLowerCase().includes(q) || aciklama.toLowerCase().includes(q)) {
+      const card = document.createElement("div");
+      card.className = "lugat-card";
+      card.innerHTML = `
+        <h4>${kavram}</h4>
+        <p>${aciklama}</p>
+      `;
+      lugatGrid.appendChild(card);
+    }
+  }
+}
+
+lugatSearch.addEventListener("input", (e) => renderLugat(e.target.value));
+renderLugat();
+
+// ==========================================
+// 6. BİLGİ YARIŞMASI
+// ==========================================
+let currentQuestions = [];
+let currentIndex = 0;
+let currentScore = 0;
+
+const quizStartView = document.getElementById("quizStartView");
+const quizGameView = document.getElementById("quizGameView");
+const quizEndView = document.getElementById("quizEndView");
+const btnQuizBaslat = document.getElementById("btnQuizBaslat");
+const btnQuizNext = document.getElementById("btnQuizNext");
+const btnQuizTekrar = document.getElementById("btnQuizTekrar");
+
+const quizProgressFill = document.getElementById("quizProgressFill");
+const quizQuestionNumber = document.getElementById("quizQuestionNumber");
+const quizScore = document.getElementById("quizScore");
+const quizQuestionText = document.getElementById("quizQuestionText");
+const quizOptionsList = document.getElementById("quizOptionsList");
+const quizFeedback = document.getElementById("quizFeedback");
+const quizFeedbackStatus = document.getElementById("quizFeedbackStatus");
+const quizFeedbackExplanation = document.getElementById("quizFeedbackExplanation");
+
+function startQuiz() {
+  const sorular = [...(CORPUS.quiz_sorulari || [])];
+  sorular.sort(() => Math.random() - 0.5);
+  currentQuestions = sorular.slice(0, 5);
+  currentIndex = 0;
+  currentScore = 0;
+
+  quizStartView.classList.add("hidden");
+  quizEndView.classList.add("hidden");
+  quizGameView.classList.remove("hidden");
+
+  renderQuizQuestion();
+}
+
+function renderQuizQuestion() {
+  quizFeedback.classList.add("hidden");
+  quizOptionsList.innerHTML = "";
+
+  const q = currentQuestions[currentIndex];
+  quizProgressFill.style.width = `${((currentIndex + 1) / currentQuestions.length) * 100}%`;
+  quizQuestionNumber.textContent = `Soru ${currentIndex + 1} / ${currentQuestions.length}`;
+  quizScore.textContent = `Puan: ${currentScore}`;
+  quizQuestionText.textContent = q.soru;
+
+  q.secenekler.forEach((sec, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "quiz-option-btn";
+    btn.textContent = sec;
+    btn.addEventListener("click", () => handleAnswer(idx, btn));
+    quizOptionsList.appendChild(btn);
+  });
+}
+
+function handleAnswer(selectedIndex, selectedBtn) {
+  const q = currentQuestions[currentIndex];
+  const allBtns = quizOptionsList.querySelectorAll(".quiz-option-btn");
+  allBtns.forEach(b => b.disabled = true);
+
+  if (selectedIndex === q.dogru_cevap) {
+    selectedBtn.classList.add("correct");
+    currentScore += 20;
+    quizFeedbackStatus.innerHTML = "<strong style='color: #22c55e;'>✔ TEBRİKLER! Doğru Cevap.</strong>";
+  } else {
+    selectedBtn.classList.add("wrong");
+    allBtns[q.dogru_cevap].classList.add("correct");
+    quizFeedbackStatus.innerHTML = "<strong style='color: #ef4444;'>✘ YANLIŞ CEVAP!</strong>";
+  }
+
+  quizScore.textContent = `Puan: ${currentScore}`;
+  quizFeedbackExplanation.textContent = q.aciklama || "";
+  quizFeedback.classList.remove("hidden");
+}
+
+btnQuizNext.addEventListener("click", () => {
+  currentIndex++;
+  if (currentIndex < currentQuestions.length) {
+    renderQuizQuestion();
+  } else {
+    endQuiz();
+  }
+});
+
+function endQuiz() {
+  quizGameView.classList.add("hidden");
+  quizEndView.classList.remove("hidden");
+
+  document.getElementById("quizFinalScore").textContent = `${currentScore} / 100`;
+  const msg = document.getElementById("quizFinalMessage");
+  if (currentScore === 100) {
+    msg.textContent = "🌟 Harika! Tam bir Fuzûlî ve Dîvân Edebiyatı Mütehassısısınız!";
+  } else if (currentScore >= 60) {
+    msg.textContent = "👏 Gayet başarılı bir edebi birikim!";
+  } else {
+    msg.textContent = "📚 Külliyâtı inceleyerek bilginizi artırabilirsiniz.";
+  }
+}
+
+btnQuizBaslat.addEventListener("click", startQuiz);
+btnQuizTekrar.addEventListener("click", startQuiz);
+
+// ==========================================
+// 7. İSTATİSTİK & BİYOGRAFİ
+// ==========================================
+const statsGrid = document.getElementById("statsGrid");
+
+function renderStats() {
+  const totalGazelBeyit = (CORPUS.gazeller || []).reduce((acc, g) => acc + (g.beyitler?.length || 0), 0);
+  const totalSKBeyit = CORPUS.su_kasidesi?.beyitler?.length || 32;
+  const totalLugat = Object.keys(CORPUS.lugat || {}).length;
+  const totalMesnevi = (CORPUS.mesneviler || []).length;
+  const totalMensur = (CORPUS.mensur_eserler || []).length;
+
+  statsGrid.innerHTML = `
+    <div class="stat-box">
+      <span class="number">${CORPUS.gazeller?.length || 0}</span>
+      <span class="label">Başyapıt Gazel (${totalGazelBeyit} Beyit)</span>
+    </div>
+    <div class="stat-box">
+      <span class="number">${totalSKBeyit}</span>
+      <span class="label">Su Kasîdesi Beyti (Tam)</span>
+    </div>
+    <div class="stat-box">
+      <span class="number">${totalMesnevi}</span>
+      <span class="label">Mesnevî Şaheseri</span>
+    </div>
+    <div class="stat-box">
+      <span class="number">${totalMensur}</span>
+      <span class="label">Mensur Eser & Mektup</span>
+    </div>
+    <div class="stat-box">
+      <span class="number">${totalLugat}</span>
+      <span class="label">Dîvân Lügati Kavramı</span>
+    </div>
+    <div class="stat-box">
+      <span class="number">${CORPUS.quiz_sorulari?.length || 0}</span>
+      <span class="label">Bilgi Yarışması Sorusu</span>
+    </div>
+  `;
+}
+
+renderStats();

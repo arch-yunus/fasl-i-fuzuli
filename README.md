@@ -12,6 +12,8 @@
   <img src="https://img.shields.io/badge/Muhit-Bağdat_|_Hille_|_Kerbelâ-8A2BE2?style=for-the-badge" alt="Muhit"/>
   <img src="https://img.shields.io/badge/Dil-Osmanlıca_|_Azerbaycan_Türkçesi_|_Farsça_|_Arapça-blue?style=for-the-badge" alt="Diller"/>
   <img src="https://img.shields.io/badge/Python-3.9+-informational?style=for-the-badge&logo=python" alt="Python 3"/>
+  <img src="https://img.shields.io/badge/Web_UI-Vanilla_Modern_SPA-purple?style=for-the-badge" alt="Web UI"/>
+  <img src="https://img.shields.io/badge/Tests-20_Passing-brightgreen?style=for-the-badge" alt="Tests"/>
   <img src="https://img.shields.io/badge/Lisans-MIT-success?style=for-the-badge" alt="MIT License"/>
 </p>
 
@@ -22,52 +24,35 @@
 
 ---
 
-## 🏛️ Fuzûlî Hakkında Söylenenler (Tezkireler, Şairler ve Münekkitler)
+## 🌟 Fasl-ı Fuzûlî Külliyâtı ve Edebiyat Motoru v2.0
 
-Asırlar boyunca Doğu ve Batı edebiyat dünyasının en büyük şairleri, tezkire yazarları ve edebiyat tarihçileri Fuzûlî'nin eşsiz dehasını şu sözlerle teslim etmişlerdir:
+**Fasl-ı Fuzûlî**, klasik Türk ve Şark edebiyatının en büyük lirik dehası **Molla Muhammed bin Süleyman Fuzûlî**'nin (1483-1556) eserlerini, aşk felsefesini, poetikasını ve tasavvufi remizlerini dijital çağa taşıyan kapsamlı bir açık kaynak edebiyat ve yazılım platformudur.
+
+### ✨ Öne Çıkan Başlıca Özellikler
+- 📜 **Eksiksiz Külliyât Veri Tabanı:** Seçkin gazeller, **32 beytin tamamı** ile Su Kasîdesi, Mesnevîler (*Leylâ vü Mecnûn*, *Beng ü Bâde*), Mensur eserler (*Şikâyetnâme*, *Hadîkatü's-Süedâ*, *Rind ü Zâhid*, *Dîbâce*) ve Hikemî Kıt'a/Rübâiler.
+- ⚖️ **Aruz Vezni Sezgisel Analiz Motoru:** Mısraları açık (.) ve kapalı (-) hecelerine ayırarak klasik aruz tef'ileleriyle eşleştiren algoritmik vezin analizörü.
+- 🎴 **Fâl-i Fuzûlî (Tefe'ül-i Şi'r):** Külliyat deryasından rastgele hikmetli beyit ve şerh çekme motoru.
+- 🎯 **Fuzûlî Bilgi Yarışması:** Şairin hayatı, eserleri, aruz vezinleri ve edebi terimleri kapsayan interaktif soru bankası.
+- 🌐 **Modern İnteraktif Web Arayüzü (`web/index.html`):** Karanlık/Aydınlık tema destekli, responsive, hat sanatından esinlenen saf JavaScript tek sayfa web uygulaması.
+- 💻 **Güçlü Terminal CLI & REPL Kabuğu:** Renkli, estetik komut satırı arayüzü ve interaktif kabuk modu.
+- 📦 **Standart Python Paketi:** `pip install -e .` ile doğrudan `fuzuli` komut satırı aracı olarak sisteme entegre olabilme.
+
+---
+
+## 🏛️ Fuzûlî Hakkında Söylenenler (Tezkireler ve Münekkitler)
 
 > *"Fuzûlî, Türk edebiyatının ve bütün Doğu âleminin gelmiş geçmiş en büyük aşk ve ıstırap şairidir. Fakat onun bahsettiği ıstırap insanı küçülten veya ezen bir keder değil; insan ruhunu kâinat derecesinde büyüten, onu saflaştırıp mutlak hakikate yükselten ilahi bir ateştir. Türkçe onun nefesinde musikinin ve samimiyetin zirvesine ulaşmıştır."*  
-> — **Ahmet Hamdi Tanpınar (*19. Asır Türk Edebiyatı Tarihi & Edebiyat Üzerine Makaleler*)**
+> — **Ahmet Hamdi Tanpınar (*19. Asır Türk Edebiyatı Tarihi*)**
 
 > *"Fuzûlî yalnız Türk edebiyatının değil, bütün İslâm ve Şark edebiyatlarının en büyük lirik dehalarından biridir. Üç dilde (Türkçe, Farsça, Arapça) dîvân tertip etmiş ve her birinde sahasının en yüksek zirvesine bayrak dikmiştir."*  
 > — **Prof. Dr. Mehmet Fuad Köprülü (*Fuzûlî Hayatı ve Eserleri*)**
 
-> *"Gör zümre-i nâzımân-ı Rûm'u / Fâik mi değil Fuzûlî ma'lûm...  
-> Söz söylemek ol güher-feşândan / Kalmış bize mülk-i Bağdâd'dan!"*  
-> *(Anadolu şairleri zümresine bir bak; Fuzûlî'nin hepsinden üstün olduğu malum değil midir? Şiirde inci saçmak, Bağdat mülkünden bize o eşsiz üstaddan miras kalmıştır.)*  
+> *"Gör zümre-i nâzımân-ı Rûm'u / Fâik mi değil Fuzûlî ma'lûm... Söz söylemek ol güher-feşândan / Kalmış bize mülk-i Bağdâd'dan!"*  
 > — **Ziyâ Paşa (*Harâbât Mukaddimesi*)**
-
-> *"Fuzûlî, Türkçe şiir semâsının asırlardır sönmeyen ve her devirde yeni bir feyizle parıldayan kutup yıldızıdır. Bizim dilimiz onun divanında kendi kalbini ve en samimi feryadını bulmuştur."*  
-> — **Yahya Kemal Beyatlı**
-
-> *"Fuzûlî'nin her beyti, bir tefekkür ve duygu ummanıdır. Onda lafız ile mana, beden ile can gibi birbirinden ayrılmaz bir bütün haline gelmiştir."*  
-> — **Prof. Dr. Ali Nihad Tarlan (*Fuzûlî Dîvânı Şerhi*)**
-
-> *"Fuzûlî, aşkı bir din, ızdırabı bir ibadet ve vefayı bir varoluş gayesi mertebesine yükselten benzersiz bir âşık-ı sâdıktır."*  
-> — **Abdülbâki Gölpınarlı (*Fuzûlî Dîvânı*)**
-
-> *"Fuzûlî-i bî-bedel, ol allâme-i dehr ve mûcid-i ma'ânî-i bikr... Eş'âr-ı bî-nazîri ve elsine-i selâsede olan kütüb-i kesîresi cümle âleme ma'lûmdur."*  
-> *(Eşi benzeri olmayan Fuzûlî, çağının en büyük âlimi ve daha önce söylenmemiş bakir manaların kâşifidir... Eşsiz şiirleri ve üç dilde telif ettiği sayısız eserleri bütün âlemce bilinmektedir.)*  
-> — **Ahdî (*Gülşen-i Şuarâ Tezkiresi, 1563*)**
-
-> *"Söz mülkünün sultânı, tabiatı selîm ve ma'rifeti bî-adîl... Irak toprağında yetişen şairlerin şüphesiz en büyüğü ve en lirik olanıdır."*  
-> — **Kınalızâde Hasan Çelebi (*Tezkiretü'ş-Şuarâ, 1586*)**
-
-> *"Fuzûlî, Türk edebiyatında kederi bir asalet, ızdırabı bir şeref tahtı yapan sultandır. Onun mısraları ağlamaz; ağlatır, düşündürür ve ruhu yıkar."*  
-> — **Nihad Sâmi Banarlı (*Resimli Türk Edebiyatı Tarihi*)**
-
-> *"Fuzûlî is undoubtedly the greatest lyric poet that the Ottoman empire produced. In his hands, the conventional imagery of Persian and Turkish poetry ceased to be mere rhetoric and became the burning expression of intense personal passion and mystical sincerity."*  
-> — **E. J. W. Gibb (*A History of Ottoman Poetry*)**
-
-> *"Fuzûlî, Doğu'nun metafizik çilesini lirizmin zirvesinde düğümleyen şairdir. Mecnûn'un çölünü Türkçenin ebedi vatanı kılmıştır."*  
-> — **Sezai Karakoç (*Edebiyat Yazıları*)**
-
-> *"Fuzûlî, mustarip ruhların en dürüst ve en derin tercümanıdır; acıyı şikâyet konusu değil, varoluşun tacı kılmıştır."*  
-> — **Cemil Meriç (*Kırk Ambar*)**
 
 ---
 
-## 💎 Fuzûlî Külliyâtından Seçkin İnciler ve Genişletilmiş Alıntılar
+## 💎 Fuzûlî Külliyâtından Seçkin İnciler
 
 ### 🔥 1. Aşk, Cân ve Canân Üzerine Başyapıt Gazel Beyitleri
 
@@ -91,85 +76,25 @@ Asırlar boyunca Doğu ve Batı edebiyat dünyasının en büyük şairleri, tez
 > **Ben kimem sâkî olan kimdür mey ü sahbâ nedür**  
 > ↳ *Öyle sarhoş ve kendimden geçmişim ki dünyanın ne olduğunu anlamıyorum; ben kimim, kadehi sunan sâkî kimdir, şarap ve kadeh nedir bilmem!*
 
-> **Dost bî-vefâ felek bî-rahm devrân bî-sükûn**  
-> **Dert çoh hem-dert yoh düşmen kavî tâli' zebûn**  
-> ↳ *Dost vefasız, felek merhametsiz, dünya ise bir an olsun durup dinlenmiyor. Dert çok, dert ortağı yok; düşman güçlü, talihim ise âciz ve yenik!*
-
-> **Cânı cânân dilemiş vermemek olmaz ey dil**  
-> **Ne nizâ' eyleyelim ol yâr ile cân mülküdür**  
-> ↳ *Sevgili senin canını istemiş, ey gönül vermemek olur mu? O sevgiliyle ne diye nizaya düşelim; can zaten onun kendi mülküdür!*
-
-> **Penbe-i dâğ-ı cünûn içre nihândır bedenim**  
-> **Diri oldukça libâsım budur ölsem kefenim**  
-> ↳ *Bedenim aşk çılgınlığının açtığı yaraların pamukları içinde gizlidir; yaşadığım müddetçe elbisem budur, ölürsem de kefenim yine bu yaralar olacaktır!*
-
-> **Ne yanar kimse bana âteş-i dilden özge**  
-> **Ne açar kimse kapım bâd-ı sabâdan gayrı**  
-> ↳ *Gönlümün aşk ateşinden başka kimse benim halime yanmaz; kapımı sabah rüzgârından başka hiç kimse açmaz!*
-
-> **Gönlüm açılır zülf-i perîşânını görgeç**  
-> **Nutkum tutulur gonca-i handânını görgeç**  
-> ↳ *Senin dağınık saçlarını görünce gönlümün gamı dağılır açılır; fakat o gülen gonca dudaklarını görünce heyecandan nutkum tutulur, tek kelime edemem!*
-
-> **Yetti bî-kesliğim ol gāyete kim çevremde**  
-> **Kimse yok çizginir ancak başıma girdâbım**  
-> ↳ *Kimsesizliğim ve yalnızlığım öyle bir son raddeye vardı ki, etrafımda hiç kimse kalmadı; sadece başımın üstünde çaresizlik girdabım dönüp durmaktadır.*
-
-> **Kamu âlem safâ-yı vasl ile mesrûr ü handândır**  
-> **Fuzûlî künc-i gamda mübtelâ-yı hecr ü nâlandır**  
-> ↳ *Bütün âlem kavuşma safasıyla neşeli ve gülmektedir; yapayalnız Fuzûlî ise dert köşesinde ayrılık derdine düşmüş feryat etmektedir.*
-
-> **Hikmet-i dünyâ vü mâfîhâ bilen ârif değül**  
-> **Ârif oldur bilmeye dünyâ vü mâfîhâ nedür**  
-> ↳ *Dünyanın ve içindekilerin hikmetini bilip akıl yürüten gerçek arif değildir; gerçek arif Hak aşkından ötürü dünyayı ve içindekilerin ne olduğunu dahi unutandır.*
-
-> **Gözüm kim bağrımın kanın döker bî-ihtiyâr oynar**  
-> **Meğer kim tîr-i müjgânın hayâliyle hezâr oynar**  
-> ↳ *Bağrımın kanını döken gözüm durmaksızın kıpırdar oynar; meğer o göz, sevgilinin ok gibi kirpiklerinin hayaliyle binlerce oyun oynamaktadır!*
-
-> **Âlem oldu şâd senden ben esîr-i gam henüz**  
-> **Âlem etdi terk-i mâtem ben tutaram mâtem henüz**  
-> ↳ *Senin lütfunla bütün âlem sevince boğuldu, bense hâlâ gam esiriyim; herkes matem tutmayı bıraktı, bense hâlâ senin aşkının yasını tutmaktayım!*
-
 ---
 
 <p align="center">
   <img src="assets/su_kasidesi_banner.jpg" alt="Su Kasîdesi Banner" width="100%"/>
 </p>
 
-### 🌊 2. Şaheser: Su Kasîdesi'nden Na't-ı Şerif İncileri
+### 🌊 2. Şaheser: Su Kasîdesi'nden Na't-ı Şerif İncileri (32 Beyit Tam Metin)
 
 > **Sâçma ey göz eşkden gönlümdeki odlara su**  
 > **Kim bu denlü tutuşan odlara kılmaz fâide su**  
 > ↳ *Ey gözüm! Gönlümdeki aşk yangınlarına gözyaşından su saçma; çünkü bu derece alevlenip tutuşmuş yangınlara su fayda vermez!*
 
-> **Âb-gûndur günbed-i devvâr rengi bilmezem**  
-> **Yâ muhît olmuş gözümden günbed-i devvâra su**  
-> ↳ *Dönen feleğin (gökyüzünün) rengi kendiliğinden mi su rengindedir (mavidir), yoksa gözümden dökülen yaşlar bütün gök kubbeyi mi kaplamıştır, bilemiyorum!*
-
 > **Hâk-i pâyine yetem dir ömrlerdir muttasıl**  
 > **Başını daşdan daşa urup gezer âvâre su**  
 > ↳ *Su, senin ayağının toprağına ulaşayım diyerek asırlardır durmaksızın başını taştan taşa vurarak avare bir halde akıp gezmektedir.*
 
-> **Mu'ciz-i peygamberî çün zahir oldu dehrde**  
-> **Eyledi parmaklarından fışkıran enhâra su**  
-> ↳ *Peygamberlik mucizesi dünyada aşikâr olduğunda, susuz çölde mübarek parmaklarından fışkıran ırmaklara sular hayran ve teslim oldu.*
-
-> **Gılmân-ı huld âb-ı kevser içmeğe teşne kılır**  
-> **Lutfun eylerse füyûz-ı meşreb-i ezhâra su**  
-> ↳ *Senin lütfun çiçeklerin sulandığı pınarlara bereket ve feyiz verirse, cennet gılmanları bile Kevser suyunu içmek yerine o çiçeklerin suyuna susar hale gelirler.*
-
-> **Mihr-i zâtın berk vurur zerrât-ı kevne her seher**  
-> **Kim verir her zerre-i nâçîze envâra su**  
-> ↳ *Senin zatının güneşi her seher varlığın bütün zerrelerine ışık saçar; o güneş ki her değersiz zerrenin nuruna berraklık ve su bağışlar.*
-
 > **Dest-bûsi ârzûsiyle ger ölsem dostlar**  
 > **Kûze eylen toprağım sunun anunla yâra su**  
 > ↳ *Ey dostlar! Eğer onun elini öpme arzusu ve hasretiyle ölürsem; mezarımın toprağından bir testi (kûze) yapın ve o testiyle o sevgiliye su sunun!*
-
-> **Hâb-ı gafletden Fuzûlî çün uyandı âkıbet**  
-> **Tâ ki kılur eşk-i hasretle bu pür-efkâra su**  
-> ↳ *Fuzûlî gaflet uykusundan nihayet uyandığında; hasret gözyaşlarıyla bu keder ve tefekkür dolu gönlüne şefaat suyu döker.*
 
 ---
 
@@ -181,31 +106,7 @@ Asırlar boyunca Doğu ve Batı edebiyat dünyasının en büyük şairleri, tez
 
 > **Yâ Rab belâ-yı aşk ile kıl âşinâ beni**  
 > **Bir dem belâ-yı aşkdan etme cüdâ beni**  
->  
-> **Az eyleme in'âmını ehl-i kereminden**  
-> **Yâni ki çok eyle gam ü derd ü belânı**  
->  
-> **Gittikçe hüsnün eyle ziyâde nigârımın**  
-> **Geldikçe derdine kıl ziyâde devâmımı**  
-> ↳ *(Mecnûn'un Kâbe'deki Münâcâtı)*: *Ey Rabbim! Beni aşk belasına aşina eyle, beni bir an bile aşk derdinden ayrı düşürme! Kerem ehli katından lütfunu sakın eksik etme; yani bana olan gamı, derdi ve aşk belasını katbekat artır! Sevgilimin güzelliğini gün geçtikçe artır; benim de onun derdine olan sabrımı ve vefamı sonsuz eyle!*
-
-> **Ey şem' senünle menem hemdem**  
-> **İkimiz de yanaruz dem-be-dem**  
->  
-> **Sen başından dökersün yaşını**  
-> **Ben sînemden çıkaruram âteşimi**  
->  
-> **Farkımız oldur ki ey nûr-ı safâ**  
-> **Sen giceler yanarsun ben subh u mesâ**  
-> ↳ *(Mecnûn'un Mumla Söyleşisi)*: *Ey mum! Seninle dert ortağıyız, ikimiz de durmaksızın yanıyoruz. Sen başından yaş dökersin, ben ise bağrımdan ateş püskürürüm. Tek farkımız şudur: Sen sadece geceleri yanarsın, ben ise hem sabah hem akşam yanmaktayım!*
-
-> **Bende Mecnûn'un hevası, sende Leylâ hüsnü var**  
-> **Gel bu sevdâ meclisinde terk edelim cânı biz**  
-> ↳ *Bende Mecnûn'un aşk ateşi, sende ise Leylâ'nın eşsiz güzelliği var; gel bu ebedi sevda meclisinde can kaygısını bir kenara bırakalım!*
-
-> *(Leylâ'nın Çölde Mecnûn'a Seslenişi ve Mecnûn'un Fenâ Makamı):*  
-> Leylâ: *"Ben Leylâ'yım, senin için geldim!"*  
-> Mecnûn: *"Ger sen Leylî isen bendeki kimdir? Bendeki Leylâ bana yeter; fâni surete ve cisme artık mecalim yoktur!"*
+> ↳ *(Mecnûn'un Kâbe'deki Münâcâtı)*: *Ey Rabbim! Beni aşk belasına aşina eyle, beni bir an bile aşk derdinden ayrı düşürme! Bana olan aşk derdini artır, sevgilimin güzelliğini çoğalt, benim de o derde tahammülümü ve vefamı sonsuz eyle!*
 
 ---
 
@@ -213,74 +114,19 @@ Asırlar boyunca Doğu ve Batı edebiyat dünyasının en büyük şairleri, tez
   <img src="assets/sikayetname_banner.jpg" alt="Şikâyetnâme ve İlim Meclisi Banner" width="100%"/>
 </p>
 
-### 📜 4. Şikâyetnâme'den Bürokrasi ve Toplum Hicvi
+### 📜 4. Şikâyetnâme'den Sosyal Hiciv
 
-> *"Ba'de't-tahyiyyet ve't-teslîm... Evkāf ta'ayyün eyleyen gürûh-ı nâ-kesânın yanına vardım:  
->  
-> **Selâm verdim rüşvet değildür deyu almadılar.**  
-> **Hüküm gösterdim fâidesüzdür deyu mültefit olmadılar.**  
->  
-> Eğerçi zâhirde sûret-i itâ'at gösterdiler, ammâ zebân-ı hâl ile cemî'-i su'âlime cevâb-ı bârid verdiler.  
->  
-> Dedim: 'Yâ eyyühe'l-ashâb! Bu ne mu'âmele-i nâ-meşrû'dur?'  
-> Dediler: 'Bizim mu'âdeletimiz böyledir.'  
->  
-> Dedim: 'Benim berâtımın mazmûnuna amel etmek vâcib değil midir?'  
-> Dediler: 'Ol zevâiddir, husûlü müte'azzirdir.'  
->  
-> Dedim: 'Vakf malı mültefit-i zâyi' olmak revâ mıdır?'  
-> Dediler: 'Zemânede hak budur ki, hıfz-ı emânet eden bî-kâm ola.'  
->  
-> Dedim: 'Bu hüccet-i şer'îye i'tibâr yok mudur?'  
-> Dediler: 'Bizim meclisimizde fuzûlî sözün i'tibârı yokdur!'  
->  
-> Hâsılı gördüm ki, su'âlime cevâbdan gayrı nesne vermezler ve bu berât ile hâcetim revâ görmezler. Nâ-çâr terk-i cidâl kıldım ve me'yûs ü mahzûn kûşe-i firâk u fakre çekildim..."*
+> *"Selâm verdim rüşvet değildür deyu almadılar. Hüküm gösterdim fâidesüzdür deyu mültefit olmadılar. Eğerçi zâhirde sûret-i itâ'at gösterdiler, ammâ zebân-ı hâl ile cemî'-i su'âlime cevâb-ı bârid verdiler..."*
 
 ---
 
-### 🥀 5. Hadîkatü's-Süedâ'dan Kerbelâ Mersiyesi
-
-> **Mâh-ı Muharrem oldu döküldü yine kanlar**  
-> **Gark oldu kızıla boyandı şühedâlar**  
->  
-> **Kerbelâ deştine düştü âl-i evlâd-ı Resûl**  
-> **Ağlasun bu derde yer ü gök ile ins ü melek**  
->  
-> **Susuzluktan yandı ol gülşen-i pâkin gülleri**  
-> **Döksün gözyaşını deryâ gibi cümle âşıklar**  
-> ↳ *Muharrem ayı geldi, yine masum kanlar döküldü; şehitler baştan başa kızıla boyandı. Peygamber evlatları Kerbelâ çölüne düştü; bu büyük derde yer, gök, insan ve melekler ağlasın! O temiz gül bahçesinin gülleri susuzluktan yandı tutuştu; cümle âşıklar gözyaşlarını denizler gibi döksün!*
-
----
-
-### ⚖️ 6. Hikmetli Kıt'alar ve Rübâilerden İrfânî Sözler
-
-> **Cehl ile kimesne bulmadı kâm**  
-> **İlm iledir rif'at-i makām**  
-> **Ger zerre kadar olursa ilmin**  
-> **Âlemde seni kılur muazzam**  
-> ↳ *Cehaletle hiçbir kimse muradına eremedi; mevkilerin ve derecelerin en yücesi ancak ilim iledir. Zerre kadar da olsa gerçek ilmin varsa, o ilim seni bütün cihanda aziz ve saygın kılar.*
-
-> **Dünyâ talebiyle ömrün etme zâyi'**  
-> **Bir zevk içün eyleme cihânı tâyi'**  
-> **Kânî' olasın dâima her nâzile kim**  
-> **Rızkı vericidir ol Cenâb-ı Sâni'**  
-> ↳ *Dünya hırsı peşinde ömrünü heba etme; fâni bir lezzet için dünyaya boyun eğme. Başına gelen her hâle kanaat eyle; çünkü bütün yaratılmışların rızkını veren O Yüce Yaratıcı'dır.*
-
-> **Bî-vefâ dünyâdan umma sen vefâ**  
-> **Kimseye kılmadı bu dehr-i cefâ**  
-> **Balını yiyen içer ağu hemîn**  
-> **Zehrine sabr eyle ger dersen safâ**  
-> ↳ *Vefasız dünyadan asla vefa bekleme; bu cefa dünyası bugüne dek kime vefa gösterdi ki? Onun balını tadan mutlaka zehrini de içer; eğer safa sürmek istersen önce onun zehrine sabretmeyi öğrenmelisin.*
-
----
-
-## 🗂️ Külliyât İçerik Ağacı
+## 🗂️ Külliyât Proje Mimarisi
 
 ```
 fasl-i-fuzuli/
 │
 ├── biyografi-ve-tahlil/           # Şâirin Hayatı, Sanatı, Şiir Felsefesi ve Kaynakça
-│   ├── hayati-ve-sanati.md        # Ayrıntılı biyografi, edebi dönemi, Bağdat ve Kerbela muhiti
+│   ├── hayati-ve-sanati.md        # Ayrıntılı biyografi, edebi dönemi, Bağdat ve Kerbelâ muhiti
 │   ├── ilim-ve-siir-felsefesi.md  # Fuzûlî'nin poetikası: Şiir ve İlim dengesi
 │   └── kaynakca.md                # Tenkitli basımlar (Gölpınarlı, Tarlan, İpekten vb.)
 │
@@ -288,12 +134,6 @@ fasl-i-fuzuli/
 │   ├── divan/                     # Türkçe Dîvân ve Seçkin Şiirler
 │   │   ├── dibace.md              # Türkçe Dîvân Mukaddimesi (Asıl Metin + Çeviri + İnceleme)
 │   │   ├── gazeller/              # Başyapıt Gazeller (Beyit Beyit Şerh ve Sanatlar)
-│   │   │   ├── beni-candan-usandirdi.md
-│   │   │   ├── oyle-sermestem.md
-│   │   │   ├── can-verme-gam-i-aska.md
-│   │   │   ├── mende-mecnundan-fuzun.md
-│   │   │   ├── dost-bi-vefa.md
-│   │   │   └── ask-derdiyle-hosem.md
 │   │   ├── kasideler/
 │   │   │   └── su-kasidesi.md     # 32 Beyit Tam Metin Na't-ı Şerif, Vezin ve Şerh
 │   │   └── rubailer-ve-kitalar/
@@ -302,7 +142,7 @@ fasl-i-fuzuli/
 │   │   ├── leyla-vu-mecnun.md     # Doğu Edebiyatının En Lirik Mesnevisi Tahlili
 │   │   └── beng-u-bade.md         # Şarap ve Afyon Münazarası (Alegorik Hiciv)
 │   └── mensur-ve-mektup/
-│       ├── sikayetname.md         # "Selâm verdim rüşvet değildür deyu almadılar..." Tam Metin
+│       ├── sikayetname.md         # Şikâyetnâme Tam Metin ve İnceleme
 │       ├── hadikatus-sueda.md     # Kerbelâ Makteli Şaheseri
 │       └── rind-u-zahid.md        # Rind ile Zâhid Münazarası
 │
@@ -311,87 +151,137 @@ fasl-i-fuzuli/
 │   ├── mazmunlar-ve-remizler.md   # Gül-Bülbül, Şem'-Pervâne, Ok-Gamze Mazmunları
 │   └── aruz-ve-edebi-sanatlar.md  # Vezin Kalıpları ve Kullanılan Edebi Sanatlar
 │
-├── araclar/                       # Python CLI, Külliyat Sorgulama & Fal-ı Fuzûlî
-│   ├── corpus.json                # Yapılandırılmış JSON Veri Tabanı
-│   ├── api.py                     # Programatik Erişim Motoru
-│   └── fuzuli_cli.py              # İnteraktif Terminal Komut Satırı Arayüzü
+├── web/                           # 🌐 Modern İnteraktif Web Uygulaması
+│   ├── index.html                 # Tek Sayfa Uygulama (SPA)
+│   ├── style.css                  # Divan Hat & Altın Varak Temalı CSS
+│   └── app.js                     # Canlı Arama, Aruz Analizörü, Quiz ve Fâl Motoru
 │
-└── tests/
-    └── test_corpus.py             # Otomatik Veri ve API Test Süiti
+├── araclar/                       # 🐍 Python CLI, API & Poetik Analiz Motoru
+│   ├── __init__.py
+│   ├── corpus.json                # Genişletilmiş Yapılandırılmış JSON Veri Tabanı
+│   ├── api.py                     # Aruz Motoru, Arama, İstatistik ve Export API
+│   └── fuzuli_cli.py              # Zenginleştirilmiş Terminal Komut Satırı Arayüzü
+│
+├── tests/                         # 🧪 Kapsamlı Otomatik Test Süiti (20 Test)
+│   ├── test_corpus.py             # API ve Veri Bütünlüğü Testleri
+│   ├── test_aruz.py               # Heceleme ve Aruz Vezni Testleri
+│   ├── test_quiz.py               # Bilgi Yarışması Soru Bankası Testleri
+│   └── test_cli.py                # Uçtan Uca CLI Testleri
+│
+├── .github/workflows/ci.yml       # ⚙️ GitHub Actions Otomatik CI/CD Test Pipeline
+├── pyproject.toml                 # Modern Python Paketleme Standardı (PEP 517/621)
+├── setup.py                       # Kurulum ve Entrypoint Tanımları
+└── requirements.txt               # Bağımlılıklar
 ```
 
 ---
 
-## ⚡ Hızlı Başlangıç & CLI Kullanımı
-
-Külliyat, terminal üzerinden etkileşimli olarak beyit sorgulamaya, gazel okumaya ve Fâl-i Fuzûlî çekmeye olanak tanıyan bir Python motoru ile donatılmıştır:
+## ⚡ Hızlı Başlangıç & CLI Komutları
 
 ```bash
-# Depoyu klonlayın
+# 1. Depoyu klonlayın
 git clone https://github.com/arch-yunus/fasl-i-fuzuli.git
 cd fasl-i-fuzuli
 
-# Fâl-i Fuzûlî: Rastgele hikmetli bir beyit ve şerhini çek
+# 2. Paketi geliştirici modunda kurun (İsteğe bağlı)
+pip install -e .
+
+# 3. Fâl-i Fuzûlî çekin (Rastgele hikmetli beyit ve şerhi)
 python -m araclar.fuzuli_cli fal
+# veya sistem genelinde:
+fuzuli fal
 
-# Gazelleri listele veya seçilen bir gazeli beyit beyit incele
+# 4. Gazelleri listeleyin veya seçilen gazeli inceleyin
+python -m araclar.fuzuli_cli gazel
 python -m araclar.fuzuli_cli gazel 1
-python -m araclar.fuzuli_cli gazel oyle-sermestem
+python -m araclar.fuzuli_cli gazel beni-candan-usandirdi
 
-# Su Kasîdesi'nden beyit oku (#31 numaralı meşhur vasiyet beyti)
+# 5. Su Kasîdesi'nden beyit okuyun (veya tüm 32 beyti listeleyin)
 python -m araclar.fuzuli_cli su-kasidesi 31
+python -m araclar.fuzuli_cli su-kasidesi tum
 
-# Külliyat genelinde arama yap
+# 6. Eserleri (Mesnevi veya Mensur) okuyun
+python -m araclar.fuzuli_cli eser sikayetname
+python -m araclar.fuzuli_cli eser leyla-vu-mecnun
+
+# 7. Aruz Vezni Analizörü (Mısranın hece yapısını ve veznini tespit edin)
+python -m araclar.fuzuli_cli aruz "Beni cândan usandırdı cefâdan yâr usanmaz mı"
+
+# 8. Fuzûlî Edebiyat Bilgi Yarışması (İnteraktif Terminal Quizi)
+python -m araclar.fuzuli_cli yarisma
+
+# 9. Külliyât İstatistiklerini görüntüleyin
+python -m araclar.fuzuli_cli istatistik
+
+# 10. Külliyatta canlı arama yapın veya lügatten kavram sorgulayın
 python -m araclar.fuzuli_cli ara mecnun
-
-# Dîvân lügatinden kavram sorgula
 python -m araclar.fuzuli_cli lugat Rind
+
+# 11. İnteraktif Kabuk (REPL) modunu başlatın
+python -m araclar.fuzuli_cli interaktif
+
+# 12. Külliyatı Markdown veya JSON olarak dışa aktarın
+python -m araclar.fuzuli_cli export markdown > kulliyat_export.md
 ```
 
 ---
 
-## 🐍 Python API ile Programatik Erişim
+## 🌐 İnteraktif Web Arayüzünü Kullanma
 
-Külliyat verilerine kendi Python projelerinizde doğrudan erişebilirsiniz:
+Külliyatın modern web arayüzünü açmak için herhangi bir web tarayıcısında `web/index.html` dosyasını açmanız yeterlidir (sıfır bağımlılık, çevrimdışı çalışır):
+
+```bash
+# Windows
+start web/index.html
+
+# macOS
+open web/index.html
+
+# Linux
+xdg-open web/index.html
+```
+
+---
+
+## 🐍 Python API ile Programatik Kullanım
 
 ```python
 from araclar.api import FuzuliCorpus
 
 corpus = FuzuliCorpus()
 
-# Rastgele hikmetli bir beyit çek
+# 1. Fâl-i Fuzûlî Çek
 fal = corpus.fal_cek()
-print(fal["metin"])
-print(fal["sadelesmis"])
+print(f"Metin : {fal['metin']}")
+print(f"Anlamı: {fal['sadelesmis']}")
 
-# Gazel getir
-gazel = corpus.gazel_getir("beni-candan-usandirdi")
-print(f"Vezin: {gazel['vezin']}")
+# 2. Aruz Vezni Analizi Yap
+analiz = corpus.aruz_tahmin("Beni cândan usandırdı cefâdan yâr usanmaz mı")
+print(f"Açık/Kapalı Deseni: {analiz['desen']}")
+print(f"Tahmin Edilen Vezin: {analiz['tahmin_edilen_kalip']}")
 
-# Lügatten kavram bak
-anlam = corpus.lugat_sorgula("Fenâfillâh")
-print(anlam)
+# 3. Su Kasîdesi 31. Beyit (Vasiyet Beyti)
+sk = corpus.su_kasidesi
+beyit_31 = next(b for b in sk['beyitler'] if b['no'] == 31)
+print(beyit_31['metin'])
+
+# 4. Külliyatta Arama Yap
+sonuclar = corpus.ara("Mecnûn")
+for s in sonuclar:
+    print(f"[{s['tur']}] {s['kaynak']} -> {s['metin']}")
+
+# 5. Dîvân Lügatinden Kavram Getir
+print(corpus.lugat_sorgula("Fenâfillâh"))
 ```
-
----
-
-## 📖 Başlıca Şaheserler
-
-| Eser | Türü / Form | Açıklama |
-|:---|:---|:---|
-| [**Türkçe Dîvân Dîbâcesi**](file:///eserler/divan/dibace.md) | Mensur Mukaddime | Fuzûlî'nin ilim ve şiir felsefesi, mahlas seçimi |
-| [**Su Kasîdesi**](file:///eserler/divan/kasideler/su-kasidesi.md) | Kasîde / Na't | 32 Beyit tam metin; Peygamber sevgisi ve vasiyet beyti |
-| [**Beni Candan Usandırdı**](file:///eserler/divan/gazeller/beni-candan-usandirdi.md) | Gazel | Âşıkâne gazel türünün zirvesi, 6 beyit tahlilli |
-| [**Leylâ vü Mecnûn**](file:///eserler/mesneviler/leyla-vu-mecnun.md) | Mesnevî (3096 beyit) | Maddi aşktan İlahi Aşka yükselişin destanı |
-| [**Şikâyetnâme**](file:///eserler/mensur-ve-mektup/sikayetname.md) | Mektup / Hiciv | *"Selâm verdim rüşvet değildür deyu almadılar..."* |
-| [**Fuzûlî Lügati**](file:///lugat-ve-mazmunlar/fuzuli-sozlugu.md) | Sözlük / Istılahlar | Divan edebiyatı tasavvufi ve edebi remizler tablosu |
 
 ---
 
 ## 🧪 Testlerin Çalıştırılması
 
+Tüm 20 test birimini koşturmak için:
+
 ```bash
-python tests/test_corpus.py
+python -m unittest discover -s tests -v
 ```
 
 ---
