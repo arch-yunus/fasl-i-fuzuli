@@ -10,6 +10,12 @@ Kullanım:
     fuzuli eser [leyla-vu-mecnun|beng-u-bade|sikayetname|hadikatus-sueda|rind-u-zahid|dibace]
     fuzuli rubai [no]
     fuzuli aruz [misra]
+    fuzuli takti [misra]
+    fuzuli kafiye [misra1] [misra2]
+    fuzuli sanat [beyit]
+    fuzuli tezkire [ahdi|asik|latifi|kinalizade|sehi]
+    fuzuli kart [fal|no]
+    fuzuli sunucu [--port 8000]
     fuzuli yarisma
     fuzuli istatistik
     fuzuli ara [kelime]
@@ -21,6 +27,11 @@ Kullanım:
 
 import sys
 import argparse
+import http.server
+import socketserver
+import webbrowser
+import threading
+from pathlib import Path
 from typing import Optional
 
 # Windows console UTF-8 safety
@@ -83,11 +94,11 @@ def cmd_fal(corpus: FuzuliCorpus):
 
 def cmd_gazel(corpus: FuzuliCorpus, query: Optional[str] = None):
     if not query:
-        print(f"\n{Colors.CYAN}{Colors.BOLD}📜 [ MEVCUT GAZEL LİSTESİ ]{Colors.END}")
+        print(f"\n{Colors.CYAN}{Colors.BOLD}📜 [ MEVCUT GAZEL LİSTESİ ({len(corpus.gazeller)} Başyapıt) ]{Colors.END}")
         print("─" * 65)
         for i, g in enumerate(corpus.gazeller, 1):
             tema = g.get('tema', 'Aşk ve İrfan')
-            print(f"  {Colors.YELLOW}[{i}]{Colors.END} {Colors.BOLD}{g['id']}{Colors.END} ➔ {g['baslik']} {Colors.DIM}({tema}){Colors.END}")
+            print(f"  {Colors.YELLOW}[{i:2d}]{Colors.END} {Colors.BOLD}{g['id']:25}{Colors.END} ➔ {g['baslik']} {Colors.DIM}({tema}){Colors.END}")
         print("\nBir gazeli incelemek için: python -m araclar.fuzuli_cli gazel [no/id]")
         return
 
@@ -240,6 +251,160 @@ def cmd_aruz(corpus: FuzuliCorpus, misra: str):
     print("═" * 65)
 
 
+def cmd_takti(corpus: FuzuliCorpus, misra: str):
+    if not misra:
+        print(f"{Colors.RED}Lütfen takti' edilecek bir mısra giriniz.{Colors.END}")
+        return
+
+    res = corpus.takti_et(misra)
+    if "hata" in res:
+        print(f"{Colors.RED}{res['hata']}{Colors.END}")
+        return
+
+    print(f"\n{Colors.CYAN}{Colors.BOLD}📐 [ ARUZ TAKTÎ' (TEF'İLE BÖLÜMLEME) TABLOSU ]{Colors.END}")
+    print("═" * 65)
+    print(f"{Colors.BOLD}Mısra       :{Colors.END} {res['misra']}")
+    print(f"{Colors.BOLD}Hedef Kalıp :{Colors.END} {Colors.GREEN}{res['kalip_adi']}{Colors.END} ({res['bahr']})")
+    print(f"{Colors.BOLD}Taktî' Metni:{Colors.END} {Colors.YELLOW}{Colors.BOLD}{res['takti_metni']}{Colors.END}")
+    print("─" * 65)
+    print(f"{'Tef\'ile':<15} | {'Heceler':<20} | {'Desen':<10} | {'Kalıp Deseni'}")
+    print("─" * 65)
+    for c in res["cuzler"]:
+        heceler_str = c["metin"]
+        sembol_str = " ".join(c["semboller"])
+        print(f"{Colors.BOLD}{c['tefile']:<15}{Colors.END} | {Colors.CYAN}{heceler_str:<20}{Colors.END} | {Colors.YELLOW}{sembol_str:<10}{Colors.END} | {c['hedef_desen']}")
+    print("═" * 65 + "\n")
+
+
+def cmd_kafiye(corpus: FuzuliCorpus, misra1: str, misra2: Optional[str] = None):
+    m1 = misra1
+    m2 = misra2
+    if not m2 and "/" in m1:
+        parts = m1.split("/", 1)
+        m1 = parts[0].strip()
+        m2 = parts[1].strip()
+
+    if not m1 or not m2:
+        print(f"{Colors.RED}Lütfen kafiye analizi için iki mısra giriniz (örn: fuzuli kafiye 'mısra1' 'mısra2' veya 'mısra1 / mısra2').{Colors.END}")
+        return
+
+    res = corpus.kafiye_redif_analiz(m1, m2)
+    if "hata" in res:
+        print(f"{Colors.RED}{res['hata']}{Colors.END}")
+        return
+
+    print(f"\n{Colors.CYAN}{Colors.BOLD}🎶 [ KAFİYE VE REDİF ANALİZ RAPORU ]{Colors.END}")
+    print("═" * 65)
+    print(f"  {Colors.BOLD}1. Mısra   :{Colors.END} {res['misra1']}")
+    print(f"  {Colors.BOLD}2. Mısra   :{Colors.END} {res['misra2']}")
+    print("─" * 65)
+    print(f"  {Colors.BOLD}Redif      :{Colors.END} {Colors.YELLOW}{Colors.BOLD}{res['redif']}{Colors.END}")
+    print(f"  {Colors.BOLD}Kafiye Sesi:{Colors.END} {Colors.GREEN}{Colors.BOLD}{res['kafiye']}{Colors.END}")
+    print(f"  {Colors.BOLD}Kafiye Türü:{Colors.END} {res['kafiye_turu']}")
+    print(f"  {Colors.BOLD}Revî Harfi :{Colors.END} {res['revi']}")
+    print("═" * 65 + "\n")
+
+
+def cmd_sanat(corpus: FuzuliCorpus, metin: str):
+    if not metin:
+        print(f"{Colors.RED}Lütfen edebî sanatları taranacak bir beyit veya mısra giriniz.{Colors.END}")
+        return
+
+    res = corpus.edebi_sanat_analiz(metin)
+    print(f"\n{Colors.CYAN}{Colors.BOLD}🎨 [ EDEBÎ SANAT TEŞHİS VE TAHLİLİ ]{Colors.END}")
+    print("═" * 65)
+    print(f"{Colors.BOLD}Metin:{Colors.END} {res['metin']}")
+    print(f"{Colors.BOLD}Tespit Edilen Sanat Sayısı:{Colors.END} {res['tespit_sayisi']}")
+    print("─" * 65)
+
+    if not res["sanatlar"]:
+        print(f"  {Colors.DIM}Belirgin bir klasik sanat tespit edilemedi.{Colors.END}")
+    else:
+        for s in res["sanatlar"]:
+            kelimeler_str = ", ".join(s.get("kelimeler", []))
+            print(f"  • {Colors.YELLOW}{Colors.BOLD}{s['sanat']:<12}{Colors.END} ➔ {Colors.GREEN}[{kelimeler_str}]{Colors.END}")
+            print(f"    {Colors.DIM}{s['aciklama']}{Colors.END}")
+    print("═" * 65 + "\n")
+
+
+def cmd_tezkire(corpus: FuzuliCorpus, query: Optional[str] = None):
+    print(f"\n{Colors.CYAN}{Colors.BOLD}📜 [ TARİHÎ ŞU'ARÂ TEZKİRELERİNDE FUZÛLÎ ]{Colors.END}")
+    print("═" * 65)
+    tezkireler = corpus.tezkire_getir(query)
+    if not tezkireler:
+        print(f"{Colors.RED}Eşleşen tezkire kaydı bulunamadı.{Colors.END}")
+        return
+
+    for t in tezkireler:
+        print(f"\n{Colors.YELLOW}{Colors.BOLD}◆ {t['yazar']} – {t['eser']} ◆{Colors.END}")
+        print(f"{Colors.DIM}Önemi: {t.get('onemi', '')}{Colors.END}")
+        print(f"\n  {Colors.CYAN}\"{t['metin']}\"{Colors.END}\n")
+        print(f"  {Colors.BOLD}Anahtar Tespit:{Colors.END} {t.get('anahtar_tespit', '')}")
+        print(f"{Colors.DIM}{'─' * 65}{Colors.END}")
+    print("═" * 65 + "\n")
+
+
+def cmd_kart(corpus: FuzuliCorpus, secim: Optional[str] = None):
+    """Estetik çerçeveli beyit kartı üretir."""
+    fal = corpus.fal_cek()
+    metin = fal.get("metin", "")
+    kaynak = fal.get("kaynak", "")
+    vezin = fal.get("vezin", "")
+    anlam = fal.get("sadelesmis", "")
+
+    # Mısraları böl
+    misralar = [m.strip() for m in metin.split("/") if m.strip()]
+    if len(misralar) < 2 and "\n" in metin:
+        misralar = [m.strip() for m in metin.split("\n") if m.strip()]
+
+    m1 = misralar[0] if misralar else metin
+    m2 = misralar[1] if len(misralar) > 1 else ""
+
+    print(f"\n{Colors.YELLOW}╭─────────────────────────────────────────────────────────────────╮")
+    print(f"│                       فصل فضولی • FASL-I FUZÛLÎ                  │")
+    print(f"├─────────────────────────────────────────────────────────────────┤{Colors.END}")
+    print(f"{Colors.CYAN}{Colors.BOLD}│  \"{m1}\"{Colors.END}")
+    if m2:
+        print(f"{Colors.CYAN}{Colors.BOLD}│  \"{m2}\"{Colors.END}")
+    print(f"{Colors.YELLOW}├─────────────────────────────────────────────────────────────────┤{Colors.END}")
+    print(f"│  {Colors.BOLD}Kaynak:{Colors.END} {kaynak:<54} │")
+    if vezin:
+        print(f"│  {Colors.BOLD}Vezin :{Colors.END} {vezin[:54]:<54} │")
+    print(f"{Colors.YELLOW}├─────────────────────────────────────────────────────────────────┤{Colors.END}")
+    print(f"│  {Colors.DIM}{anlam[:62]:<62}{Colors.END} │")
+    if len(anlam) > 62:
+        print(f"│  {Colors.DIM}{anlam[62:124]:<62}{Colors.END} │")
+    print(f"{Colors.YELLOW}╰─────────────────────────────────────────────────────────────────╯{Colors.END}\n")
+
+
+def cmd_sunucu(corpus: FuzuliCorpus, port: int = 8000, no_browser: bool = False):
+    web_dir = Path(__file__).parent.parent / "web"
+    if not web_dir.exists():
+        print(f"{Colors.RED}Web dizini bulunamadı: {web_dir}{Colors.END}")
+        return
+
+    class CustomHandler(http.server.SimpleHTTPRequestHandler):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, directory=str(web_dir), **kwargs)
+
+        def log_message(self, format, *args):
+            pass  # Sessiz log
+
+    url = f"http://localhost:{port}"
+    print(f"\n{Colors.GREEN}{Colors.BOLD}🌐 Fasl-ı Fuzûlî Web Sunucusu Başlatılıyor...{Colors.END}")
+    print(f"Adres: {Colors.CYAN}{Colors.UNDERLINE}{url}{Colors.END}")
+    print(f"{Colors.DIM}Durdurmak için Ctrl + C tuşlarına basabilirsiniz.{Colors.END}\n")
+
+    if not no_browser:
+        threading.Timer(1.0, lambda: webbrowser.open(url)).start()
+
+    with socketserver.TCPServer(("", port), CustomHandler) as httpd:
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print("\nSunucu kapatıldı. Selâmetle!")
+
+
 def cmd_yarisma(corpus: FuzuliCorpus):
     sorular = corpus.quiz_getir(5)
     if not sorular:
@@ -304,6 +469,8 @@ def cmd_istatistik(corpus: FuzuliCorpus):
     print(f"  {Colors.BOLD}Rübâi ve Kıt'a Sayısı      :{Colors.END} {ist['rubai_sayisi']}")
     print(f"  {Colors.BOLD}Hikmetli Söz Sayısı        :{Colors.END} {ist['hikmetli_soz_sayisi']}")
     print(f"  {Colors.BOLD}Lügat Kavram Sayısı        :{Colors.END} {ist['lugat_kavram_sayisi']} kavram")
+    print(f"  {Colors.BOLD}Aruz Kalıp Sayısı          :{Colors.END} {ist.get('aruz_kalip_sayisi', 12)} kalıp")
+    print(f"  {Colors.BOLD}Tarihî Tezkire Kayıtları   :{Colors.END} {ist.get('tezkire_sayisi', 5)} tezkire")
     print(f"  {Colors.BOLD}Soru Bankası Kapasitesi    :{Colors.END} {ist['quiz_soru_sayisi']} soru")
     print("─" * 65)
     print(f"  {Colors.BOLD}En Çok Kullanılan Sanatlar :{Colors.END}")
@@ -332,7 +499,7 @@ def cmd_lugat(corpus: FuzuliCorpus, kavram: Optional[str] = None):
         print(f"\n{Colors.CYAN}{Colors.BOLD}📖 [ FUZÛLÎ DÎVÂN LÜGATİ ({len(corpus.lugat)} Kavram) ]{Colors.END}")
         print("═" * 65)
         for k, v in sorted(corpus.lugat.items()):
-            print(f"  • {Colors.YELLOW}{k:18}{Colors.END}: {v}")
+            print(f"  • {Colors.YELLOW}{k:22}{Colors.END}: {v}")
         return
 
     anlam = corpus.lugat_sorgula(kavram)
@@ -352,7 +519,7 @@ def cmd_export(corpus: FuzuliCorpus, format_tipi: str = "json"):
 def cmd_interaktif(corpus: FuzuliCorpus):
     print(BANNER)
     print(f"\n{Colors.GREEN}✨ İnteraktif Fuzûlî Kabuğuna Hoş Geldiniz! (Çıkmak için 'q' veya 'exit' yazın){Colors.END}")
-    print("Komutlar: fal, gazel [no], su, eser [ad], aruz [misra], yarisma, ara [kelime], lugat [kelime], istatistik\n")
+    print("Komutlar: fal, gazel [no], su, eser [ad], aruz [misra], takti [misra], kafiye [m1/m2], sanat [beyit], tezkire [ad], kart, yarisma, ara [kelime], lugat [kelime], istatistik\n")
 
     while True:
         try:
@@ -379,6 +546,20 @@ def cmd_interaktif(corpus: FuzuliCorpus):
                 cmd_rubai(corpus, arg)
             elif komut == "aruz":
                 cmd_aruz(corpus, arg or "")
+            elif komut == "takti":
+                cmd_takti(corpus, arg or "")
+            elif komut == "kafiye":
+                if arg and "/" in arg:
+                    p = arg.split("/", 1)
+                    cmd_kafiye(corpus, p[0].strip(), p[1].strip())
+                else:
+                    cmd_kafiye(corpus, arg or "", None)
+            elif komut == "sanat":
+                cmd_sanat(corpus, arg or "")
+            elif komut == "tezkire":
+                cmd_tezkire(corpus, arg)
+            elif komut == "kart":
+                cmd_kart(corpus, arg)
             elif komut in ("yarisma", "quiz"):
                 cmd_yarisma(corpus)
             elif komut in ("istatistik", "stats"):
@@ -391,7 +572,7 @@ def cmd_interaktif(corpus: FuzuliCorpus):
             elif komut == "lugat":
                 cmd_lugat(corpus, arg)
             elif komut == "help":
-                print("Komutlar: fal, gazel, su, eser, rubai, aruz, yarisma, ara, lugat, istatistik, exit")
+                print("Komutlar: fal, gazel, su, eser, rubai, aruz, takti, kafiye, sanat, tezkire, kart, yarisma, ara, lugat, istatistik, exit")
             else:
                 print(f"Bilinmeyen komut: '{komut}'. Yardım için 'help' yazabilirsiniz.")
         except (KeyboardInterrupt, EOFError):
@@ -410,6 +591,7 @@ def cmd_bilgi(corpus: FuzuliCorpus):
     print(f"  {Colors.BOLD}Eser Dilleri         :{Colors.END} {', '.join(sair.get('diller', []))}")
     print(f"  {Colors.BOLD}Gazel Sayısı (Seçkin):{Colors.END} {len(corpus.gazeller)}")
     print(f"  {Colors.BOLD}Lügat Kavram Sayısı  :{Colors.END} {len(corpus.lugat)}")
+    print(f"  {Colors.BOLD}Tezkire Kayıtları    :{Colors.END} {len(corpus.tezkireler)}")
     print(f"\n  {Colors.YELLOW}{Colors.BOLD}\"Şi'r-i bî-ilm esâssız dîvâr olur ve esâssız dîvâr gâyetde bî-i'tibâr olur.\"{Colors.END}")
     print("═" * 65 + "\n")
 
@@ -443,6 +625,32 @@ def main():
     # aruz
     p_aruz = subparsers.add_parser("aruz", help="Mısranın aruz veznini otomatik tespit et")
     p_aruz.add_argument("misra", help="Analiz edilecek mısra")
+
+    # takti
+    p_takti = subparsers.add_parser("takti", help="Aruz vezninin tef'ilelerine göre mısrayı takti' et")
+    p_takti.add_argument("misra", help="Taktî' edilecek mısra")
+
+    # kafiye
+    p_kafiye = subparsers.add_parser("kafiye", help="İki mısra arasında kafiye ve redif tahlili yap")
+    p_kafiye.add_argument("misra1", help="1. Mısra (veya 'm1 / m2')")
+    p_kafiye.add_argument("misra2", nargs="?", default=None, help="2. Mısra")
+
+    # sanat
+    p_sanat = subparsers.add_parser("sanat", help="Mısra veya beyitteki edebî sanatları otomatik tespit et")
+    p_sanat.add_argument("metin", help="Taranacak beyit veya mısra")
+
+    # tezkire
+    p_tez = subparsers.add_parser("tezkire", help="Tarihî şuara tezkirelerindeki Fuzûlî kayıtları")
+    p_tez.add_argument("query", nargs="?", default=None, help="Tezkireci veya arama kelimesi")
+
+    # kart
+    p_kart = subparsers.add_parser("kart", help="Estetik çerçeveli beyit kartı üret")
+    p_kart.add_argument("secim", nargs="?", default=None, help="Beyit seçimi")
+
+    # sunucu
+    p_srv = subparsers.add_parser("sunucu", help="Web arayüzünü yerel sunucuda başlat")
+    p_srv.add_argument("--port", type=int, default=8000, help="Sunucu portu (Varsayılan: 8000)")
+    p_srv.add_argument("--no-browser", action="store_true", help="Tarayıcıyı otomatik açma")
 
     # yarisma
     subparsers.add_parser("yarisma", help="Fuzûlî Edebiyat Bilgi Yarışmasını başlat")
@@ -489,6 +697,18 @@ def main():
         cmd_rubai(corpus, args.query)
     elif args.command == "aruz":
         cmd_aruz(corpus, args.misra)
+    elif args.command == "takti":
+        cmd_takti(corpus, args.misra)
+    elif args.command == "kafiye":
+        cmd_kafiye(corpus, args.misra1, args.misra2)
+    elif args.command == "sanat":
+        cmd_sanat(corpus, args.metin)
+    elif args.command == "tezkire":
+        cmd_tezkire(corpus, args.query)
+    elif args.command == "kart":
+        cmd_kart(corpus, args.secim)
+    elif args.command == "sunucu":
+        cmd_sunucu(corpus, args.port, args.no_browser)
     elif args.command == "yarisma":
         cmd_yarisma(corpus)
     elif args.command == "istatistik":

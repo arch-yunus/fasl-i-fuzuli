@@ -68,6 +68,36 @@ class TestCLIExecution(unittest.TestCase):
         self.assertEqual(res.returncode, 0)
         self.assertIn("KAVRAM: Rind", res.stdout)
 
+    def test_cli_takti(self):
+        res = self.run_cli(["takti", "Beni cândan usandırdı cefâdan yâr usanmaz mı"])
+        self.assertEqual(res.returncode, 0)
+        self.assertIn("ARUZ TAKTÎ'", res.stdout)
+        self.assertIn("Tef'ile", res.stdout)
+
+    def test_cli_kafiye(self):
+        res = self.run_cli(["kafiye", "Beni cândan usandırdı cefâdan yâr usanmaz mı / Felekler yandı âhımdan murâdım şem'i yanmaz mı"])
+        self.assertEqual(res.returncode, 0)
+        self.assertIn("KAFİYE VE REDİF ANALİZ RAPORU", res.stdout)
+        self.assertIn("Redif", res.stdout)
+
+    def test_cli_sanat(self):
+        res = self.run_cli(["sanat", "Kamu bîmârına cânân devâ-yı derd eder ihsân / Niçin kılmaz bana dermân beni bîmâr sanmaz mı"])
+        self.assertEqual(res.returncode, 0)
+        self.assertIn("EDEBÎ SANAT TEŞHİS VE TAHLİLİ", res.stdout)
+        self.assertIn("Tenasüp", res.stdout)
+
+    def test_cli_tezkire(self):
+        res = self.run_cli(["tezkire", "ahdi"])
+        self.assertEqual(res.returncode, 0)
+        self.assertIn("Ahdî", res.stdout)
+        self.assertIn("Gülşen-i Şu'arâ", res.stdout)
+
+    def test_cli_kart(self):
+        res = self.run_cli(["kart"])
+        self.assertEqual(res.returncode, 0)
+        self.assertIn("FASL-I FUZÛLÎ", res.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()
+

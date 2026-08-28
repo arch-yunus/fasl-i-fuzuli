@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/Dil-Osmanlıca_|_Azerbaycan_Türkçesi_|_Farsça_|_Arapça-blue?style=for-the-badge" alt="Diller"/>
   <img src="https://img.shields.io/badge/Python-3.9+-informational?style=for-the-badge&logo=python" alt="Python 3"/>
   <img src="https://img.shields.io/badge/Web_UI-Vanilla_Modern_SPA-purple?style=for-the-badge" alt="Web UI"/>
-  <img src="https://img.shields.io/badge/Tests-20_Passing-brightgreen?style=for-the-badge" alt="Tests"/>
+  <img src="https://img.shields.io/badge/Tests-34_Passing-brightgreen?style=for-the-badge" alt="Tests"/>
   <img src="https://img.shields.io/badge/Lisans-MIT-success?style=for-the-badge" alt="MIT License"/>
 </p>
 
@@ -24,18 +24,20 @@
 
 ---
 
-## 🌟 Fasl-ı Fuzûlî Külliyâtı ve Edebiyat Motoru v2.0
+## 🌟 Fasl-ı Fuzûlî Külliyâtı ve Edebiyat Motoru v3.0
 
-**Fasl-ı Fuzûlî**, klasik Türk ve Şark edebiyatının en büyük lirik dehası **Molla Muhammed bin Süleyman Fuzûlî**'nin (1483-1556) eserlerini, aşk felsefesini, poetikasını ve tasavvufi remizlerini dijital çağa taşıyan kapsamlı bir açık kaynak edebiyat ve yazılım platformudur.
+**Fasl-ı Fuzûlî**, klasik Türk ve Şark edebiyatının en büyük lirik dehası **Molla Muhammed bin Süleyman Fuzûlî**'nin (1483-1556) eserlerini, aşk felsefesini, poetikasını, vezin ve kafiye yapısını ve tasavvufi remizlerini dijital çağa taşıyan kapsamlı bir açık kaynak edebiyat ve yazılım platformudur.
 
 ### ✨ Öne Çıkan Başlıca Özellikler
-- 📜 **Eksiksiz Külliyât Veri Tabanı:** Seçkin gazeller, **32 beytin tamamı** ile Su Kasîdesi, Mesnevîler (*Leylâ vü Mecnûn*, *Beng ü Bâde*), Mensur eserler (*Şikâyetnâme*, *Hadîkatü's-Süedâ*, *Rind ü Zâhid*, *Dîbâce*) ve Hikemî Kıt'a/Rübâiler.
-- ⚖️ **Aruz Vezni Sezgisel Analiz Motoru:** Mısraları açık (.) ve kapalı (-) hecelerine ayırarak klasik aruz tef'ileleriyle eşleştiren algoritmik vezin analizörü.
-- 🎴 **Fâl-i Fuzûlî (Tefe'ül-i Şi'r):** Külliyat deryasından rastgele hikmetli beyit ve şerh çekme motoru.
-- 🎯 **Fuzûlî Bilgi Yarışması:** Şairin hayatı, eserleri, aruz vezinleri ve edebi terimleri kapsayan interaktif soru bankası.
-- 🌐 **Modern İnteraktif Web Arayüzü (`web/index.html`):** Karanlık/Aydınlık tema destekli, responsive, hat sanatından esinlenen saf JavaScript tek sayfa web uygulaması.
-- 💻 **Güçlü Terminal CLI & REPL Kabuğu:** Renkli, estetik komut satırı arayüzü ve interaktif kabuk modu.
-- 📦 **Standart Python Paketi:** `pip install -e .` ile doğrudan `fuzuli` komut satırı aracı olarak sisteme entegre olabilme.
+- 📜 **Genişletilmiş Külliyât Veri Tabanı:** 10 Başyapıt Gazel, **32 beytin tamamı** ile Su Kasîdesi, Mesnevîler (*Leylâ vü Mecnûn*, *Beng ü Bâde*), Mensur eserler (*Şikâyetnâme*, *Hadîkatü's-Süedâ*, *Rind ü Zâhid*, *Dîbâce*) ve Hikemî Kıt'a/Rübâiler.
+- ⚖️ **Aruz Vezni & Taktî' Motoru:** Mısraları açık (.) ve kapalı (-) hecelerine ayırmanın ötesinde, klasik aruz tef'ilelerine (cüzlerine) göre takti' eden bölümleme motoru.
+- 🎶 **Kafiye ve Redif Tahlil Motoru:** İki mısra arasındaki sözcük ve ek rediflerini, revî harfini ve kafiye türünü (Yarım, Tam, Zengin Kafiye) otomatik çözümleyen algoritma.
+- 🎨 **Edebî Sanat Teşhis Motoru:** Beyitlerdeki Tezat, Tenasüp, İstifham, Nidâ, Tecrid ve Mübalağa sanatlarını anında tespit edip şerh eden analizör.
+- 📜 **Tarihî Şu'arâ Tezkireleri:** Ahdî (*Gülşen-i Şu'arâ*), Âşık Çelebi (*Meşâ'irü'ş-Şu'arâ*), Latîfî, Kınalızâde Hasan Çelebi ve Sehî Bey'in Fuzûlî hakkındaki birincil tarihî şerhleri.
+- 🎴 **Fâl-i Fuzûlî & Beyit Kartı:** Külliyattan rastgele hikmetli tefe'ül ve terminal / sosyal medya için estetik çerçeveli beyit kartı üretici (`fuzuli kart`).
+- 🎯 **Zenginleştirilmiş Bilgi Yarışması:** 16 soruluk genişletilmiş soru bankasıyla açıklamalı Dîvân edebiyatı quizi.
+- 🌐 **Modern İnteraktif Web Arayüzü (`fuzuli sunucu`):** Kafiye tahlili, takti' görselleştiricisi, tezkireler ve panoya kopyalama özellikli web arayüzü.
+- 🧪 **Kapsamlı Test Süiti:** 34 adet otomatik birim testi ile %100 doğruluk.
 
 ---
 
@@ -204,23 +206,39 @@ python -m araclar.fuzuli_cli su-kasidesi tum
 python -m araclar.fuzuli_cli eser sikayetname
 python -m araclar.fuzuli_cli eser leyla-vu-mecnun
 
-# 7. Aruz Vezni Analizörü (Mısranın hece yapısını ve veznini tespit edin)
+# 7. Aruz Vezni & Taktî' Motoru
 python -m araclar.fuzuli_cli aruz "Beni cândan usandırdı cefâdan yâr usanmaz mı"
+python -m araclar.fuzuli_cli takti "Beni cândan usandırdı cefâdan yâr usanmaz mı"
 
-# 8. Fuzûlî Edebiyat Bilgi Yarışması (İnteraktif Terminal Quizi)
+# 8. Kafiye ve Redif Tahlili
+python -m araclar.fuzuli_cli kafiye "Beni cândan usandırdı cefâdan yâr usanmaz mı / Felekler yandı âhımdan murâdım şem'i yanmaz mı"
+
+# 9. Edebî Sanat Tahlili (Tezat, Tenasüp, İstifham, vb.)
+python -m araclar.fuzuli_cli sanat "Kamu bîmârına cânân devâ-yı derd eder ihsân / Niçin kılmaz bana dermân beni bîmâr sanmaz mı"
+
+# 10. Tarihî Şu'arâ Tezkireleri Kayıtları
+python -m araclar.fuzuli_cli tezkire ahdi
+
+# 11. Estetik Beyit Kartı Üretici (ASCII/Unicode çerçeveli)
+python -m araclar.fuzuli_cli kart
+
+# 12. Yerel Web Sunucusunu Başlatma
+python -m araclar.fuzuli_cli sunucu --port 8000
+
+# 13. Fuzûlî Edebiyat Bilgi Yarışması (16 Soruluk Banka)
 python -m araclar.fuzuli_cli yarisma
 
-# 9. Külliyât İstatistiklerini görüntüleyin
+# 14. Külliyât İstatistiklerini görüntüleyin
 python -m araclar.fuzuli_cli istatistik
 
-# 10. Külliyatta canlı arama yapın veya lügatten kavram sorgulayın
+# 15. Külliyatta canlı arama yapın veya lügatten kavram sorgulayın
 python -m araclar.fuzuli_cli ara mecnun
 python -m araclar.fuzuli_cli lugat Rind
 
-# 11. İnteraktif Kabuk (REPL) modunu başlatın
+# 16. İnteraktif Kabuk (REPL) modunu başlatın
 python -m araclar.fuzuli_cli interaktif
 
-# 12. Külliyatı Markdown veya JSON olarak dışa aktarın
+# 17. Külliyatı Markdown veya JSON olarak dışa aktarın
 python -m araclar.fuzuli_cli export markdown > kulliyat_export.md
 ```
 
@@ -228,9 +246,13 @@ python -m araclar.fuzuli_cli export markdown > kulliyat_export.md
 
 ## 🌐 İnteraktif Web Arayüzünü Kullanma
 
-Külliyatın modern web arayüzünü açmak için herhangi bir web tarayıcısında `web/index.html` dosyasını açmanız yeterlidir (sıfır bağımlılık, çevrimdışı çalışır):
+Külliyatın modern web arayüzünü doğrudan CLI üzerinden veya tarayıcıda açarak kullanabilirsiniz:
 
 ```bash
+# Doğrudan gömülü sunucu ile çalıştırma (Önerilen)
+python -m araclar.fuzuli_cli sunucu --port 8000
+
+# veya doğrudan statik HTML dosyasını açma:
 # Windows
 start web/index.html
 
@@ -255,32 +277,38 @@ fal = corpus.fal_cek()
 print(f"Metin : {fal['metin']}")
 print(f"Anlamı: {fal['sadelesmis']}")
 
-# 2. Aruz Vezni Analizi Yap
-analiz = corpus.aruz_tahmin("Beni cândan usandırdı cefâdan yâr usanmaz mı")
-print(f"Açık/Kapalı Deseni: {analiz['desen']}")
-print(f"Tahmin Edilen Vezin: {analiz['tahmin_edilen_kalip']}")
+# 2. Aruz Taktî' Analizi
+takti = corpus.takti_et("Beni cândan usandırdı cefâdan yâr usanmaz mı")
+print(f"Taktî': {takti['takti_metni']}")
+for c in takti['cuzler']:
+    print(f"  {c['tefile']}: {c['metin']} ({' '.join(c['semboller'])})")
 
-# 3. Su Kasîdesi 31. Beyit (Vasiyet Beyti)
-sk = corpus.su_kasidesi
-beyit_31 = next(b for b in sk['beyitler'] if b['no'] == 31)
-print(beyit_31['metin'])
+# 3. Kafiye ve Redif Tahlili
+kr = corpus.kafiye_redif_analiz(
+    "Beni cândan usandırdı cefâdan yâr usanmaz mı",
+    "Felekler yandı âhımdan murâdım şem'i yanmaz mı"
+)
+print(f"Redif: {kr['redif']} | Kafiye: {kr['kafiye']} ({kr['kafiye_turu']})")
 
-# 4. Külliyatta Arama Yap
-sonuclar = corpus.ara("Mecnûn")
-for s in sonuclar:
-    print(f"[{s['tur']}] {s['kaynak']} -> {s['metin']}")
+# 4. Edebî Sanat Teşhisi
+sanat = corpus.edebi_sanat_analiz("Kamu bîmârına cânân devâ-yı derd eder ihsân / Niçin kılmaz bana dermân beni bîmâr sanmaz mı")
+for s in sanat['sanatlar']:
+    print(f"  • {s['sanat']}: {s['kelimeler']}")
 
-# 5. Dîvân Lügatinden Kavram Getir
-print(corpus.lugat_sorgula("Fenâfillâh"))
+# 5. Tarihî Tezkire Kaydı
+tezkireler = corpus.tezkire_getir("ahdi")
+print(tezkireler[0]['metin'])
 ```
 
 ---
 
 ## 🧪 Testlerin Çalıştırılması
 
-Tüm 20 test birimini koşturmak için:
+Tüm 34 test birimini koşturmak için:
 
 ```bash
+pytest
+# veya
 python -m unittest discover -s tests -v
 ```
 

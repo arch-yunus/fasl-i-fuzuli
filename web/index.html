@@ -25,10 +25,11 @@
         <span>— Molla Fuzûlî (1483 - 1556)</span>
       </blockquote>
       <div class="quick-stats-bar">
-        <div class="stat-pill"><strong>6</strong> Başyapıt Gazel</div>
+        <div class="stat-pill"><strong>10</strong> Başyapıt Gazel</div>
         <div class="stat-pill"><strong>32</strong> Su Kasîdesi Beyti</div>
-        <div class="stat-pill"><strong>2</strong> Mesnevî Şaheseri</div>
-        <div class="stat-pill"><strong>50+</strong> Lügat Kavramı</div>
+        <div class="stat-pill"><strong>12</strong> Aruz Kalıbı</div>
+        <div class="stat-pill"><strong>80+</strong> Lügat & Mazmun</div>
+        <div class="stat-pill"><strong>5</strong> Tarihî Tezkire</div>
       </div>
     </div>
   </header>
@@ -39,8 +40,10 @@
       <button class="nav-btn active" data-tab="fal">🎴 Fâl-i Fuzûlî</button>
       <button class="nav-btn" data-tab="kulliyat">📜 Külliyât Okuyucu</button>
       <button class="nav-btn" data-tab="arama">🔍 Canlı Arama</button>
-      <button class="nav-btn" data-tab="aruz">⚖️ Aruz Analizörü</button>
+      <button class="nav-btn" data-tab="aruz">⚖️ Aruz & Taktî'</button>
+      <button class="nav-btn" data-tab="kafiye">🎶 Kafiye Analizi</button>
       <button class="nav-btn" data-tab="lugat">📖 Dîvân Lügati</button>
+      <button class="nav-btn" data-tab="tezkire">📜 Tarihî Tezkireler</button>
       <button class="nav-btn" data-tab="yarisma">🎯 Bilgi Yarışması</button>
       <button class="nav-btn" data-tab="istatistik">📊 İstatistik & Biyografi</button>
     </div>
@@ -69,6 +72,9 @@
             <h4>Şerh ve Günümüz Türkçesi</h4>
             <p id="falAnlam">—</p>
           </div>
+          <div class="fal-actions">
+            <button id="btnCopyFal" class="btn-preset">📋 Beyti & Anlamını Kopyala</button>
+          </div>
         </div>
       </div>
     </section>
@@ -76,7 +82,7 @@
     <!-- Tab 2: Külliyât Okuyucu -->
     <section id="tab-kulliyat" class="tab-pane">
       <div class="sub-nav-bar">
-        <button class="sub-nav-btn active" data-sub="gazeller">Gazeller</button>
+        <button class="sub-nav-btn active" data-sub="gazeller">Gazeller (10 Şaheser)</button>
         <button class="sub-nav-btn" data-sub="su-kasidesi">Su Kasîdesi (32 Beyit)</button>
         <button class="sub-nav-btn" data-sub="mesneviler">Mesnevîler</button>
         <button class="sub-nav-btn" data-sub="mensur">Mensur Eserler</button>
@@ -92,9 +98,9 @@
     <section id="tab-arama" class="tab-pane">
       <div class="section-card">
         <h2>🔍 Külliyât Genelinde Arama</h2>
-        <p class="desc-text">Beyitler, anlamlar, mazmunlar, edebî sanatlar veya lügat kavramları arasında anlık arama yapın.</p>
+        <p class="desc-text">Beyitler, anlamlar, mazmunlar, edebî sanatlar, tezkireler veya lügat kavramları arasında anlık arama yapın.</p>
         <div class="search-input-wrap">
-          <input type="text" id="searchInput" placeholder="Örn: mecnun, ab-ı hayat, canan, felek, istifham..." autocomplete="off">
+          <input type="text" id="searchInput" placeholder="Örn: mecnun, ab-ı hayat, canan, ahdi, tezat, istifham..." autocomplete="off">
           <span class="search-icon">🔍</span>
         </div>
         <div id="searchCount" class="search-count-label">Aramaya başlamak için bir kelime yazınız.</div>
@@ -102,23 +108,24 @@
       </div>
     </section>
 
-    <!-- Tab 4: Aruz Vezni Analizörü -->
+    <!-- Tab 4: Aruz Vezni & Taktî' Analizörü -->
     <section id="tab-aruz" class="tab-pane">
       <div class="section-card">
-        <h2>⚖️ Aruz Vezni Sezgisel Çözümleyici</h2>
-        <p class="desc-text">İncelemek istediğiniz bir mısrayı yazın; motor açık (.) ve kapalı (-) hece yapısını çıkarıp en yakın klasik Aruz kalıbını eşleştirsin.</p>
+        <h2>⚖️ Aruz Vezni & Taktî' Sezgisel Çözümleyici</h2>
+        <p class="desc-text">İncelemek istediğiniz bir mısrayı yazın; motor açık (.) ve kapalı (-) hece yapısını çıkarıp tef'ilelerine (cüzlerine) göre takti' etsin.</p>
         
         <div class="aruz-presets">
           <span>Örnek Mısralar:</span>
           <button class="btn-preset" data-text="Beni cândan usandırdı cefâdan yâr usanmaz mı">Beni Candan Usandırdı</button>
           <button class="btn-preset" data-text="Sâçma ey göz eşkden gönlümdeki odlara su">Su Kasîdesi Matla</button>
-          <button class="btn-preset" data-text="Öyle sermestem ki idrâk etmezem dünyâ nedür">Öyle Sermestem</button>
-          <button class="btn-preset" data-text="Yâ Rab belâ-yı aşk ile kıl âşinâ beni">Leylâ vü Mecnûn Münâcât</button>
+          <button class="btn-preset" data-text="Âşiyân-ı murg-ı dil zülf-i perîşânındadır">Âşiyân-ı Murg-ı Dil</button>
+          <button class="btn-preset" data-text="Panbûk-ı dâğ-ı cünûn içre nihândır bedenim">Panbûk-ı Dâğ-ı Cünûn</button>
+          <button class="btn-preset" data-text="Yâ Rab belâ-yı aşk ile kıl âşinâ beni">Leylâ vü Mecnûn</button>
         </div>
 
         <div class="search-input-wrap">
           <input type="text" id="aruzInput" placeholder="Bir mısra yazın veya yukarıdaki örneklerden seçin...">
-          <button id="btnAruzHesapla" class="btn-gold">Hesapla</button>
+          <button id="btnAruzHesapla" class="btn-gold">Taktî' Et</button>
         </div>
 
         <div id="aruzSonuc" class="aruz-result-card hidden">
@@ -127,25 +134,64 @@
       </div>
     </section>
 
-    <!-- Tab 5: Dîvân Lügati -->
+    <!-- Tab 5: Kafiye ve Redif Analizi (YENİ) -->
+    <section id="tab-kafiye" class="tab-pane">
+      <div class="section-card">
+        <h2>🎶 Kafiye ve Redif Tahlil Motoru</h2>
+        <p class="desc-text">Karşılaştırmak istediğiniz iki mısrayı girin; sistem sondaki redifi, kafiye sesini, revî harfini ve kafiye türünü (Yarım/Tam/Zengin) tahlil etsin.</p>
+
+        <div class="kafiye-inputs-grid">
+          <div class="input-group">
+            <label>1. Mısra:</label>
+            <input type="text" id="kafiyeM1" value="Beni cândan usandırdı cefâdan yâr usanmaz mı" placeholder="1. Mısrayı giriniz...">
+          </div>
+          <div class="input-group">
+            <label>2. Mısra:</label>
+            <input type="text" id="kafiyeM2" value="Felekler yandı âhımdan murâdım şem'i yanmaz mı" placeholder="2. Mısrayı giriniz...">
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 1.2rem;">
+          <button id="btnKafiyeHesapla" class="btn-gold">Kafiye & Redif Tahlili Yap</button>
+        </div>
+
+        <div id="kafiyeSonuc" class="kafiye-result-wrap hidden">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 6: Dîvân Lügati -->
     <section id="tab-lugat" class="tab-pane">
       <div class="section-card">
         <h2>📖 Fuzûlî Dîvân Lügati & Edebî Istılahlar</h2>
-        <p class="desc-text">Dîvân şiirinde geçen tasavvufi remizler, arkaik kavramlar ve mazmunlar rehberi.</p>
-        <input type="text" id="lugatSearch" class="filter-input" placeholder="Lügatte filtrele (örn: Rind, Fenâ, Sâkî, Gamze)...">
+        <p class="desc-text">Dîvân şiirinde geçen tasavvufi remizler, arkaik kavramlar ve mazmunlar rehberi (80+ Madde).</p>
+        <input type="text" id="lugatSearch" class="filter-input" placeholder="Lügatte filtrele (örn: Rind, Fenâ, Serv-i Revân, Şem' ü Pervâne, Harâbât)...">
         <div id="lugatGrid" class="lugat-grid"></div>
       </div>
     </section>
 
-    <!-- Tab 6: Bilgi Yarışması -->
+    <!-- Tab 7: Tarihî Şu'arâ Tezkireleri (YENİ) -->
+    <section id="tab-tezkire" class="tab-pane">
+      <div class="section-card">
+        <h2>📜 XVI. Yüzyıl Şu'arâ Tezkirelerinde Molla Fuzûlî</h2>
+        <p class="desc-text">Fuzûlî'nin çağdaşı ve ardılı Osmanlı tezkire yazarlarının onun dehâsı, ilmi ve üslûb-ı mahsûsu hakkındaki birincil tarihî şerhleri.</p>
+        
+        <div id="tezkirelerContainer" class="tezkireler-grid">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 8: Bilgi Yarışması -->
     <section id="tab-yarisma" class="tab-pane">
       <div class="section-card quiz-card text-center">
         <h2>🎯 Fuzûlî Edebiyat Bilgi Yarışması</h2>
-        <p class="desc-text">Molla Fuzûlî'nin hayatı, eserleri, aruz vezinleri ve edebi sanatları hakkındaki bilginizi test edin!</p>
+        <p class="desc-text">Molla Fuzûlî'nin hayatı, eserleri, aruz vezinleri, edebî sanatları ve tezkire kayıtları hakkındaki bilginizi test edin!</p>
         
         <div id="quizStartView">
           <div class="quiz-info-box">
-            <p>📌 5 rastgele soru • Her soru 20 puan • Anlık açıklamalar</p>
+            <p>📌 16 soruluk zengin bankadan 5 rastgele soru • Her soru 20 puan • Açıklamalı şerhler</p>
           </div>
           <button id="btnQuizBaslat" class="btn-gold-pulse">Yarışmayı Başlat</button>
         </div>
@@ -177,7 +223,7 @@
       </div>
     </section>
 
-    <!-- Tab 7: İstatistik & Biyografi -->
+    <!-- Tab 9: İstatistik & Biyografi -->
     <section id="tab-istatistik" class="tab-pane">
       <div class="section-card">
         <h2>📊 Külliyât İstatistikleri & Biyografi</h2>
