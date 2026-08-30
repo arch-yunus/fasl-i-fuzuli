@@ -536,6 +536,228 @@
           ]
         }
       ]
+    },
+    {
+      "id": "gozum-canim-efendim",
+      "baslik": "Gözüm Cânım Efendim Sevdüğüm Devletlü Sultânım",
+      "vezin": "Mef'ûlü / Mefâ'îlü / Mefâ'îlü / Fe'ûlün",
+      "redif": "...devletlü sultânım",
+      "tema": "Aşk, Niyâz, Sevgiliye Tazim, İhlas",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Gözüm cânım efendim sevdüğüm devletlü sultânım / Mürüvvetsiz mürüvvet kıl ki geldi cân lebe ânım",
+          "sadelesmis": "Gözüm, canım, efendim, sevdiğim, saadetli sultanım! Ey merhametsiz sevgili, artık merhamet eyle zira canım dudağıma geldi, son nefesimdir.",
+          "sanatlar": [
+            "Nidâ",
+            "Tenasüp",
+            "Tezat",
+            "Mübalağa"
+          ]
+        },
+        {
+          "no": 2,
+          "turkce": "Gamından şem' tek yandım sabâdan sorma ahvâlim / Bu bağrım kanına gark oldu ey çeşm-i dür-efşânım",
+          "sadelesmis": "Gamından mum gibi eriyip yandım, halimi seher rüzgarından sorma; ey inci saçan gözüm, bağrım kan deryasına gark oldu.",
+          "sanatlar": [
+            "Teşbih",
+            "Tenasüp",
+            "Teşhis",
+            "İstifham"
+          ]
+        },
+        {
+          "no": 3,
+          "turkce": "Dil-i mahzûnumu gamdan halâs eyle vefâ eyle / Kerem kıl eyle bir ihsân mürüvvet menba'ı hânım",
+          "sadelesmis": "Hüzünlü gönlümü gamdan kurtar, vefa göster; ey iyilik ve lütuf membaı hünkarım, bir ihsan eyle.",
+          "sanatlar": [
+            "Tenasüp",
+            "İştikak",
+            "Nidâ"
+          ]
+        },
+        {
+          "no": 4,
+          "turkce": "Sen ol bî-rahm şâhsın kim kulundur hüsrevân yek-ser / Menem ol derd-mend âşık ki bî-hadd oldu efgānım",
+          "sadelesmis": "Sen öyle celalli bir sultansın ki bütün padişahlar senin kapında kuldur; bense iniltisi haddi aşmış o dertli aşığım.",
+          "sanatlar": [
+            "Tezat",
+            "Tenasüp",
+            "Mübalağa"
+          ]
+        },
+        {
+          "no": 5,
+          "turkce": "Fuzûlî derd-i hicrânın çeker her dem niyâz eyler / Yüzün görsün safâ bulsun o serv-i bâğ-ı rıdvânım",
+          "sadelesmis": "Fuzûlî her an ayrılık derdini çeker ve yalvarır; o cennet bahçesinin servi boylusu sevgilimin yüzünü görsün de gönlü huzur bulsun.",
+          "sanatlar": [
+            "Tecrid",
+            "Teşbih",
+            "Tenasüp",
+            "Hüsn-i Ta'lil"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gonul-tan-eyleme-mecnuna",
+      "baslik": "Gönül Ta'n Eyleme Mecnûna Sen Hem Bir Zaman Gördün",
+      "vezin": "Mefâ'îlün / Mefâ'îlün / Mefâ'îlün / Mefâ'îlün",
+      "redif": "...gördün / ...bildin",
+      "tema": "Mecnûnluk, Aşkın İstilası, Gönül İkâzı",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Gönül ta'n eyleme Mecnûna sen hem bir zamân gördün / O şûhun hüsnünü kim aklını Mecnûn eder bildin",
+          "sadelesmis": "Ey gönül! Mecnûn'u kınayıp ayıplama, sen de bir zamanlar o güzelin cemalini gördün ve onun güzelliğinin aklı Mecnûn ettiğini bizzat bildin.",
+          "sanatlar": [
+            "Teşhis",
+            "Nidâ",
+            "Tenasüp",
+            "İştikak"
+          ]
+        },
+        {
+          "no": 2,
+          "turkce": "Perî-rûlar cefâsından şikâyet eylemek olmaz / Vefâ ummak hatâdır çün bu resm-i bî-vefâ gördün",
+          "sadelesmis": "Peri yüzlü güzellerin cefasından şikayet etmek yakışmaz; bu vefasızlık kanununu gördükten sonra onlardan vefa ummak ziyan ve hatadır.",
+          "sanatlar": [
+            "Tezat",
+            "Tenasüp",
+            "Teşbih-i Belîğ"
+          ]
+        },
+        {
+          "no": 3,
+          "turkce": "Cünûn sahrâsına düşmek değildir ihtiyâr ile / Çü zülfün dâmına düşdün belâ-yı aşkı pâ-ber-câ gördün",
+          "sadelesmis": "Delilik ve mecnunluk çölüne düşmek insanın kendi iradesiyle olmaz; zira sevgilinin saçının tuzağına yakalanınca aşk belasını yerli yerinde gördün.",
+          "sanatlar": [
+            "Tenasüp",
+            "İstiare",
+            "Teşbih"
+          ]
+        },
+        {
+          "no": 4,
+          "turkce": "Fuzûlî haste-dil aşk içre sabr ü tâkat aramaz / Bu rüsvâlık rehinde her ne geldiyse revâ gördün",
+          "sadelesmis": "Gönlü yaralı Fuzûlî aşk yolunda sabır ve derman aramaz; bu melamet ve rüsvaylık yolunda başına her ne geldiyse hak ve layık gördün.",
+          "sanatlar": [
+            "Tecrid",
+            "Tenasüp",
+            "Tasavvufî Hikmet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ey-bi-vefa-ki-adet-olupdur",
+      "baslik": "Ey Bî-vefâ Ki Âdet Olupdur Cefâ Sana",
+      "vezin": "Mef'ûlü / Fâ'ilâtü / Mefâ'îlü / Fâ'ilün",
+      "redif": "...sana",
+      "tema": "Cefa, Vefasızlık, Sitem, Teslimiyet",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Ey bî-vefâ ki âdet olupdur cefâ sana / Billâh cefâdır eyleme gel bî-vefâ sana",
+          "sadelesmis": "Ey cefayı kendine huy edinmiş vefasız güzel! Allah için vefasızlık sana yakışmıyor, gel etme; zulüm sana da cefa olur.",
+          "sanatlar": [
+            "İştikak",
+            "Nidâ",
+            "Tezat",
+            "Cinas"
+          ]
+        },
+        {
+          "no": 2,
+          "turkce": "Cânım fedâ-yı la'l-i lebin kılmağa beni / Gönderdi kûyuna gam-ı aşkın vefâ sana",
+          "sadelesmis": "Canımı o yakut dudağına feda etmek üzere, aşkının gamı sana vefasını ispat için beni senin mahallene gönderdi.",
+          "sanatlar": [
+            "Tenasüp",
+            "Teşhis",
+            "Tezat"
+          ]
+        },
+        {
+          "no": 3,
+          "turkce": "Yağdırma tîr-i gamzen ile bağrıma keder / Lutf eyle kim kul oldu bu dilde safâ sana",
+          "sadelesmis": "Yan bakışının oklarıyla bağrıma keder yağdırma; lütfet zira bu gönüldeki bütün huzur ve safa sana köle oldu.",
+          "sanatlar": [
+            "İstiare",
+            "Teşbih",
+            "Tenasüp"
+          ]
+        },
+        {
+          "no": 4,
+          "turkce": "Hâl-i perîşânıma rahm eyle gel berü / Göster cemâl-i pür-ziyâ ey meh-likā sana",
+          "sadelesmis": "Perişan halime merhamet eyle de beri gel; ey ay yüzlü sevgili, o ışık saçan cemalini göster ki sana hayran olayım.",
+          "sanatlar": [
+            "Teşbih",
+            "Nidâ",
+            "Tenasüp"
+          ]
+        },
+        {
+          "no": 5,
+          "turkce": "Kılmaz Fuzûlî terk-i tarîk-i mahabbetin / Ger kılsa her dem ehl-i melâmet cefâ sana",
+          "sadelesmis": "Bütün kınayıcılar her dem sana ve aşığa cefa etse de, Fuzûlî senin sevginin yolunu asla terk etmez.",
+          "sanatlar": [
+            "Tecrid",
+            "Tezat",
+            "Tenasüp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hasilim-hun-i-cigerdir",
+      "baslik": "Hâsılım Hûn-ı Ciğerdir Kârdan Âsîb-i Dehr",
+      "vezin": "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+      "redif": "Yok (Yalın / Zengin Kafiye)",
+      "tema": "Dünyadan El Çekme, Melâmet, Rindlik, Izdırap",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Hâsılım hûn-ı ciğerdir dille la'l-i yârdan / Nükte-i ser-beste söyler bî-haber esrârdan",
+          "sadelesmis": "Sevgilinin la'l dudağını anan gönülden bana kalan tek kazanç ciğer kanıdır; ilahi sırlardan habersiz olanlar bu örtülü nükteyi anlayamaz.",
+          "sanatlar": [
+            "Teşbih",
+            "Tenasüp",
+            "Tezat"
+          ]
+        },
+        {
+          "no": 2,
+          "turkce": "Çekme zâhid dâmen-i pâkin harâbât ehlinden / Kim tahâret ehli pâk olmaz bu nâ-hemvârdan",
+          "sadelesmis": "Ey ham sofu, temiz eteğini meyhane rindlerinden kaçırma; zira şekilci temizlik ehli bu eğriliklerden asla arınmış sayılmaz.",
+          "sanatlar": [
+            "Tezat",
+            "Tenasüp",
+            "Teşbih"
+          ]
+        },
+        {
+          "no": 3,
+          "turkce": "Tûtiyâ-yı çeşmim eyler hâk-i râh-ı kûyunu / Başını taştan taşa ursun bu seyl-i zârdan",
+          "sadelesmis": "Sevgilinin sokak toprağını gözüme sürme yaparım; bu feryat eden gözyaşı seli başını taştan taşa vursun.",
+          "sanatlar": [
+            "Hüsn-i Ta'lil",
+            "Teşhis",
+            "Teşbih",
+            "Tenasüp"
+          ]
+        },
+        {
+          "no": 4,
+          "turkce": "Dâğ-ı aşkındır Fuzûlî göğsümün pîrâyesi / Şâd-kâmam dehr içinde devr-i bî-âsârdan",
+          "sadelesmis": "Ey Fuzûlî, göğsümün yegane süsü onun aşkının yarasıdır; bu vefasız felek içinde bana kalan tek bahtiyarlık ve teselli de budur.",
+          "sanatlar": [
+            "Tecrid",
+            "Teşbih",
+            "Tezat"
+          ]
+        }
+      ]
     }
   ],
   "su_kasidesi": {
@@ -953,7 +1175,7 @@
     }
   ],
   "lugat": {
-    "Âb-ı Hayât": "Dirilik ve ölümsüzlük suyu. Tasavvufta İlahi Aşk, marifetullah ve Hz. Peygamber'in feyzi.",
+    "Âb-ı Hayât": "İçene ebedî hayat bahşeden dirilik suyu; sevgilinin dudağı veya feyz-i ilahi.",
     "Âgâh": "Uyanık, haberdar, hakikatin farkında olan basiret sahibi.",
     "Ahlat-ı Erbaa": "Klasik tıpta dört temel unsur: Kan (dem), balgam, sarı safra, kara safra (sevda).",
     "Arak-rîz": "Ter döken, terleten; utanma veya vecd hali.",
@@ -964,7 +1186,7 @@
     "Cüdâ": "Ayrı, uzak, ayrılmış.",
     "Çâk": "Yarık, yırtık. Aşk ateşiyle göğsün yarılması (çâk-i girîbân).",
     "Derd": "Hastalık, acı. Fuzûlî'de dert aranan ve sevilendir; aşk derdi ruhun şifasıdır.",
-    "Dîbâce": "Önsöz, mukaddime. Eserin telif sebebini ve sanat felsefesini açıklar.",
+    "Dîbâce": "Eserlerin başındaki mensur veya manzum mukaddime; Fuzûlî'nin şiir felsefesini izah ettiği manifesto.",
     "Dildâr / Dilber": "Gönlü alan, sevgili. Hakiki manada Cenâb-ı Hak veya O'nun tecellisi.",
     "Eşk": "Gözyaşı. Genellikle kanlı (hûn-efşân) olarak tasvir edilir.",
     "Fenâ / Fenâfillâh": "Kulun kendi benliğinden geçip Hakk'ın varlığında yok olması.",
@@ -980,7 +1202,7 @@
     "Kûze": "Testi, çömlek. Âşığın toprağından yapılan su kabı.",
     "Künc": "Köşe, kuytu yer (örn. künc-i gam: dert ve hüzün köşesi).",
     "Lâle-gûn": "Lale renkli, al, kan kırmızı.",
-    "Maktel": "Şehadet ve katil yeri; Kerbelâ faciasını anlatan edebi tür.",
+    "Maktel": "Hz. Hüseyin ve Kerbelâ şehitlerinin destansı şehadetini anlatan edebî tür.",
     "Mazmun": "Edebi kavram, kalıplaşmış mecaz ve semboller.",
     "Mecnûn": "Çılgın, deli, aşk divânesi; Leylâ ile Mecnûn'un kahramanı Kays.",
     "Mihr": "Güneş; aynı zamanda sevgi, muhabbet ve şefkat.",
@@ -999,7 +1221,7 @@
     "Şem'": "Mum, kandil. Sevgilinin nurlu yüzü veya hakikat ışığı.",
     "Tabîb": "Hekim, doktor. Şiirde âşığın derdine çare bulamayan akıl ehli.",
     "Terkîb-i Bend": "Bentlerle kurulan, her bent sonunda vasıta beyti değişen musammat nazım şekli.",
-    "Vahdet-i Vücûd": "Varlığın tekliği; yaratılmış her şeyin Hakk'ın tecellisinden ibaret olduğu tasavvufi öğreti.",
+    "Vahdet-i Vücûd": "Varlığın birliği; tek mutlak varlığın Hak olduğu ve kâinattaki bütün kesretin O'nun tecellisinden ibaret bulunduğu tasavvufi idrak.",
     "Vuslat": "Sevgiliye kavuşma hali.",
     "Zâhid": "Kuru kuralcı, şekle ve cennet menfaatine takılan sığ din adamı tipi.",
     "Zevâid": "Artık, gelir fazlası (Şikâyetnâme'deki vakıf zevâidi).",
@@ -1007,13 +1229,13 @@
     "Kûy-ı Cânân": "Sevgilinin mahallesi, semti; tasavvufi manada Hakk'a vasıl olunan kurbiyet ve vuslat makamı.",
     "Çeşm-i Cadû": "Aşığın aklını başından alan büyüleyici ve sihirbaz göz; fitne koparan bakış.",
     "Leb-i La'l": "Kırmızı yakut gibi değerli ve can bağışlayan sevgili dudağı; İsa nefesi gibi dirilten lütuf.",
-    "Pîr-i Mugân": "Meyhane piri; tasavvuf edebiyatında sâliki irşad eden, hakikat şarabını sunan kâmil mürşit.",
+    "Pîr-i Mugân": "Meyhaneci pir; hakikat yolunda müride irfan şarabı sunan kâmil mürşid.",
     "Hatt": "Sevgilinin yanağında yeni beliren ince ayva tüyleri; Kur'an ayetlerine, reyhan yazısına ve hüsnün kemaline teşbih edilir.",
     "Hâk-i Pây": "Ayağın toprağı; aşığın tevazu göstererek sevgilinin bastığı toprağa baş koyması, fenâ hâli.",
-    "Şem' ü Pervâne": "Mum ve kelebek; aşk ateşine bilerek atılıp yok olan aşığın fedakarlık ve fenâfillah remzi.",
+    "Şem' ü Pervâne": "Mum ve etrafında dönüp kendini ateşe atan kelebek; mutlak aşk uğrunda feda olmanın sembolü.",
     "Bâde-i Elest": "Elest bezminde (ruhlar meclisinde) Allah'a verilen kulluk sözünün sarhoşluğu ve ezelî aşk.",
     "Çark-ı Çep-gerdîş": "Tersine dönen kahpe felek; talihin aşığa ve erdemliye yüz vermeyip liyakatsizleri kayırması.",
-    "Câm-ı Cem": "Cemşid'in bütün dünyayı gösteren efsanevi kadehi; tasavvufta arifin ilahi hakikatleri müşahede ettiği tertemiz gönül aynası.",
+    "Câm-ı Cem": "Cemşid'in bütün dünyayı gösteren efsanevi kadehi; hakikati yansıtan saf arif gönlü.",
     "Dehr": "Zaman, dünya, fani devran; faniliği sebebiyle gönül bağlanmaması gereken fani konak.",
     "Dûd-ı Dil": "Gönül dumanı; aşk ateşinin yürekte yanmasıyla aşığın ağzından çıkan dertli âh nefesi.",
     "Gül ü Bülbül": "Dîvân şiirinin en temel alegorisi; bülbül aşığın feryadını, nazlanan ve dikeniyle inciten gül ise sevgiliyi simgeler.",
@@ -1033,7 +1255,32 @@
     "Meyhâne": "Aşk ve vecd meclisi; rindlerin dünya kaygısını unuttuğu irfan dergâhı.",
     "Hüsn-i Ta'lîl": "Bir vakıayı tabii sebebinin haricinde hayalî, latif ve şiirsel bir sebebe bağlama sanatı.",
     "Tecâhül-i Ârif": "Bildiği bir hakikati nükte ve şairane hayret oluşturmak için bilmezden gelme sanatı.",
-    "Teşbih-i Belîğ": "Benzetme edatı ve benzetme yönü zikredilmeden yalnızca benzeyen ve benzetilenle yapılan asil teşbih."
+    "Teşbih-i Belîğ": "Benzetme edatı ve benzetme yönü zikredilmeden yalnızca benzeyen ve benzetilenle yapılan asil teşbih.",
+    "Kesret": "Çokluk âlemi; vahdetin zıddı olup maddî dünyanın aldatıcı ve dağıtıcı çokluğu.",
+    "Mâsivâ": "Allah'tan gayrı olan her şey; arifin kalbinden tamamen silip atması gereken fâni dünya alâkaları.",
+    "Tecellî": "İlâhî nurun ve esmâ-i hüsnânın kulun kalbinde veya varlık aynasında aşikâr olması.",
+    "Kâmet-i Mevzûn": "Dengeli, vezinli ve servi gibi biçimli boy; ilahî güzelliğin ve istikametin timsali.",
+    "Hâl-i Hindû": "Hindistanlı köle gibi kara olan ben; sevgilinin yüzündeki siyah ben ve gönülleri esir eden tılsım.",
+    "Dehen-i Tang": "Dar ve nokta gibi ağız; yokluk (adem) âleminin ve lâhûtî sırların tecessümü.",
+    "Kûy-ı Yâr": "Sevgilinin mahallesi veya kapısının eşiği; arifin sığındığı Kâbe mesabesindeki vuslat diyarı.",
+    "Melâmet": "Kınanma ve kınayıcıların ayıplamasını zevk bilme; riyadan kaçarak iç alemi ihlas ve ıstırapla donatma yolu.",
+    "Cünûn": "Aşk deliliği; aklın sınırlarını aşıp cezbe, hayret ve fenâ makamına ulaşma hali.",
+    "Hüsn ü Ân": "Suret güzelliği ile içsel eda ve cazibenin birleşimi; maşukun karşı konulmaz cezbesi.",
+    "Gül-zâr": "Gül bahçesi; sevgilinin cemali veya ilahi tecellilerin seyredildiği mana meclisi.",
+    "Hâb-ı Gaflet": "Gaflet uykusu; hakikatten bihaber yaşama hali.",
+    "Belâ-yı Aşk": "Aşk imtihanı ve ızdırabı; Fuzûlî'ye göre şairin ve arifin olgunlaşması için talep ettiği en tatlı eza.",
+    "Sebk-i Hindî": "Fuzûlî'nin şiirlerinde erken nüveleri görülen; derin muhayyile, girift mazmunlar ve ıstırap estetiği içeren şiir akımı.",
+    "Musammat Gazel": "Mısra ortalarında iç kafiye barındıran ve ikiye bölündüğünde dörtlük haline gelebilen ahenkli gazel türü.",
+    "İrsâl-i Mesel": "Şiirde atasözü veya darb-ı mesel niteliğinde hikmetli bir söz zikretme sanatı.",
+    "İştikak": "Aynı kökten türeyen sözcükleri bir mısra veya beyitte bir araya getirerek ahenk sağlama sanatı.",
+    "Mazmûn": "Klasik divan şiirinde kalıplaşmış, nükte ve mecaz yüklü gizli mana ve imge.",
+    "Revî": "Kafiyeyi oluşturan asıl ve son değişmez sessiz harf.",
+    "Taktî'": "Bir mısrayı aruz vezninin tef'ile (cüz) parçalarına göre hece hece ayırıp vezin ahengini kontrol etme işlemi.",
+    "Zihaf": "Aruz vezninde zorunlu olarak uzun bir heceyi kısa okuma kuralı veya vezin tasarrufu.",
+    "İmâle": "Aruz veznine uydurmak maksadıyla Türkçe kısa bir heceyi çekerek uzun okuma.",
+    "Vasl (Ulama)": "Sonu ünsüzle biten kelimeyi, ünlüyle başlayan sonraki kelimeye bağlayarak heceyi açık hale getirme.",
+    "Kasr": "Uzun ünlüyle biten bir kelimeyi aruz icabı kısaltarak okuma tasarrufu.",
+    "Med": "Bir uzun ünlü ve bir ünsüzle biten hecenin aruzda bir buçuk hece (kapalı + açık) değerinde sayılması."
   },
   "aruz_kaliplari": [
     {
@@ -1107,6 +1354,30 @@
       "sembol": ". - - - / . - - - / . - - - / . - - -",
       "ad": "Hezec Bahri (Müsemen Sâlim)",
       "ornek": "Cefâdan bezmezem ger cânıma kasd eylese cânân"
+    },
+    {
+      "ad": "Hezec Bahri (Müseddes Mahzûf)",
+      "kalip": "Mefâ'ilün / Mefâ'ilün / Fe'ûlün",
+      "sembol": ". - . - / . - . - / . - -",
+      "ornek": "Dîvân Kıta ve Gazelleri"
+    },
+    {
+      "ad": "Hafif Bahri (Klasik)",
+      "kalip": "Fe'ilâtün / Mefâ'ilün / Fe'ilün",
+      "sembol": ". . - - / . - . - / . . -",
+      "ornek": "Gam-ı aşkınla pür-safâdır dil"
+    },
+    {
+      "ad": "Recez Bahri (Müseddes)",
+      "kalip": "Müstef'ilün / Müstef'ilün / Müstef'ilün",
+      "sembol": "- - . - / - - . - / - - . -",
+      "ornek": "Cân mülkünü vîrân eden hicrândır"
+    },
+    {
+      "ad": "Mütedârik Bahri (Sâlim)",
+      "kalip": "Fâ'ilün / Fâ'ilün / Fâ'ilün / Fâ'ilün",
+      "sembol": "- . - / - . - / - . - / - . -",
+      "ornek": "Dilde gam zevk-i cân lezzet-i vuslat"
     }
   ],
   "quiz_sorulari": [
@@ -1301,6 +1572,114 @@
       ],
       "dogru_cevap": 0,
       "aciklama": "Fuzûlî; Türkçe, Farsça ve Arapça dillerinin üçünde de divan tertip etmiş Doğu edebiyatının nâdir üç dilli dâhisidir."
+    },
+    {
+      "id": 17,
+      "soru": "Fuzûlî'nin Türkçe Dîvân'ında 'Beni cândan usandırdı...' matlaıyla başlayan gazeli mısra ortalarında iç kafiye barındırdığı için hangi gazel türünün şaheseridir?",
+      "secenekler": [
+        "A) Musammat Gazel",
+        "B) Müstezâd",
+        "C) Şarkı",
+        "D) Terkîb-i Bend"
+      ],
+      "dogru_cevap": 0,
+      "aciklama": "Mısra ortaları ve sonları kafiyeli olan, ikiye bölününce dörtlük teşkil edebilen gazellere 'Musammat Gazel' adı verilir."
+    },
+    {
+      "id": 18,
+      "soru": "Klasik edebiyatta doğal bir hadiseyi gerçek sebebi dışında hayalî ve şiirsel güzel bir sebebe bağlama sanatına ne ad verilir?",
+      "secenekler": [
+        "A) Tecâhül-i Ârif",
+        "B) Hüsn-i Ta'lîl",
+        "C) Teşbih-i Belîğ",
+        "D) Tenasüp"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "Hüsn-i Ta'lîl, suyun Hz. Peygamber'in ayağına yüz sürmek için taştan taşa baş vurup akması örneğinde olduğu gibi güzel sebebe bağlama sanatıdır."
+    },
+    {
+      "id": 19,
+      "soru": "Fuzûlî'nin 'Gözüm cânım efendim sevdüğüm devletlü sultânım' mısraıyla başlayan meşhur gazelinin aruz vezni hangisidir?",
+      "secenekler": [
+        "A) Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+        "B) Mef'ûlü / Mefâ'îlü / Mefâ'îlü / Fe'ûlün",
+        "C) Mefâ'îlün / Mefâ'îlün / Fe'ûlün",
+        "D) Fe'ilâtün / Fe'ilâtün / Fe'ilün"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "Bu gazel, Fuzûlî'nin en coşkulu lirik vezinlerinden 'Mef'ûlü / Mefâ'îlü / Mefâ'îlü / Fe'ûlün' ile nazmedilmiştir."
+    },
+    {
+      "id": 20,
+      "soru": "Fuzûlî'nin şiirlerinde sıkça rastlanan 'aşk / âşık / ma'şûk' gibi aynı kökten türeyen sözcüklerin birlikte kullanılması hangi edebî sanattır?",
+      "secenekler": [
+        "A) Cinas",
+        "B) İştikak",
+        "C) Tezat",
+        "D) İstifham"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "İştikak, aynı sülasi kökten türeyen kelimeleri bir beyitte sanatkârane bir ahenkle yan yana kullanma sanatıdır."
+    },
+    {
+      "id": 21,
+      "soru": "Fuzûlî'nin 'Dost bî-vefâ felek bî-rahm devrân bî-sükûn' mısraında dile getirilen temel tema hangisidir?",
+      "secenekler": [
+        "A) Saray hayatının zevk ve eğlenceleri",
+        "B) Dünyanın faniliği ve melâmet ehlinin yalnızlığı",
+        "C) Bahar mevsiminin coşkusu",
+        "D) Kahramanlık ve savaş tasviri"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "Fuzûlî bu gazelinde feleğin acımasızlığı, dostun vefasızlığı ve zamanın çalkantısı karşısında aşığın yalnızlık ve ıstırabını dile getirir."
+    },
+    {
+      "id": 22,
+      "soru": "Molla Fuzûlî'nin türbesi ve kabr-i şerîfi hangi mukaddes şehirde bulunmaktadır?",
+      "secenekler": [
+        "A) İstanbul",
+        "B) Tebriz",
+        "C) Kerbelâ",
+        "D) Şam"
+      ],
+      "dogru_cevap": 2,
+      "aciklama": "Fuzûlî, 1556 yılındaki veba salgınında Kerbelâ'da vefat etmiş olup kabri Hz. Hüseyin Türbesi civarındadır."
+    },
+    {
+      "id": 23,
+      "soru": "Fuzûlî'nin afyon (beng) ile şarabı (bâde) sembolik olarak konuşturduğu alegorik münâzara mesnevisi hangisidir?",
+      "secenekler": [
+        "A) Beng ü Bâde",
+        "B) Sohbetü'l-Esmâr",
+        "C) Leylâ vü Mecnûn",
+        "D) Rind ü Zâhid"
+      ],
+      "dogru_cevap": 0,
+      "aciklama": "Beng ü Bâde, afyon ile şarabın üstünlük münazarasını Şah İsmail'e ithafen anlatan 440 beyitlik alegorik mesnevidir."
+    },
+    {
+      "id": 24,
+      "soru": "16. yüzyıl tezkire yazarı Latîfî, Fuzûlî hakkında en çok hangi hususa dikkat çekmiştir?",
+      "secenekler": [
+        "A) Hiç kimseyi taklit etmeyen kendine has üslûbuna (tarz-ı hâss)",
+        "B) Yalnızca hece vezni kullandığına",
+        "C) Hiç gazel yazmadığına",
+        "D) Sadece mensur eserler verdiğine"
+      ],
+      "dogru_cevap": 0,
+      "aciklama": "Latîfî, Fuzûlî'nin kaside ve gazelde nev-i şahsına münhasır bir tarzı olup kimseye benzemediğini hayranlıkla kaydetmiştir."
+    },
+    {
+      "id": 25,
+      "soru": "Fuzûlî'nin 'Şikâyetnâme' adlı eseri dönemin hangi yüksek Osmanlı devlet adamına yazılmış bir mektuptur?",
+      "secenekler": [
+        "A) Sadrazam Pargalı İbrahim Paşa",
+        "B) Nişancı Celâlzâde Mustafa Çelebi",
+        "C) Şeyhülislâm Ebussuud Efendi",
+        "D) Kaptan-ı Deryâ Barbaros Hayreddin Paşa"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "Şikâyetnâme, Kanunî devrinin meşhur Nişancısı ve edibi Celâlzâde Mustafa Çelebi'ye ithafen kaleme alınmış şaheser bir mektuptur."
     }
   ],
   "tezkireler": [

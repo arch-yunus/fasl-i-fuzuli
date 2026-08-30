@@ -70,20 +70,81 @@ TEZAT_CIFTLERI = [
     ({"zâhid", "zahid", "rind"}, "Kaba sofu (zâhid) ve rind zıtlığı"),
     ({"gam", "safâ", "safa"}, "Gam ve safâ (huzur/neşe) zıtlığı"),
     ({"yanmak", "usanmak"}, "Yanmak (hararet) ve usanmak (bıkıp soğumak) tezat ve tenasübü"),
-    ({"uyanmak", "uyarmak", "halk", "karâ baht"}, "Uyanmak ve uyarmak zıtlığı")
+    ({"uyanmak", "uyarmak", "halk", "karâ baht"}, "Uyanmak ve uyarmak zıtlığı"),
+    ({"şâh", "kul", "hüsrevân"}, "Şâh ve kul/bende zıtlığı"),
+    ({"keder", "safâ"}, "Keder ve safâ zıtlığı")
 ]
 
 TENASUP_KUMELERI = [
-    ("Su ve Gözyaşı Kümesi", {"su", "eşk", "çeşm", "bahr", "derya", "deryâ", "gözyaşı", "seyl", "ırmak", "cûy", "bulanmak"}),
+    ("Su ve Gözyaşı Kümesi", {"su", "eşk", "çeşm", "bahr", "derya", "deryâ", "gözyaşı", "seyl", "ırmak", "cûy", "bulanmak", "kûze"}),
     ("Ateş ve Hararet Kümesi", {"ateş", "âteş", "od", "şem'", "şem", "yanmak", "kül", "dûd", "şûle", "tâb", "harâret", "şeb-i hicrân"}),
-    ("Gül ve Gülistan Kümesi", {"gül", "bülbül", "diken", "hâr", "bâğ", "çemen", "bostân", "gonca", "gül-berg", "fasl-ı gül"}),
+    ("Gül ve Gülistan Kümesi", {"gül", "bülbül", "diken", "hâr", "bâğ", "çemen", "bostân", "gonca", "gül-berg", "fasl-ı gül", "bağbân"}),
     ("Tabip ve Derman Kümesi", {"tabîb", "tabib", "hekim", "derd", "derdim", "devâ", "dermân", "derman", "bîmâr", "maraz", "şifâ"}),
     ("Meyhane ve Rindlik Kümesi", {"mey", "bâde", "sâkî", "sâkıyâ", "câm", "kadeh", "hum", "harâbât", "mest", "sermest", "pîr-i mugân"})
 ]
 
 ISTIFHAM_EDATLARI = ["mı", "mi", "mu", "mü", "nedür", "nedir", "kim", "kanda", "nice", "niçin", "hangi", "aceb"]
-NIDA_EDATLARI = ["ey", "yâ", "ayâ", "heyhât", "yâ rab", "habîbim", "sâkıyâ"]
-MUBALAGA_KALIPLARI = ["felekler yandı", "taş deler", "âlem tutuştu", "kan döker", "halkı uyârır", "efgānım"]
+NIDA_EDATLARI = ["ey", "yâ", "ayâ", "heyhât", "yâ rab", "habîbim", "sâkıyâ", "efendim", "sultânım"]
+MUBALAGA_KALIPLARI = ["felekler yandı", "taş deler", "âlem tutuştu", "kan döker", "halkı uyârır", "efgānım", "bî-hadd", "cân lebe"]
+
+HUSNI_TALIL_IPUCLARI = [
+    ("odlara su", "Aşk ateşini söndürmek maksadıyla gözyaşı dökülmesi"),
+    ("başını taştan taşa", "Ayağına yüz sürebilmek için suyun taştan taşa baş vurup akması"),
+    ("hâk-i pây", "Sevgilinin bastığı toprağa erişme arzusu"),
+    ("bulanmaz mı", "Akar suların sevgilinin gül yanağını görüp coşup bulanması"),
+    ("ayağına yüz sürmek", "Suyun veya rüzgarın sevgilinin ayağına varmak istemesi"),
+    ("felekler yandı âhımdan", "Âh ateşi sebebiyle feleklerin tutuşması"),
+    ("yüzün görsün safâ bulsun", "Ayrılık ızdırabının sevgilinin cemaliyle dinmesi"),
+    ("bağbân", "Bahçıvanın bir tek gül yaprağı için çukurlara su akıtması")
+]
+
+TESBIH_IPUCLARI = [
+    (" tek ", "Gibi / benzeme edatı (şem' tek, mecnun tek)"),
+    ("veş", "Gibi edatı (şem'-veş, gonca-veş)"),
+    ("çü ", "Gibi / sanki benzetme edatı"),
+    ("misâl", "Örnek / benzer edatı"),
+    ("benzer", "Benzeme fiili"),
+    ("mânend", "Benzer edatı"),
+    ("serv-i", "Servi gibi uzun ve düzgün boy (Teşbih-i Belîğ)"),
+    ("murg-ı dil", "Gönül kuşu (Teşbih-i Belîğ)"),
+    ("meh-likā", "Ay yüzlü sevgili (Teşbih-i Belîğ)"),
+    ("tîr-i gamze", "Gamze oku (Teşbih / İstiare)"),
+    ("dâm-ı zülf", "Saç tuzağı (Teşbih-i Belîğ)"),
+    ("perî-rû", "Peri yüzlü güzel (Teşbih-i Belîğ)"),
+    ("gül-i ruhsâr", "Gül yanak (Teşbih-i Belîğ)")
+]
+
+TESHIS_IPUCLARI = [
+    ("su", ["gezer", "akar", "başını taştan", "ağlar", "usanmaz", "seyl", "durmaz", "yüz sür"], "Su unsuruna canlı gibi baş vurup gezme veya ağlama yüklenmiştir."),
+    ("felek", ["yandı", "döner", "bî-rahm", "rehm kılmaz", "sitem", "bî-vefâ"], "Feleğe (kadere) acımasızlık ve can yakıcılık yüklenmiştir."),
+    ("gönül", ["deli", "ey gönül", "ta'n eyleme", "divâne", "usanmaz", "bî-çâre", "yandı"], "Gönül bir insan gibi muhatap alınıp uyarılmıştır."),
+    ("baht", ["uyanmaz mı", "karâ baht", "uyur", "hâb"], "Bahta (talihe) uyuma ve uyanma özelliği atfedilmiştir."),
+    ("sabâ", ["sorma", "ey sabâ", "esme", "peygâm", "ahvâl"], "Sabah rüzgarı haberci ve dert ortağı bir canlı olarak tasvir edilmiştir."),
+    ("şem'", ["yanar", "ağlar", "erir", "şem' tek", "yanmaz mı"], "Mum bir aşık gibi ağlayan ve eriyen bir varlık kılınmıştır.")
+]
+
+TECAHULI_ARIF_IPUCLARI = [
+    "usanmaz mı", "yanmaz mı", "uyanmaz mı", "bilmez mi", "sanmaz mı",
+    "bilmem", "aceb", "olmaya kim", "utanmaz mı", "ayb kılman", "halkı bîmâr sanır",
+    "görgeç utanmaz mı", "bî-vefâ yâra irişmez mi"
+]
+
+ISTIKAK_KUMELERI = [
+    ({"aşk", "âşık", "ma'şûk", "ışk", "uşşâk"}, "Aşk / Âşık / Ma'şûk (Aynı kökten türeyiş)"),
+    ({"derd", "dermân"}, "Derd / Dermân türevleri"),
+    ({"gam", "gam-hâr", "gam-nâk", "gamgîn", "gumûm"}, "Gam kökünden türeyenler"),
+    ({"vefâ", "bî-vefâ", "vefâdâr"}, "Vefâ ve türevleri"),
+    ({"cefâ", "bî-cefâ", "cefâ-kâr", "cefa"}, "Cefâ ve türevleri"),
+    ({"hüküm", "hâkim", "hikmet", "hakîm"}, "H-K-M kökünden türeyenler"),
+    ({"şevk", "müştâk", "iştiyâk"}, "Şevk / Müştâk türevleri"),
+    ({"nazar", "nâzır", "manzara"}, "Nazar / Nâzır türevleri"),
+    ({"vasl", "vuslat"}, "Vasl / Vuslat türevleri"),
+    ({"hicr", "hicrân"}, "Hicr / Hicrân türevleri"),
+    ({"sevdâ", "sevdâ-zede"}, "Sevdâ türevleri"),
+    ({"mürüvvet", "mürüvvetsiz"}, "Mürüvvet ve türevleri")
+]
+
+RUCU_IPUCLARI = ["ne dedim", "hâşâ", "yok yok", "estağfirullah", "galat ettim", "belki", "hâşâ kim"]
 
 
 class FuzuliCorpus:
@@ -552,7 +613,8 @@ class FuzuliCorpus:
     def edebi_sanat_analiz(self, metin: str) -> Dict[str, Any]:
         """
         Verilen bir mısra veya beyitteki edebî sanatları (Tezat, Tenasüp,
-        İstifham, Nidâ, Tecrid, Mübalağa) otomatik teşhis eder.
+        İstifham, Nidâ, Tecrid, Mübalağa, Hüsn-i Ta'lîl, Teşbih, Teşhis,
+        Tecâhül-i Ârif, İştikak, Rücû') otomatik teşhis eder.
         """
         metin_temiz = re.sub(r"[^\w\sâîûÂÎÛ']", " ", metin.lower())
         kelimeler = set(metin_temiz.split())
@@ -616,11 +678,163 @@ class FuzuliCorpus:
                 "aciklama": "Izdırap ve aşk coşkusunu akıl sınırlarını aşacak derecede büyütme sanatı."
             })
 
+        # 7. Hüsn-i Ta'lîl
+        for ipucu, aciklama in HUSNI_TALIL_IPUCLARI:
+            if ipucu in tam_metin_lower:
+                bulunanlar.append({
+                    "sanat": "Hüsn-i Ta'lîl",
+                    "kelimeler": [ipucu],
+                    "aciklama": f"Olayı tabii nedeninin haricinde hayalî ve lirik bir sebebe bağlama ({aciklama})."
+                })
+
+        # 8. Teşbih / Teşbih-i Belîğ
+        for edat, aciklama in TESBIH_IPUCLARI:
+            if edat in tam_metin_lower:
+                bulunanlar.append({
+                    "sanat": "Teşbih / Teşbih-i Belîğ",
+                    "kelimeler": [edat.strip()],
+                    "aciklama": aciklama
+                })
+
+        # 9. Teşhis & İntak
+        for unsur, eylemler, aciklama in TESHIS_IPUCLARI:
+            if unsur in tam_metin_lower:
+                eslesen_eylemler = [e for e in eylemler if e in tam_metin_lower]
+                if eslesen_eylemler:
+                    bulunanlar.append({
+                        "sanat": "Teşhis",
+                        "kelimeler": [unsur] + eslesen_eylemler,
+                        "aciklama": aciklama
+                    })
+
+        # 10. Tecâhül-i Ârif
+        bulunan_tecahul = [t for t in TECAHULI_ARIF_IPUCLARI if t in tam_metin_lower]
+        if bulunan_tecahul:
+            bulunanlar.append({
+                "sanat": "Tecâhül-i Ârif",
+                "kelimeler": bulunan_tecahul,
+                "aciklama": "Bildiği bir gerçeği nükte ve lirik bir hayret yaratmak maksadıyla bilmezden gelme sanatı."
+            })
+
+        # 11. İştikak
+        for grup, aciklama in ISTIKAK_KUMELERI:
+            matches = [t for t in grup if any(norm_text(t) == norm_text(w) or (len(t) >= 3 and norm_text(w).startswith(norm_text(t))) for w in kelimeler)]
+            if len(matches) >= 2:
+                bulunanlar.append({
+                    "sanat": "İştikak",
+                    "kelimeler": matches,
+                    "aciklama": f"{aciklama} - Aynı kökten türeyen ahenkli sözcükler."
+                })
+
+        # 12. Rücû'
+        bulunan_rucu = [r for r in RUCU_IPUCLARI if r in tam_metin_lower]
+        if bulunan_rucu:
+            bulunanlar.append({
+                "sanat": "Rücû'",
+                "kelimeler": bulunan_rucu,
+                "aciklama": "Söylenen sözden döner gibi yaparak manayı kuvvetlendirme sanatı."
+            })
+
         return {
             "metin": metin,
             "tespit_sayisi": len(bulunanlar),
             "sanatlar": bulunanlar
         }
+
+    def musammat_tahlil(self, misra1: str, misra2: Optional[str] = None) -> Dict[str, Any]:
+        """
+        Mısra veya beyit içinde iç kafiye (musammat gazel) yapısını tahlil eder.
+        Dört cüzlü mısraların orta duraklarındaki ses uyumunu tespit eder.
+        """
+        m1_words = misra1.strip().split()
+        if len(m1_words) < 4:
+            return {"musammat_mi": False, "aciklama": "Mısra kelime sayısı iç kafiye tespiti için yetersiz."}
+
+        mid1 = len(m1_words) // 2
+        ilk_yari1 = " ".join(m1_words[:mid1])
+        son_yari1 = " ".join(m1_words[mid1:])
+        orta_kelime1 = re.sub(r"[^\wâîûÂÎÛ]", "", m1_words[mid1 - 1].lower())
+        son_kelime1 = re.sub(r"[^\wâîûÂÎÛ]", "", m1_words[-1].lower())
+
+        ic_kafiye_bulundu = False
+        detay = {}
+
+        # 1. Mısra kendi içinde kafiyeli mi? (Şeb-i hicrân yanar cânım / döker kan çeşm-i giryânım)
+        if len(orta_kelime1) >= 2 and len(son_kelime1) >= 2:
+            min_len = min(len(orta_kelime1), len(son_kelime1))
+            ortak_ses = 0
+            for i in range(1, min_len + 1):
+                if orta_kelime1[-i] == son_kelime1[-i]:
+                    ortak_ses += 1
+                else:
+                    break
+            if ortak_ses >= 2:
+                ic_kafiye_bulundu = True
+                detay = {
+                    "tip": "Mısra İçi Musammat",
+                    "orta_kelime": orta_kelime1,
+                    "son_kelime": son_kelime1,
+                    "ortak_sesler": orta_kelime1[-ortak_ses:],
+                    "ilk_yari": ilk_yari1,
+                    "ikinci_yari": son_yari1
+                }
+
+        # 2. İki mısra verildiyse orta duraklar arası kafiye var mı?
+        if misra2 and not ic_kafiye_bulundu:
+            m2_words = misra2.strip().split()
+            if len(m2_words) >= 4:
+                mid2 = len(m2_words) // 2
+                orta_kelime2 = re.sub(r"[^\wâîûÂÎÛ]", "", m2_words[mid2 - 1].lower())
+                min_len = min(len(orta_kelime1), len(orta_kelime2))
+                ortak_ses = 0
+                for i in range(1, min_len + 1):
+                    if orta_kelime1[-i] == orta_kelime2[-i]:
+                        ortak_ses += 1
+                    else:
+                        break
+                if ortak_ses >= 2:
+                    ic_kafiye_bulundu = True
+                    detay = {
+                        "tip": "Beyit Ortası Musammat (Orta Durak Kafiyesi)",
+                        "1_misra_orta": orta_kelime1,
+                        "2_misra_orta": orta_kelime2,
+                        "ortak_sesler": orta_kelime1[-ortak_ses:]
+                    }
+
+        return {
+            "musammat_mi": ic_kafiye_bulundu,
+            "detay": detay if ic_kafiye_bulundu else "İç kafiye bulunamadı.",
+            "aciklama": "Musammat gazellerde mısra ortaları ve sonları birbirine kafiyeli olup ikiye bölündüğünde murabba (dörtlük) haline gelebilir."
+        }
+
+    def nazire_veya_akraba_beyitler(self, query_or_kalip: str, limit: int = 5) -> List[Dict[str, Any]]:
+        """
+        Verilen bir vezin, kafiye veya mısraya vezin/tema yönünden 'akraba' olan
+        veya nazire olabilecek külliyat beyitlerini getirir.
+        """
+        q = norm_text(query_or_kalip.strip())
+        sonuclar = []
+
+        # Eğer aruz tahmini yapılabiliyorsa
+        tahmin = self.aruz_tahmin(query_or_kalip)
+        kalip_ad = tahmin.get("tahmin_edilen_kalip", "")
+
+        for gazel in self.gazeller:
+            vezin_uyumu = bool(kalip_ad and kalip_ad in gazel.get("vezin", ""))
+            for b in gazel.get("beyitler", []):
+                metin_norm = norm_text(b["turkce"])
+                if vezin_uyumu or q in metin_norm or (len(q) > 4 and q[-4:] in metin_norm):
+                    sonuclar.append({
+                        "kaynak": f"{gazel['baslik']} #{b['no']}",
+                        "vezin": gazel.get("vezin", ""),
+                        "metin": b["turkce"],
+                        "anlam": b["sadelesmis"],
+                        "vezin_eslesmesi": vezin_uyumu
+                    })
+                    if len(sonuclar) >= limit:
+                        return sonuclar
+
+        return sonuclar
 
     def istatistikler(self) -> Dict[str, Any]:
         """Külliyat istatistiklerini hesaplar."""

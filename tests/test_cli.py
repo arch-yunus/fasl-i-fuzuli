@@ -97,6 +97,17 @@ class TestCLIExecution(unittest.TestCase):
         self.assertEqual(res.returncode, 0)
         self.assertIn("FASL-I FUZÛLÎ", res.stdout)
 
+    def test_cli_musammat(self):
+        res = self.run_cli(["musammat", "Şeb-i hicrân yanar cânım döker kan çeşm-i giryânım"])
+        self.assertEqual(res.returncode, 0)
+        self.assertIn("MUSAMMAT GAZEL", res.stdout)
+        self.assertIn("İç Kafiye", res.stdout)
+
+    def test_cli_nazire(self):
+        res = self.run_cli(["nazire", "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün"])
+        self.assertEqual(res.returncode, 0)
+        self.assertIn("NAZÎRE VE AKRABA BEYİTLER", res.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()

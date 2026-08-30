@@ -1,5 +1,5 @@
-// Fasl-ı Fuzûlî - Modern Web Uygulaması ve Edebiyat Motoru
-// Otomatik Senkronize Veri Tabanı ve İnteraktif Poetik Analizör
+// Fasl-ı Fuzûlî - Modern Web Uygulaması ve Edebiyat Motoru v4.0
+// Otomatik Senkronize Veri Tabanı, Belâgat Teşhis Laboratuvarı, Ney Sentezleyici ve Beyit Kartı Motoru
 
 const CORPUS = {
   "sair": {
@@ -539,6 +539,228 @@ const CORPUS = {
           ]
         }
       ]
+    },
+    {
+      "id": "gozum-canim-efendim",
+      "baslik": "Gözüm Cânım Efendim Sevdüğüm Devletlü Sultânım",
+      "vezin": "Mef'ûlü / Mefâ'îlü / Mefâ'îlü / Fe'ûlün",
+      "redif": "...devletlü sultânım",
+      "tema": "Aşk, Niyâz, Sevgiliye Tazim, İhlas",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Gözüm cânım efendim sevdüğüm devletlü sultânım / Mürüvvetsiz mürüvvet kıl ki geldi cân lebe ânım",
+          "sadelesmis": "Gözüm, canım, efendim, sevdiğim, saadetli sultanım! Ey merhametsiz sevgili, artık merhamet eyle zira canım dudağıma geldi, son nefesimdir.",
+          "sanatlar": [
+            "Nidâ",
+            "Tenasüp",
+            "Tezat",
+            "Mübalağa"
+          ]
+        },
+        {
+          "no": 2,
+          "turkce": "Gamından şem' tek yandım sabâdan sorma ahvâlim / Bu bağrım kanına gark oldu ey çeşm-i dür-efşânım",
+          "sadelesmis": "Gamından mum gibi eriyip yandım, halimi seher rüzgarından sorma; ey inci saçan gözüm, bağrım kan deryasına gark oldu.",
+          "sanatlar": [
+            "Teşbih",
+            "Tenasüp",
+            "Teşhis",
+            "İstifham"
+          ]
+        },
+        {
+          "no": 3,
+          "turkce": "Dil-i mahzûnumu gamdan halâs eyle vefâ eyle / Kerem kıl eyle bir ihsân mürüvvet menba'ı hânım",
+          "sadelesmis": "Hüzünlü gönlümü gamdan kurtar, vefa göster; ey iyilik ve lütuf membaı hünkarım, bir ihsan eyle.",
+          "sanatlar": [
+            "Tenasüp",
+            "İştikak",
+            "Nidâ"
+          ]
+        },
+        {
+          "no": 4,
+          "turkce": "Sen ol bî-rahm şâhsın kim kulundur hüsrevân yek-ser / Menem ol derd-mend âşık ki bî-hadd oldu efgānım",
+          "sadelesmis": "Sen öyle celalli bir sultansın ki bütün padişahlar senin kapında kuldur; bense iniltisi haddi aşmış o dertli aşığım.",
+          "sanatlar": [
+            "Tezat",
+            "Tenasüp",
+            "Mübalağa"
+          ]
+        },
+        {
+          "no": 5,
+          "turkce": "Fuzûlî derd-i hicrânın çeker her dem niyâz eyler / Yüzün görsün safâ bulsun o serv-i bâğ-ı rıdvânım",
+          "sadelesmis": "Fuzûlî her an ayrılık derdini çeker ve yalvarır; o cennet bahçesinin servi boylusu sevgilimin yüzünü görsün de gönlü huzur bulsun.",
+          "sanatlar": [
+            "Tecrid",
+            "Teşbih",
+            "Tenasüp",
+            "Hüsn-i Ta'lil"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gonul-tan-eyleme-mecnuna",
+      "baslik": "Gönül Ta'n Eyleme Mecnûna Sen Hem Bir Zaman Gördün",
+      "vezin": "Mefâ'îlün / Mefâ'îlün / Mefâ'îlün / Mefâ'îlün",
+      "redif": "...gördün / ...bildin",
+      "tema": "Mecnûnluk, Aşkın İstilası, Gönül İkâzı",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Gönül ta'n eyleme Mecnûna sen hem bir zamân gördün / O şûhun hüsnünü kim aklını Mecnûn eder bildin",
+          "sadelesmis": "Ey gönül! Mecnûn'u kınayıp ayıplama, sen de bir zamanlar o güzelin cemalini gördün ve onun güzelliğinin aklı Mecnûn ettiğini bizzat bildin.",
+          "sanatlar": [
+            "Teşhis",
+            "Nidâ",
+            "Tenasüp",
+            "İştikak"
+          ]
+        },
+        {
+          "no": 2,
+          "turkce": "Perî-rûlar cefâsından şikâyet eylemek olmaz / Vefâ ummak hatâdır çün bu resm-i bî-vefâ gördün",
+          "sadelesmis": "Peri yüzlü güzellerin cefasından şikayet etmek yakışmaz; bu vefasızlık kanununu gördükten sonra onlardan vefa ummak ziyan ve hatadır.",
+          "sanatlar": [
+            "Tezat",
+            "Tenasüp",
+            "Teşbih-i Belîğ"
+          ]
+        },
+        {
+          "no": 3,
+          "turkce": "Cünûn sahrâsına düşmek değildir ihtiyâr ile / Çü zülfün dâmına düşdün belâ-yı aşkı pâ-ber-câ gördün",
+          "sadelesmis": "Delilik ve mecnunluk çölüne düşmek insanın kendi iradesiyle olmaz; zira sevgilinin saçının tuzağına yakalanınca aşk belasını yerli yerinde gördün.",
+          "sanatlar": [
+            "Tenasüp",
+            "İstiare",
+            "Teşbih"
+          ]
+        },
+        {
+          "no": 4,
+          "turkce": "Fuzûlî haste-dil aşk içre sabr ü tâkat aramaz / Bu rüsvâlık rehinde her ne geldiyse revâ gördün",
+          "sadelesmis": "Gönlü yaralı Fuzûlî aşk yolunda sabır ve derman aramaz; bu melamet ve rüsvaylık yolunda başına her ne geldiyse hak ve layık gördün.",
+          "sanatlar": [
+            "Tecrid",
+            "Tenasüp",
+            "Tasavvufî Hikmet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ey-bi-vefa-ki-adet-olupdur",
+      "baslik": "Ey Bî-vefâ Ki Âdet Olupdur Cefâ Sana",
+      "vezin": "Mef'ûlü / Fâ'ilâtü / Mefâ'îlü / Fâ'ilün",
+      "redif": "...sana",
+      "tema": "Cefa, Vefasızlık, Sitem, Teslimiyet",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Ey bî-vefâ ki âdet olupdur cefâ sana / Billâh cefâdır eyleme gel bî-vefâ sana",
+          "sadelesmis": "Ey cefayı kendine huy edinmiş vefasız güzel! Allah için vefasızlık sana yakışmıyor, gel etme; zulüm sana da cefa olur.",
+          "sanatlar": [
+            "İştikak",
+            "Nidâ",
+            "Tezat",
+            "Cinas"
+          ]
+        },
+        {
+          "no": 2,
+          "turkce": "Cânım fedâ-yı la'l-i lebin kılmağa beni / Gönderdi kûyuna gam-ı aşkın vefâ sana",
+          "sadelesmis": "Canımı o yakut dudağına feda etmek üzere, aşkının gamı sana vefasını ispat için beni senin mahallene gönderdi.",
+          "sanatlar": [
+            "Tenasüp",
+            "Teşhis",
+            "Tezat"
+          ]
+        },
+        {
+          "no": 3,
+          "turkce": "Yağdırma tîr-i gamzen ile bağrıma keder / Lutf eyle kim kul oldu bu dilde safâ sana",
+          "sadelesmis": "Yan bakışının oklarıyla bağrıma keder yağdırma; lütfet zira bu gönüldeki bütün huzur ve safa sana köle oldu.",
+          "sanatlar": [
+            "İstiare",
+            "Teşbih",
+            "Tenasüp"
+          ]
+        },
+        {
+          "no": 4,
+          "turkce": "Hâl-i perîşânıma rahm eyle gel berü / Göster cemâl-i pür-ziyâ ey meh-likā sana",
+          "sadelesmis": "Perişan halime merhamet eyle de beri gel; ey ay yüzlü sevgili, o ışık saçan cemalini göster ki sana hayran olayım.",
+          "sanatlar": [
+            "Teşbih",
+            "Nidâ",
+            "Tenasüp"
+          ]
+        },
+        {
+          "no": 5,
+          "turkce": "Kılmaz Fuzûlî terk-i tarîk-i mahabbetin / Ger kılsa her dem ehl-i melâmet cefâ sana",
+          "sadelesmis": "Bütün kınayıcılar her dem sana ve aşığa cefa etse de, Fuzûlî senin sevginin yolunu asla terk etmez.",
+          "sanatlar": [
+            "Tecrid",
+            "Tezat",
+            "Tenasüp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hasilim-hun-i-cigerdir",
+      "baslik": "Hâsılım Hûn-ı Ciğerdir Kârdan Âsîb-i Dehr",
+      "vezin": "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+      "redif": "Yok (Yalın / Zengin Kafiye)",
+      "tema": "Dünyadan El Çekme, Melâmet, Rindlik, Izdırap",
+      "beyitler": [
+        {
+          "no": 1,
+          "turkce": "Hâsılım hûn-ı ciğerdir dille la'l-i yârdan / Nükte-i ser-beste söyler bî-haber esrârdan",
+          "sadelesmis": "Sevgilinin la'l dudağını anan gönülden bana kalan tek kazanç ciğer kanıdır; ilahi sırlardan habersiz olanlar bu örtülü nükteyi anlayamaz.",
+          "sanatlar": [
+            "Teşbih",
+            "Tenasüp",
+            "Tezat"
+          ]
+        },
+        {
+          "no": 2,
+          "turkce": "Çekme zâhid dâmen-i pâkin harâbât ehlinden / Kim tahâret ehli pâk olmaz bu nâ-hemvârdan",
+          "sadelesmis": "Ey ham sofu, temiz eteğini meyhane rindlerinden kaçırma; zira şekilci temizlik ehli bu eğriliklerden asla arınmış sayılmaz.",
+          "sanatlar": [
+            "Tezat",
+            "Tenasüp",
+            "Teşbih"
+          ]
+        },
+        {
+          "no": 3,
+          "turkce": "Tûtiyâ-yı çeşmim eyler hâk-i râh-ı kûyunu / Başını taştan taşa ursun bu seyl-i zârdan",
+          "sadelesmis": "Sevgilinin sokak toprağını gözüme sürme yaparım; bu feryat eden gözyaşı seli başını taştan taşa vursun.",
+          "sanatlar": [
+            "Hüsn-i Ta'lil",
+            "Teşhis",
+            "Teşbih",
+            "Tenasüp"
+          ]
+        },
+        {
+          "no": 4,
+          "turkce": "Dâğ-ı aşkındır Fuzûlî göğsümün pîrâyesi / Şâd-kâmam dehr içinde devr-i bî-âsârdan",
+          "sadelesmis": "Ey Fuzûlî, göğsümün yegane süsü onun aşkının yarasıdır; bu vefasız felek içinde bana kalan tek bahtiyarlık ve teselli de budur.",
+          "sanatlar": [
+            "Tecrid",
+            "Teşbih",
+            "Tezat"
+          ]
+        }
+      ]
     }
   ],
   "su_kasidesi": {
@@ -956,7 +1178,7 @@ const CORPUS = {
     }
   ],
   "lugat": {
-    "Âb-ı Hayât": "Dirilik ve ölümsüzlük suyu. Tasavvufta İlahi Aşk, marifetullah ve Hz. Peygamber'in feyzi.",
+    "Âb-ı Hayât": "İçene ebedî hayat bahşeden dirilik suyu; sevgilinin dudağı veya feyz-i ilahi.",
     "Âgâh": "Uyanık, haberdar, hakikatin farkında olan basiret sahibi.",
     "Ahlat-ı Erbaa": "Klasik tıpta dört temel unsur: Kan (dem), balgam, sarı safra, kara safra (sevda).",
     "Arak-rîz": "Ter döken, terleten; utanma veya vecd hali.",
@@ -967,7 +1189,7 @@ const CORPUS = {
     "Cüdâ": "Ayrı, uzak, ayrılmış.",
     "Çâk": "Yarık, yırtık. Aşk ateşiyle göğsün yarılması (çâk-i girîbân).",
     "Derd": "Hastalık, acı. Fuzûlî'de dert aranan ve sevilendir; aşk derdi ruhun şifasıdır.",
-    "Dîbâce": "Önsöz, mukaddime. Eserin telif sebebini ve sanat felsefesini açıklar.",
+    "Dîbâce": "Eserlerin başındaki mensur veya manzum mukaddime; Fuzûlî'nin şiir felsefesini izah ettiği manifesto.",
     "Dildâr / Dilber": "Gönlü alan, sevgili. Hakiki manada Cenâb-ı Hak veya O'nun tecellisi.",
     "Eşk": "Gözyaşı. Genellikle kanlı (hûn-efşân) olarak tasvir edilir.",
     "Fenâ / Fenâfillâh": "Kulun kendi benliğinden geçip Hakk'ın varlığında yok olması.",
@@ -983,7 +1205,7 @@ const CORPUS = {
     "Kûze": "Testi, çömlek. Âşığın toprağından yapılan su kabı.",
     "Künc": "Köşe, kuytu yer (örn. künc-i gam: dert ve hüzün köşesi).",
     "Lâle-gûn": "Lale renkli, al, kan kırmızı.",
-    "Maktel": "Şehadet ve katil yeri; Kerbelâ faciasını anlatan edebi tür.",
+    "Maktel": "Hz. Hüseyin ve Kerbelâ şehitlerinin destansı şehadetini anlatan edebî tür.",
     "Mazmun": "Edebi kavram, kalıplaşmış mecaz ve semboller.",
     "Mecnûn": "Çılgın, deli, aşk divânesi; Leylâ ile Mecnûn'un kahramanı Kays.",
     "Mihr": "Güneş; aynı zamanda sevgi, muhabbet ve şefkat.",
@@ -1002,7 +1224,7 @@ const CORPUS = {
     "Şem'": "Mum, kandil. Sevgilinin nurlu yüzü veya hakikat ışığı.",
     "Tabîb": "Hekim, doktor. Şiirde âşığın derdine çare bulamayan akıl ehli.",
     "Terkîb-i Bend": "Bentlerle kurulan, her bent sonunda vasıta beyti değişen musammat nazım şekli.",
-    "Vahdet-i Vücûd": "Varlığın tekliği; yaratılmış her şeyin Hakk'ın tecellisinden ibaret olduğu tasavvufi öğreti.",
+    "Vahdet-i Vücûd": "Varlığın birliği; tek mutlak varlığın Hak olduğu ve kâinattaki bütün kesretin O'nun tecellisinden ibaret bulunduğu tasavvufi idrak.",
     "Vuslat": "Sevgiliye kavuşma hali.",
     "Zâhid": "Kuru kuralcı, şekle ve cennet menfaatine takılan sığ din adamı tipi.",
     "Zevâid": "Artık, gelir fazlası (Şikâyetnâme'deki vakıf zevâidi).",
@@ -1010,13 +1232,13 @@ const CORPUS = {
     "Kûy-ı Cânân": "Sevgilinin mahallesi, semti; tasavvufi manada Hakk'a vasıl olunan kurbiyet ve vuslat makamı.",
     "Çeşm-i Cadû": "Aşığın aklını başından alan büyüleyici ve sihirbaz göz; fitne koparan bakış.",
     "Leb-i La'l": "Kırmızı yakut gibi değerli ve can bağışlayan sevgili dudağı; İsa nefesi gibi dirilten lütuf.",
-    "Pîr-i Mugân": "Meyhane piri; tasavvuf edebiyatında sâliki irşad eden, hakikat şarabını sunan kâmil mürşit.",
+    "Pîr-i Mugân": "Meyhaneci pir; hakikat yolunda müride irfan şarabı sunan kâmil mürşid.",
     "Hatt": "Sevgilinin yanağında yeni beliren ince ayva tüyleri; Kur'an ayetlerine, reyhan yazısına ve hüsnün kemaline teşbih edilir.",
     "Hâk-i Pây": "Ayağın toprağı; aşığın tevazu göstererek sevgilinin bastığı toprağa baş koyması, fenâ hâli.",
-    "Şem' ü Pervâne": "Mum ve kelebek; aşk ateşine bilerek atılıp yok olan aşığın fedakarlık ve fenâfillah remzi.",
+    "Şem' ü Pervâne": "Mum ve etrafında dönüp kendini ateşe atan kelebek; mutlak aşk uğrunda feda olmanın sembolü.",
     "Bâde-i Elest": "Elest bezminde (ruhlar meclisinde) Allah'a verilen kulluk sözünün sarhoşluğu ve ezelî aşk.",
     "Çark-ı Çep-gerdîş": "Tersine dönen kahpe felek; talihin aşığa ve erdemliye yüz vermeyip liyakatsizleri kayırması.",
-    "Câm-ı Cem": "Cemşid'in bütün dünyayı gösteren efsanevi kadehi; tasavvufta arifin ilahi hakikatleri müşahede ettiği tertemiz gönül aynası.",
+    "Câm-ı Cem": "Cemşid'in bütün dünyayı gösteren efsanevi kadehi; hakikati yansıtan saf arif gönlü.",
     "Dehr": "Zaman, dünya, fani devran; faniliği sebebiyle gönül bağlanmaması gereken fani konak.",
     "Dûd-ı Dil": "Gönül dumanı; aşk ateşinin yürekte yanmasıyla aşığın ağzından çıkan dertli âh nefesi.",
     "Gül ü Bülbül": "Dîvân şiirinin en temel alegorisi; bülbül aşığın feryadını, nazlanan ve dikeniyle inciten gül ise sevgiliyi simgeler.",
@@ -1036,7 +1258,32 @@ const CORPUS = {
     "Meyhâne": "Aşk ve vecd meclisi; rindlerin dünya kaygısını unuttuğu irfan dergâhı.",
     "Hüsn-i Ta'lîl": "Bir vakıayı tabii sebebinin haricinde hayalî, latif ve şiirsel bir sebebe bağlama sanatı.",
     "Tecâhül-i Ârif": "Bildiği bir hakikati nükte ve şairane hayret oluşturmak için bilmezden gelme sanatı.",
-    "Teşbih-i Belîğ": "Benzetme edatı ve benzetme yönü zikredilmeden yalnızca benzeyen ve benzetilenle yapılan asil teşbih."
+    "Teşbih-i Belîğ": "Benzetme edatı ve benzetme yönü zikredilmeden yalnızca benzeyen ve benzetilenle yapılan asil teşbih.",
+    "Kesret": "Çokluk âlemi; vahdetin zıddı olup maddî dünyanın aldatıcı ve dağıtıcı çokluğu.",
+    "Mâsivâ": "Allah'tan gayrı olan her şey; arifin kalbinden tamamen silip atması gereken fâni dünya alâkaları.",
+    "Tecellî": "İlâhî nurun ve esmâ-i hüsnânın kulun kalbinde veya varlık aynasında aşikâr olması.",
+    "Kâmet-i Mevzûn": "Dengeli, vezinli ve servi gibi biçimli boy; ilahî güzelliğin ve istikametin timsali.",
+    "Hâl-i Hindû": "Hindistanlı köle gibi kara olan ben; sevgilinin yüzündeki siyah ben ve gönülleri esir eden tılsım.",
+    "Dehen-i Tang": "Dar ve nokta gibi ağız; yokluk (adem) âleminin ve lâhûtî sırların tecessümü.",
+    "Kûy-ı Yâr": "Sevgilinin mahallesi veya kapısının eşiği; arifin sığındığı Kâbe mesabesindeki vuslat diyarı.",
+    "Melâmet": "Kınanma ve kınayıcıların ayıplamasını zevk bilme; riyadan kaçarak iç alemi ihlas ve ıstırapla donatma yolu.",
+    "Cünûn": "Aşk deliliği; aklın sınırlarını aşıp cezbe, hayret ve fenâ makamına ulaşma hali.",
+    "Hüsn ü Ân": "Suret güzelliği ile içsel eda ve cazibenin birleşimi; maşukun karşı konulmaz cezbesi.",
+    "Gül-zâr": "Gül bahçesi; sevgilinin cemali veya ilahi tecellilerin seyredildiği mana meclisi.",
+    "Hâb-ı Gaflet": "Gaflet uykusu; hakikatten bihaber yaşama hali.",
+    "Belâ-yı Aşk": "Aşk imtihanı ve ızdırabı; Fuzûlî'ye göre şairin ve arifin olgunlaşması için talep ettiği en tatlı eza.",
+    "Sebk-i Hindî": "Fuzûlî'nin şiirlerinde erken nüveleri görülen; derin muhayyile, girift mazmunlar ve ıstırap estetiği içeren şiir akımı.",
+    "Musammat Gazel": "Mısra ortalarında iç kafiye barındıran ve ikiye bölündüğünde dörtlük haline gelebilen ahenkli gazel türü.",
+    "İrsâl-i Mesel": "Şiirde atasözü veya darb-ı mesel niteliğinde hikmetli bir söz zikretme sanatı.",
+    "İştikak": "Aynı kökten türeyen sözcükleri bir mısra veya beyitte bir araya getirerek ahenk sağlama sanatı.",
+    "Mazmûn": "Klasik divan şiirinde kalıplaşmış, nükte ve mecaz yüklü gizli mana ve imge.",
+    "Revî": "Kafiyeyi oluşturan asıl ve son değişmez sessiz harf.",
+    "Taktî'": "Bir mısrayı aruz vezninin tef'ile (cüz) parçalarına göre hece hece ayırıp vezin ahengini kontrol etme işlemi.",
+    "Zihaf": "Aruz vezninde zorunlu olarak uzun bir heceyi kısa okuma kuralı veya vezin tasarrufu.",
+    "İmâle": "Aruz veznine uydurmak maksadıyla Türkçe kısa bir heceyi çekerek uzun okuma.",
+    "Vasl (Ulama)": "Sonu ünsüzle biten kelimeyi, ünlüyle başlayan sonraki kelimeye bağlayarak heceyi açık hale getirme.",
+    "Kasr": "Uzun ünlüyle biten bir kelimeyi aruz icabı kısaltarak okuma tasarrufu.",
+    "Med": "Bir uzun ünlü ve bir ünsüzle biten hecenin aruzda bir buçuk hece (kapalı + açık) değerinde sayılması."
   },
   "aruz_kaliplari": [
     {
@@ -1110,6 +1357,30 @@ const CORPUS = {
       "sembol": ". - - - / . - - - / . - - - / . - - -",
       "ad": "Hezec Bahri (Müsemen Sâlim)",
       "ornek": "Cefâdan bezmezem ger cânıma kasd eylese cânân"
+    },
+    {
+      "ad": "Hezec Bahri (Müseddes Mahzûf)",
+      "kalip": "Mefâ'ilün / Mefâ'ilün / Fe'ûlün",
+      "sembol": ". - . - / . - . - / . - -",
+      "ornek": "Dîvân Kıta ve Gazelleri"
+    },
+    {
+      "ad": "Hafif Bahri (Klasik)",
+      "kalip": "Fe'ilâtün / Mefâ'ilün / Fe'ilün",
+      "sembol": ". . - - / . - . - / . . -",
+      "ornek": "Gam-ı aşkınla pür-safâdır dil"
+    },
+    {
+      "ad": "Recez Bahri (Müseddes)",
+      "kalip": "Müstef'ilün / Müstef'ilün / Müstef'ilün",
+      "sembol": "- - . - / - - . - / - - . -",
+      "ornek": "Cân mülkünü vîrân eden hicrândır"
+    },
+    {
+      "ad": "Mütedârik Bahri (Sâlim)",
+      "kalip": "Fâ'ilün / Fâ'ilün / Fâ'ilün / Fâ'ilün",
+      "sembol": "- . - / - . - / - . - / - . -",
+      "ornek": "Dilde gam zevk-i cân lezzet-i vuslat"
     }
   ],
   "quiz_sorulari": [
@@ -1304,6 +1575,114 @@ const CORPUS = {
       ],
       "dogru_cevap": 0,
       "aciklama": "Fuzûlî; Türkçe, Farsça ve Arapça dillerinin üçünde de divan tertip etmiş Doğu edebiyatının nâdir üç dilli dâhisidir."
+    },
+    {
+      "id": 17,
+      "soru": "Fuzûlî'nin Türkçe Dîvân'ında 'Beni cândan usandırdı...' matlaıyla başlayan gazeli mısra ortalarında iç kafiye barındırdığı için hangi gazel türünün şaheseridir?",
+      "secenekler": [
+        "A) Musammat Gazel",
+        "B) Müstezâd",
+        "C) Şarkı",
+        "D) Terkîb-i Bend"
+      ],
+      "dogru_cevap": 0,
+      "aciklama": "Mısra ortaları ve sonları kafiyeli olan, ikiye bölününce dörtlük teşkil edebilen gazellere 'Musammat Gazel' adı verilir."
+    },
+    {
+      "id": 18,
+      "soru": "Klasik edebiyatta doğal bir hadiseyi gerçek sebebi dışında hayalî ve şiirsel güzel bir sebebe bağlama sanatına ne ad verilir?",
+      "secenekler": [
+        "A) Tecâhül-i Ârif",
+        "B) Hüsn-i Ta'lîl",
+        "C) Teşbih-i Belîğ",
+        "D) Tenasüp"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "Hüsn-i Ta'lîl, suyun Hz. Peygamber'in ayağına yüz sürmek için taştan taşa baş vurup akması örneğinde olduğu gibi güzel sebebe bağlama sanatıdır."
+    },
+    {
+      "id": 19,
+      "soru": "Fuzûlî'nin 'Gözüm cânım efendim sevdüğüm devletlü sultânım' mısraıyla başlayan meşhur gazelinin aruz vezni hangisidir?",
+      "secenekler": [
+        "A) Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+        "B) Mef'ûlü / Mefâ'îlü / Mefâ'îlü / Fe'ûlün",
+        "C) Mefâ'îlün / Mefâ'îlün / Fe'ûlün",
+        "D) Fe'ilâtün / Fe'ilâtün / Fe'ilün"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "Bu gazel, Fuzûlî'nin en coşkulu lirik vezinlerinden 'Mef'ûlü / Mefâ'îlü / Mefâ'îlü / Fe'ûlün' ile nazmedilmiştir."
+    },
+    {
+      "id": 20,
+      "soru": "Fuzûlî'nin şiirlerinde sıkça rastlanan 'aşk / âşık / ma'şûk' gibi aynı kökten türeyen sözcüklerin birlikte kullanılması hangi edebî sanattır?",
+      "secenekler": [
+        "A) Cinas",
+        "B) İştikak",
+        "C) Tezat",
+        "D) İstifham"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "İştikak, aynı sülasi kökten türeyen kelimeleri bir beyitte sanatkârane bir ahenkle yan yana kullanma sanatıdır."
+    },
+    {
+      "id": 21,
+      "soru": "Fuzûlî'nin 'Dost bî-vefâ felek bî-rahm devrân bî-sükûn' mısraında dile getirilen temel tema hangisidir?",
+      "secenekler": [
+        "A) Saray hayatının zevk ve eğlenceleri",
+        "B) Dünyanın faniliği ve melâmet ehlinin yalnızlığı",
+        "C) Bahar mevsiminin coşkusu",
+        "D) Kahramanlık ve savaş tasviri"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "Fuzûlî bu gazelinde feleğin acımasızlığı, dostun vefasızlığı ve zamanın çalkantısı karşısında aşığın yalnızlık ve ıstırabını dile getirir."
+    },
+    {
+      "id": 22,
+      "soru": "Molla Fuzûlî'nin türbesi ve kabr-i şerîfi hangi mukaddes şehirde bulunmaktadır?",
+      "secenekler": [
+        "A) İstanbul",
+        "B) Tebriz",
+        "C) Kerbelâ",
+        "D) Şam"
+      ],
+      "dogru_cevap": 2,
+      "aciklama": "Fuzûlî, 1556 yılındaki veba salgınında Kerbelâ'da vefat etmiş olup kabri Hz. Hüseyin Türbesi civarındadır."
+    },
+    {
+      "id": 23,
+      "soru": "Fuzûlî'nin afyon (beng) ile şarabı (bâde) sembolik olarak konuşturduğu alegorik münâzara mesnevisi hangisidir?",
+      "secenekler": [
+        "A) Beng ü Bâde",
+        "B) Sohbetü'l-Esmâr",
+        "C) Leylâ vü Mecnûn",
+        "D) Rind ü Zâhid"
+      ],
+      "dogru_cevap": 0,
+      "aciklama": "Beng ü Bâde, afyon ile şarabın üstünlük münazarasını Şah İsmail'e ithafen anlatan 440 beyitlik alegorik mesnevidir."
+    },
+    {
+      "id": 24,
+      "soru": "16. yüzyıl tezkire yazarı Latîfî, Fuzûlî hakkında en çok hangi hususa dikkat çekmiştir?",
+      "secenekler": [
+        "A) Hiç kimseyi taklit etmeyen kendine has üslûbuna (tarz-ı hâss)",
+        "B) Yalnızca hece vezni kullandığına",
+        "C) Hiç gazel yazmadığına",
+        "D) Sadece mensur eserler verdiğine"
+      ],
+      "dogru_cevap": 0,
+      "aciklama": "Latîfî, Fuzûlî'nin kaside ve gazelde nev-i şahsına münhasır bir tarzı olup kimseye benzemediğini hayranlıkla kaydetmiştir."
+    },
+    {
+      "id": 25,
+      "soru": "Fuzûlî'nin 'Şikâyetnâme' adlı eseri dönemin hangi yüksek Osmanlı devlet adamına yazılmış bir mektuptur?",
+      "secenekler": [
+        "A) Sadrazam Pargalı İbrahim Paşa",
+        "B) Nişancı Celâlzâde Mustafa Çelebi",
+        "C) Şeyhülislâm Ebussuud Efendi",
+        "D) Kaptan-ı Deryâ Barbaros Hayreddin Paşa"
+      ],
+      "dogru_cevap": 1,
+      "aciklama": "Şikâyetnâme, Kanunî devrinin meşhur Nişancısı ve edibi Celâlzâde Mustafa Çelebi'ye ithafen kaleme alınmış şaheser bir mektuptur."
     }
   ],
   "tezkireler": [
@@ -1346,7 +1725,7 @@ const CORPUS = {
 };
 
 // ==========================================
-// YARDIMCI VE POETİK FONKSİYONLAR
+// POETİK ANALİZ VE YARDIMCI FONKSİYONLAR
 // ==========================================
 
 function normText(s) {
@@ -1570,6 +1949,357 @@ function kafiyeRedifAnaliz(misra1, misra2) {
 }
 
 // ==========================================
+// EDEBÎ SANAT ANALİZ MOTORU
+// ==========================================
+
+const TEZAT_CIFTLERI = [
+  [["can", "ten"], "Can (ruh) ve ten (beden) zıtlığı"],
+  [["yâr", "ağyâr", "agyar"], "Yâr (sevgili) ve ağyâr (yabancılar/düşmanlar) zıtlığı"],
+  [["vuslat", "hicran", "firkat"], "Vuslat (kavuşma) ve hicran (ayrılık) zıtlığı"],
+  [["gece", "gündüz", "şeb", "ruz"], "Gece ve gündüz zıtlığı"],
+  [["ağlamak", "gülmek", "giryan", "handan"], "Ağlamak ve gülmek zıtlığı"],
+  [["zehir", "şeker", "zehr", "şehd"], "Acı zehir ve tatlı şeker zıtlığı"],
+  [["ateş", "su", "od", "âb"], "Ateş (od) ve su (âb) zıtlığı"],
+  [["gül", "har", "hâr", "diken"], "Gül ve diken (hâr) zıtlığı"],
+  [["bimar", "bîmâr", "sıhhat", "derman", "şifa"], "Hastalık ve sıhhat/derman zıtlığı"],
+  [["fakr", "devlet", "gına"], "Fakirlik ve zenginlik/devlet zıtlığı"],
+  [["akıl", "akl", "cünun", "cinnet", "şeyda", "divane"], "Akıl ve divanelik/çılgınlık zıtlığı"],
+  [["zâhid", "zahid", "rind"], "Kaba sofu (zâhid) ve rind zıtlığı"],
+  [["gam", "safâ", "safa"], "Gam ve safâ (huzur/neşe) zıtlığı"],
+  [["yanmak", "usanmak"], "Yanmak (hararet) ve usanmak (soğumak) tezatı"],
+  [["şâh", "kul", "hüsrevân"], "Şâh ve kul/bende zıtlığı"],
+  [["keder", "safâ"], "Keder ve safâ zıtlığı"]
+];
+
+const TENASUP_KUMELERI = [
+  ["Su ve Gözyaşı Kümesi", ["su", "eşk", "çeşm", "bahr", "derya", "deryâ", "gözyaşı", "seyl", "ırmak", "cûy", "bulanmak", "kûze"]],
+  ["Ateş ve Hararet Kümesi", ["ateş", "âteş", "od", "şem'", "şem", "yanmak", "kül", "dûd", "şûle", "tâb", "harâret", "şeb-i hicrân"]],
+  ["Gül ve Gülistan Kümesi", ["gül", "bülbül", "diken", "hâr", "bâğ", "çemen", "bostân", "gonca", "gül-berg", "fasl-ı gül", "bağbân"]],
+  ["Tabip ve Derman Kümesi", ["tabîb", "tabib", "hekim", "derd", "derdim", "devâ", "dermân", "derman", "bîmâr", "maraz", "şifâ"]],
+  ["Meyhane ve Rindlik Kümesi", ["mey", "bâde", "sâkî", "sâkıyâ", "câm", "kadeh", "hum", "harâbât", "mest", "sermest", "pîr-i mugân"]]
+];
+
+const HUSNI_TALIL_IPUCLARI = [
+  ["odlara su", "Aşk ateşini söndürmek maksadıyla gözyaşı dökülmesi"],
+  ["başını daşdan daşa", "Ayağına yüz sürebilmek için suyun taştan taşa baş vurup akması"],
+  ["başını taştan taşa", "Ayağına yüz sürebilmek için suyun taştan taşa baş vurup akması"],
+  ["hâk-i pây", "Sevgilinin bastığı toprağa erişme arzusu"],
+  ["bulanmaz mı", "Akar suların sevgilinin gül yanağını görüp coşup bulanması"],
+  ["ayağına yüz sürmek", "Suyun veya rüzgarın sevgilinin ayağına varmak istemesi"],
+  ["felekler yandı âhımdan", "Âh ateşi sebebiyle feleklerin tutuşması"],
+  ["yüzün görsün safâ bulsun", "Ayrılık ızdırabının sevgilinin cemaliyle dinmesi"],
+  ["bağbân", "Bahçıvanın bir tek gül yaprağı için çukurlara su akıtması"]
+];
+
+const TESBIH_IPUCLARI = [
+  [" tek ", "Gibi / benzeme edatı (şem' tek, mecnun tek)"],
+  ["veş", "Gibi edatı (şem'-veş, gonca-veş)"],
+  ["çü ", "Gibi / sanki benzetme edatı"],
+  ["misâl", "Örnek / benzer edatı"],
+  ["benzer", "Benzeme fiili"],
+  ["serv-i", "Servi gibi uzun ve düzgün boy (Teşbih-i Belîğ)"],
+  ["murg-ı dil", "Gönül kuşu (Teşbih-i Belîğ)"],
+  ["meh-likā", "Ay yüzlü sevgili (Teşbih-i Belîğ)"],
+  ["tîr-i gamze", "Gamze oku (Teşbih / İstiare)"],
+  ["dâm-ı zülf", "Saç tuzağı (Teşbih-i Belîğ)"],
+  ["perî-rû", "Peri yüzlü güzel (Teşbih-i Belîğ)"]
+];
+
+const TESHIS_IPUCLARI = [
+  ["su", ["gezer", "akar", "başını daşdan", "başını taştan", "ağlar", "usanmaz", "seyl"], "Suya canlı gibi gezme veya ağlama yüklenmiştir."],
+  ["felek", ["yandı", "döner", "bî-rahm", "rehm kılmaz", "sitem"], "Feleğe (kadere) acımasızlık ve can yakıcılık yüklenmiştir."],
+  ["gönül", ["deli", "ey gönül", "ta'n eyleme", "divâne", "usanmaz"], "Gönül bir insan gibi muhatap alınıp uyarılmıştır."],
+  ["baht", ["uyanmaz mı", "karâ baht", "uyur"], "Bahta (talihe) uyuma ve uyanma özelliği atfedilmiştir."],
+  ["sabâ", ["sorma", "ey sabâ", "esme", "peygâm"], "Sabah rüzgarı haberci ve dert ortağı bir canlı kılınmıştır."],
+  ["şem'", ["yanar", "ağlar", "erir", "şem' tek", "yanmaz mı"], "Mum aşık gibi ağlayan ve eriyen bir varlık kılınmıştır."]
+];
+
+const TECAHULI_ARIF_IPUCLARI = [
+  "usanmaz mı", "yanmaz mı", "uyanmaz mı", "bilmez mi", "sanmaz mı",
+  "bilmem", "aceb", "olmaya kim", "utanmaz mı", "ayb kılman", "halkı bîmâr sanır"
+];
+
+const ISTIKAK_KUMELERI = [
+  [["aşk", "âşık", "ma'şûk", "ışk", "uşşâk"], "Aşk / Âşık / Ma'şûk"],
+  [["derd", "dermân"], "Derd / Dermân türevleri"],
+  [["gam", "gam-hâr", "gam-nâk", "gamgîn"], "Gam kökünden türeyenler"],
+  [["vefâ", "bî-vefâ", "vefâdâr"], "Vefâ ve türevleri"],
+  [["cefâ", "bî-cefâ", "cefâ-kâr", "cefa"], "Cefâ ve türevleri"],
+  [["hüküm", "hâkim", "hikmet", "hakîm"], "H-K-M kökünden türeyenler"],
+  [["şevk", "müştâk", "iştiyâk"], "Şevk / Müştâk türevleri"],
+  [["mürüvvet", "mürüvvetsiz"], "Mürüvvet ve türevleri"]
+];
+
+function edebiSanatAnaliz(metin) {
+  const temiz = metin.toLowerCase().replace(/[^\w\sâîûÂÎÛ']/g, " ");
+  const kelimeler = new Set(temiz.split(/\s+/).filter(Boolean));
+  const rawLower = metin.toLowerCase();
+  const bulunanlar = [];
+
+  // 1. Tezat
+  for (const [cift, aciklama] of TEZAT_CIFTLERI) {
+    const matches = cift.filter(t => [...kelimeler].some(w => normText(w) === normText(t) || (t.length >= 3 && normText(w).startsWith(normText(t)))));
+    if (matches.length >= 2) {
+      bulunanlar.push({ sanat: "Tezat", kelimeler: matches, aciklama });
+    }
+  }
+
+  // 2. Tenasüp
+  for (const [kumeAdi, kumeKelimeler] of TENASUP_KUMELERI) {
+    const matches = kumeKelimeler.filter(t => [...kelimeler].some(w => normText(w) === normText(t) || (t.length >= 3 && normText(w).startsWith(normText(t)))));
+    if (matches.length >= 2) {
+      bulunanlar.push({ sanat: "Tenasüp", kume: kumeAdi, kelimeler: matches, aciklama: `${kumeAdi} bağlamında uyumlu sözcükler kullanılmıştır.` });
+    }
+  }
+
+  // 3. İstifham
+  const istifhamEdatlari = ["mı", "mi", "mu", "mü", "nedür", "nedir", "kim", "kanda", "nice", "niçin", "hangi", "aceb"];
+  const bulunanSorular = istifhamEdatlari.filter(s => ` ${temiz} `.includes(` ${s} `));
+  if (metin.includes("?") || bulunanSorular.length) {
+    bulunanlar.push({ sanat: "İstifham", kelimeler: bulunanSorular.length ? bulunanSorular : ["Soru Cümlesi"], aciklama: "Cevap beklemeden şairane hayret veya sitemle soru sorma sanatı." });
+  }
+
+  // 4. Nidâ
+  const nidaEdatlari = ["ey", "yâ", "ayâ", "heyhât", "yâ rab", "habîbim", "sâkıyâ", "efendim", "sultânım"];
+  const bulunanNidalar = nidaEdatlari.filter(n => rawLower.includes(n));
+  if (bulunanNidalar.length) {
+    bulunanlar.push({ sanat: "Nidâ", kelimeler: bulunanNidalar, aciklama: "Coşkulu sesleniş ve hitap sanatı." });
+  }
+
+  // 5. Tecrid
+  if (rawLower.includes("fuzûlî") || rawLower.includes("fuzuli")) {
+    bulunanlar.push({ sanat: "Tecrid", kelimeler: ["Fuzûlî"], aciklama: "Şairin kendi benliğinden soyunarak mahlasına seslenmesi." });
+  }
+
+  // 6. Mübalağa
+  const mubalagaKaliplari = ["felekler yandı", "taş deler", "âlem tutuştu", "kan döker", "halkı uyârır", "efgānım", "bî-hadd", "cân lebe"];
+  const bulunanMubalaga = mubalagaKaliplari.filter(m => rawLower.includes(m));
+  if (bulunanMubalaga.length) {
+    bulunanlar.push({ sanat: "Mübalağa", kelimeler: bulunanMubalaga, aciklama: "Aşk ve ızdırabı akıl sınırlarını aşacak derecede büyütme sanatı." });
+  }
+
+  // 7. Hüsn-i Ta'lîl
+  for (const [ipucu, aciklama] of HUSNI_TALIL_IPUCLARI) {
+    if (rawLower.includes(ipucu)) {
+      bulunanlar.push({ sanat: "Hüsn-i Ta'lîl", kelimeler: [ipucu], aciklama: `Olayı hayalî ve şiirsel güzel bir sebebe bağlama (${aciklama}).` });
+    }
+  }
+
+  // 8. Teşbih / Teşbih-i Belîğ
+  for (const [edat, aciklama] of TESBIH_IPUCLARI) {
+    if (rawLower.includes(edat)) {
+      bulunanlar.push({ sanat: "Teşbih / Teşbih-i Belîğ", kelimeler: [edat.trim()], aciklama });
+    }
+  }
+
+  // 9. Teşhis & İntak
+  for (const [unsur, eylemler, aciklama] of TESHIS_IPUCLARI) {
+    if (rawLower.includes(unsur)) {
+      const eslesenEylemler = eylemler.filter(e => rawLower.includes(e));
+      if (eslesenEylemler.length) {
+        bulunanlar.push({ sanat: "Teşhis", kelimeler: [unsur, ...eslesenEylemler], aciklama });
+      }
+    }
+  }
+
+  // 10. Tecâhül-i Ârif
+  const bulunanTecahul = TECAHULI_ARIF_IPUCLARI.filter(t => rawLower.includes(t));
+  if (bulunanTecahul.length) {
+    bulunanlar.push({ sanat: "Tecâhül-i Ârif", kelimeler: bulunanTecahul, aciklama: "Bildiği bir hakikati lirik nükte oluşturmak maksadıyla bilmezden gelme sanatı." });
+  }
+
+  // 11. İştikak
+  for (const [grup, aciklama] of ISTIKAK_KUMELERI) {
+    const matches = grup.filter(t => [...kelimeler].some(w => normText(w) === normText(t) || (t.length >= 3 && normText(w).startsWith(normText(t)))));
+    if (matches.length >= 2) {
+      bulunanlar.push({ sanat: "İştikak", kelimeler: matches, aciklama: `${aciklama} (Aynı sülasi kökten türeyiş)` });
+    }
+  }
+
+  return {
+    metin,
+    tespitSayisi: bulunanlar.length,
+    sanatlar: bulunanlar
+  };
+}
+
+// ==========================================
+// MİSTİK NEY & SÜKÛN SES SENTEZLEYİCİ (WEB AUDIO API)
+// ==========================================
+
+let neyAudioCtx = null;
+let neyGainNode = null;
+let isNeyPlaying = false;
+let neyOscillators = [];
+
+function toggleNeyAudio() {
+  const btn = document.getElementById("btnNeySound");
+  if (!isNeyPlaying) {
+    try {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      neyAudioCtx = new AudioCtx();
+      neyGainNode = neyAudioCtx.createGain();
+      neyGainNode.gain.setValueAtTime(0.001, neyAudioCtx.currentTime);
+      neyGainNode.gain.exponentialRampToValueAtTime(0.12, neyAudioCtx.currentTime + 3);
+
+      const freqs = [73.41, 110.0, 146.83, 220.0];
+      neyOscillators = freqs.map((f, i) => {
+        const osc = neyAudioCtx.createOscillator();
+        osc.type = i === 0 ? "sine" : (i === 1 ? "triangle" : "sine");
+        osc.frequency.setValueAtTime(f, neyAudioCtx.currentTime);
+
+        const lfo = neyAudioCtx.createOscillator();
+        const lfoGain = neyAudioCtx.createGain();
+        lfo.frequency.setValueAtTime(4.2 + i * 0.4, neyAudioCtx.currentTime);
+        lfoGain.gain.setValueAtTime(0.6, neyAudioCtx.currentTime);
+        lfo.connect(lfoGain);
+        lfoGain.connect(osc.frequency);
+        lfo.start();
+
+        const filter = neyAudioCtx.createBiquadFilter();
+        filter.type = "lowpass";
+        filter.frequency.setValueAtTime(480, neyAudioCtx.currentTime);
+
+        osc.connect(filter);
+        filter.connect(neyGainNode);
+        osc.start();
+        return osc;
+      });
+
+      neyGainNode.connect(neyAudioCtx.destination);
+      isNeyPlaying = true;
+      if (btn) {
+        btn.classList.add("playing");
+        btn.innerHTML = "⏸️ Ney Çalıyor...";
+      }
+      showToast("🎶 Mistik Ney & Sükûn Modu Açıldı");
+    } catch (e) {
+      console.warn("Web Audio başlatılamadı:", e);
+    }
+  } else {
+    if (neyGainNode && neyAudioCtx) {
+      neyGainNode.gain.exponentialRampToValueAtTime(0.0001, neyAudioCtx.currentTime + 1.2);
+      setTimeout(() => {
+        neyOscillators.forEach(o => { try { o.stop(); } catch(e){} });
+        if (neyAudioCtx) { neyAudioCtx.close(); }
+        neyAudioCtx = null;
+      }, 1300);
+    }
+    isNeyPlaying = false;
+    if (btn) {
+      btn.classList.remove("playing");
+      btn.innerHTML = "🎶 Ney & Sükûn";
+    }
+    showToast("Ney sesi durduruldu.");
+  }
+}
+
+const btnNey = document.getElementById("btnNeySound");
+if (btnNey) {
+  btnNey.addEventListener("click", toggleNeyAudio);
+}
+
+// ==========================================
+// HAT & TEZHİP BEYİT KARTI GENERATOR (CANVAS TO PNG)
+// ==========================================
+
+function generateCoupletCard(coupletObj) {
+  const canvas = document.getElementById("cardCanvas") || document.createElement("canvas");
+  canvas.width = 1200;
+  canvas.height = 700;
+  const ctx = canvas.getContext("2d");
+
+  // Arka Plan
+  const bgGrad = ctx.createRadialGradient(600, 350, 60, 600, 350, 650);
+  bgGrad.addColorStop(0, "#181e2b");
+  bgGrad.addColorStop(1, "#0a0c10");
+  ctx.fillStyle = bgGrad;
+  ctx.fillRect(0, 0, 1200, 700);
+
+  // Çerçeveler
+  ctx.strokeStyle = "#d4a853";
+  ctx.lineWidth = 4;
+  ctx.strokeRect(30, 30, 1140, 640);
+
+  ctx.strokeStyle = "#8b6f34";
+  ctx.lineWidth = 1.5;
+  ctx.strokeRect(44, 44, 1112, 612);
+
+  // Köşe Motifleri
+  const corners = [[56, 56], [1144, 56], [56, 644], [1144, 644]];
+  ctx.fillStyle = "#f5d77f";
+  ctx.font = "20px Cinzel, serif";
+  ctx.textAlign = "center";
+  corners.forEach(([cx, cy]) => {
+    ctx.fillText("✦", cx, cy + 6);
+  });
+
+  // Üst Başlık
+  ctx.fillStyle = "#d4a853";
+  ctx.font = "700 24px 'Cinzel', serif";
+  ctx.fillText("فصل فضولی • FASL-I FUZÛLÎ", 600, 95);
+
+  ctx.font = "16px 'Plus Jakarta Sans', sans-serif";
+  ctx.fillStyle = "#94a3b8";
+  ctx.fillText("DÎVÂN-I MOLLA FUZÛLÎ (1483 - 1556)", 600, 125);
+
+  // Ayırıcı Altın Hat
+  ctx.strokeStyle = "rgba(212, 168, 83, 0.4)";
+  ctx.beginPath();
+  ctx.moveTo(360, 145);
+  ctx.lineTo(840, 145);
+  ctx.stroke();
+
+  // Beyit Metni
+  const lines = coupletObj.metin.split("/").map(s => s.trim());
+  ctx.fillStyle = "#fef08a";
+  ctx.font = "bold 32px 'Amiri', 'Cinzel', serif";
+  if (lines.length >= 2) {
+    ctx.fillText(`"${lines[0]}"`, 600, 240);
+    ctx.fillText(`"${lines[1]}"`, 600, 300);
+  } else {
+    ctx.fillText(`"${coupletObj.metin}"`, 600, 270);
+  }
+
+  // Şerh / Günümüz Türkçesi
+  ctx.font = "italic 19px 'Amiri', serif";
+  ctx.fillStyle = "#cbd5e1";
+  const anlam = coupletObj.anlam || coupletObj.sadelesmis || "";
+  if (anlam.length > 80) {
+    ctx.fillText(anlam.slice(0, 75) + "...", 600, 410);
+    ctx.fillText(anlam.slice(75, 150), 600, 440);
+  } else {
+    ctx.fillText(anlam, 600, 420);
+  }
+
+  // Vezin & Kaynak
+  ctx.font = "15px 'Plus Jakarta Sans', sans-serif";
+  ctx.fillStyle = "#d4a853";
+  if (coupletObj.vezin) {
+    ctx.fillText(`Vezin: ${coupletObj.vezin}`, 600, 520);
+  }
+  ctx.fillStyle = "#e2e8f0";
+  ctx.font = "600 17px 'Cinzel', serif";
+  ctx.fillText(`— ${coupletObj.kaynak || "Fuzûlî Külliyâtı"}`, 600, 560);
+
+  // Mühr-i Fuzûlî
+  ctx.fillStyle = "rgba(212, 168, 83, 0.25)";
+  ctx.beginPath();
+  ctx.arc(600, 620, 22, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = "#d4a853";
+  ctx.font = "14px 'Cinzel', serif";
+  ctx.fillText("فضولی", 600, 625);
+
+  // İndir
+  const link = document.createElement("a");
+  link.download = `Fuzuli_Beyit_${Date.now()}.png`;
+  link.href = canvas.toDataURL("image/png");
+  link.click();
+  showToast("🎨 Beyit Kartı (PNG) indirildi!");
+}
+
+// ==========================================
 // TOAST BİLDİRİMİ
 // ==========================================
 function showToast(msg) {
@@ -1599,10 +2329,12 @@ function copyTextToClipboard(text) {
 // TEMA GEÇİŞİ (DARK / LIGHT)
 // ==========================================
 const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("theme-light");
-  document.body.classList.toggle("theme-dark");
-});
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("theme-light");
+    document.body.classList.toggle("theme-dark");
+  });
+}
 
 // ==========================================
 // ANA SEKME YÖNETİMİ
@@ -1633,6 +2365,7 @@ const falKaynak = document.getElementById("falKaynak");
 const falVezin = document.getElementById("falVezin");
 const falSanatlar = document.getElementById("falSanatlar");
 const falAnlam = document.getElementById("falAnlam");
+let sonCekilenFal = null;
 
 function rastgeleFalCek() {
   const havuz = [];
@@ -1685,6 +2418,7 @@ function rastgeleFalCek() {
 
   if (!havuz.length) return;
   const secim = havuz[Math.floor(Math.random() * havuz.length)];
+  sonCekilenFal = secim;
 
   falTur.textContent = secim.tur;
   falMetin.textContent = `"${secim.metin}"`;
@@ -1697,14 +2431,24 @@ function rastgeleFalCek() {
   falSonuc.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
-btnFalCek.addEventListener("click", rastgeleFalCek);
+if (btnFalCek) btnFalCek.addEventListener("click", rastgeleFalCek);
 
-// Panoya Beyit Kopyalama Butonu
 const btnCopyFal = document.getElementById("btnCopyFal");
 if (btnCopyFal) {
   btnCopyFal.addEventListener("click", () => {
     const text = `${falMetin.textContent}\n${falKaynak.textContent}\nAnlamı: ${falAnlam.textContent}`;
     copyTextToClipboard(text);
+  });
+}
+
+const btnDownloadCard = document.getElementById("btnDownloadCard");
+if (btnDownloadCard) {
+  btnDownloadCard.addEventListener("click", () => {
+    if (sonCekilenFal) {
+      generateCoupletCard(sonCekilenFal);
+    } else {
+      showToast("Önce bir fal çekiniz.");
+    }
   });
 }
 
@@ -1723,6 +2467,7 @@ kulliyatSubBtns.forEach(btn => {
 });
 
 function renderKulliyat(category = "gazeller") {
+  if (!kulliyatContent) return;
   kulliyatContent.innerHTML = "";
 
   if (category === "gazeller") {
@@ -1743,16 +2488,108 @@ function renderKulliyat(category = "gazeller") {
           <span><strong>Toplam Beyit:</strong> ${g.beyitler?.length || 0}</span>
         </div>
         <div class="beyitler-accordion">
-          ${g.beyitler.map(b => `
+          ${g.beyitler.map(b => {
+            const isMusammat = (g.id === "beni-candan-usandirdi" && (b.no === 1 || b.no === 3));
+            return `
             <div class="beyit-row">
               <div class="beyit-no">#${b.no}</div>
               <div class="beyit-body">
-                <p class="beyit-arabic-tr">${b.turkce}</p>
-                <p class="beyit-meaning">➔ ${b.sadelesmis}</p>
-                <div class="beyit-arts">
-                  ${(b.sanatlar || []).map(s => `<span class="art-tag">${s}</span>`).join("")}
-                  <button class="btn-copy-mini" onclick="copyTextToClipboard('${b.turkce.replace(/'/g, "\\'")}')">📋 Kopyala</button>
+                <p class="beyit-arabic-tr">
+                  ${b.turkce}
+                  ${isMusammat ? '<span class="musammat-badge">✨ Musammat (İç Kafiyeli)</span>' : ''}
+                </p>
+                <p class="beyit-meaning">${b.sadelesmis}</p>
+                <div class="beyit-arts-wrap">
+                  ${b.sanatlar.map(s => `<span class="art-pill">${s}</span>`).join("")}
+                  <button class="btn-copy-mini btn-card-mini" data-metin="${encodeURIComponent(b.turkce)}" data-anlam="${encodeURIComponent(b.sadelesmis)}" data-kaynak="${encodeURIComponent(g.baslik + ' #' + b.no)}" data-vezin="${encodeURIComponent(g.vezin)}" title="Kart Olarak İndir">🎨 Kart</button>
+                  <button class="btn-copy-mini" onclick="copyTextToClipboard('${b.turkce.replace(/'/g, "\\'")}')" title="Mısrayı Kopyala">📋 Kopyala</button>
                 </div>
+              </div>
+            </div>
+            `;
+          }).join("")}
+        </div>
+      `;
+      container.appendChild(card);
+    });
+    kulliyatContent.appendChild(container);
+
+    container.querySelectorAll(".btn-card-mini").forEach(b => {
+      b.addEventListener("click", () => {
+        generateCoupletCard({
+          metin: decodeURIComponent(b.dataset.metin),
+          anlam: decodeURIComponent(b.dataset.anlam),
+          kaynak: decodeURIComponent(b.dataset.kaynak),
+          vezin: decodeURIComponent(b.dataset.vezin)
+        });
+      });
+    });
+  } else if (category === "su-kasidesi") {
+    const sk = CORPUS.su_kasidesi || {};
+    const wrap = document.createElement("div");
+    wrap.className = "eser-card";
+    wrap.innerHTML = `
+      <div class="eser-header">
+        <h3>${sk.baslik}</h3>
+        <span class="eser-badge">Na't-ı Şerîf</span>
+      </div>
+      <p style="color: var(--text-secondary); margin: 8px 0 16px 0;">${sk.aciklama || ""}</p>
+      <div class="eser-meta">
+        <span><strong>Vezin:</strong> ${sk.vezin}</span>
+        <span><strong>Redif:</strong> ${sk.redif}</span>
+        <span><strong>Toplam:</strong> 32 Beyit (Eksiksiz)</span>
+      </div>
+      <div class="beyitler-accordion">
+        ${(sk.beyitler || []).map(b => `
+          <div class="beyit-row">
+            <div class="beyit-no">#${b.no}</div>
+            <div class="beyit-body">
+              <p class="beyit-arabic-tr">${b.metin}</p>
+              <p class="beyit-meaning">${b.anlam}</p>
+              <div class="beyit-arts-wrap">
+                ${(b.sanatlar || []).map(s => `<span class="art-pill">${s}</span>`).join("")}
+                <button class="btn-copy-mini btn-card-mini" data-metin="${encodeURIComponent(b.metin)}" data-anlam="${encodeURIComponent(b.anlam)}" data-kaynak="${encodeURIComponent('Su Kasîdesi #' + b.no)}" data-vezin="${encodeURIComponent(sk.vezin)}" title="Kart Olarak İndir">🎨 Kart</button>
+                <button class="btn-copy-mini" onclick="copyTextToClipboard('${b.metin.replace(/'/g, "\\'")}')">📋 Kopyala</button>
+              </div>
+            </div>
+          </div>
+        `).join("")}
+      </div>
+    `;
+    kulliyatContent.appendChild(wrap);
+
+    wrap.querySelectorAll(".btn-card-mini").forEach(b => {
+      b.addEventListener("click", () => {
+        generateCoupletCard({
+          metin: decodeURIComponent(b.dataset.metin),
+          anlam: decodeURIComponent(b.dataset.anlam),
+          kaynak: decodeURIComponent(b.dataset.kaynak),
+          vezin: decodeURIComponent(b.dataset.vezin)
+        });
+      });
+    });
+  } else if (category === "mesneviler") {
+    const container = document.createElement("div");
+    (CORPUS.mesneviler || []).forEach(m => {
+      const card = document.createElement("div");
+      card.className = "eser-card";
+      card.innerHTML = `
+        <div class="eser-header">
+          <h3>${m.baslik}</h3>
+          <span class="eser-badge">${m.dil}</span>
+        </div>
+        <p style="color: var(--text-secondary); margin: 8px 0;">${m.konu}</p>
+        <div class="eser-meta">
+          <span><strong>Vezin:</strong> ${m.vezin}</span>
+          <span><strong>Beyit Sayısı:</strong> ${m.beyit_sayisi}</span>
+        </div>
+        <div class="beyitler-accordion">
+          ${(m.pasajlar || []).map(p => `
+            <div class="beyit-row">
+              <div class="beyit-body" style="width: 100%;">
+                <h4 style="color: var(--gold-light); margin-bottom: 6px;">${p.baslik}</h4>
+                <p class="beyit-arabic-tr">${p.metin}</p>
+                <p class="beyit-meaning">${p.anlam}</p>
               </div>
             </div>
           `).join("")}
@@ -1761,68 +2598,8 @@ function renderKulliyat(category = "gazeller") {
       container.appendChild(card);
     });
     kulliyatContent.appendChild(container);
-
-  } else if (category === "su-kasidesi") {
-    const sk = CORPUS.su_kasidesi;
-    const card = document.createElement("div");
-    card.className = "eser-card";
-    card.innerHTML = `
-      <div class="eser-header">
-        <h3>🌊 ${sk.baslik || "Su Kasîdesi"} (Tam Metin 32 Beyit)</h3>
-        <span class="eser-badge">Na't-ı Şerîf</span>
-      </div>
-      <div class="eser-meta">
-        <span><strong>Vezin:</strong> ${sk.vezin}</span>
-        <span><strong>Redif:</strong> ${sk.redif}</span>
-        <span><strong>Beyit Sayısı:</strong> ${sk.beyitler?.length || 32}</span>
-      </div>
-      <p class="eser-desc">${sk.aciklama || ""}</p>
-      <div class="beyitler-accordion">
-        ${(sk.beyitler || []).map(b => `
-          <div class="beyit-row">
-            <div class="beyit-no">#${b.no}</div>
-            <div class="beyit-body">
-              <p class="beyit-arabic-tr">${b.metin}</p>
-              <p class="beyit-meaning">➔ ${b.anlam}</p>
-              <div class="beyit-arts">
-                ${(b.sanatlar || []).map(s => `<span class="art-tag">${s}</span>`).join("")}
-                <button class="btn-copy-mini" onclick="copyTextToClipboard('${b.metin.replace(/'/g, "\\'")}')">📋 Kopyala</button>
-              </div>
-            </div>
-          </div>
-        `).join("")}
-      </div>
-    `;
-    kulliyatContent.appendChild(card);
-
-  } else if (category === "mesneviler") {
-    (CORPUS.mesneviler || []).forEach(m => {
-      const card = document.createElement("div");
-      card.className = "eser-card";
-      card.innerHTML = `
-        <div class="eser-header">
-          <h3>${m.baslik}</h3>
-          <span class="eser-badge">Mesnevî</span>
-        </div>
-        <div class="eser-meta">
-          <span><strong>Vezin:</strong> ${m.vezin}</span>
-          <span><strong>Toplam Beyit:</strong> ${m.toplam_beyit}</span>
-        </div>
-        <p class="eser-desc">${m.ozet}</p>
-        <div class="pasajlar-wrap">
-          ${(m.pasajlar || []).map(p => `
-            <div class="pasaj-box">
-              <h4>${p.baslik}</h4>
-              <p class="beyit-arabic-tr">${p.metin}</p>
-              <p class="beyit-meaning">➔ ${p.anlam}</p>
-            </div>
-          `).join("")}
-        </div>
-      `;
-      kulliyatContent.appendChild(card);
-    });
-
   } else if (category === "mensur") {
+    const container = document.createElement("div");
     (CORPUS.mensur_eserler || []).forEach(me => {
       const card = document.createElement("div");
       card.className = "eser-card";
@@ -1831,29 +2608,25 @@ function renderKulliyat(category = "gazeller") {
           <h3>${me.baslik}</h3>
           <span class="eser-badge">${me.tur}</span>
         </div>
-        <p class="eser-desc"><strong>Tahlil & Konu:</strong> ${me.ozet}</p>
-        <div class="pasaj-box">
-          <p class="beyit-arabic-tr">${me.metin}</p>
-        </div>
+        <p style="color: var(--text-secondary); margin: 8px 0;">${me.ozet}</p>
+        <div class="tezkire-quote">${me.metin}</div>
       `;
-      kulliyatContent.appendChild(card);
+      container.appendChild(card);
     });
-
+    kulliyatContent.appendChild(container);
   } else if (category === "rubailer") {
     const container = document.createElement("div");
-    container.className = "rubailer-grid";
+    container.className = "gazeller-list";
     (CORPUS.rubailer_ve_kitalar || []).forEach(r => {
       const card = document.createElement("div");
-      card.className = "rubai-card";
+      card.className = "eser-card";
       card.innerHTML = `
         <div class="eser-header">
-          <h4>${r.tur || "Rübâi"} #${r.no}</h4>
+          <h3>${r.tur} #${r.no}</h3>
           <span class="eser-badge">${r.vezin}</span>
         </div>
-        <p class="rubai-metin">${r.metin.replace(/\n/g, "<br>")}</p>
-        <hr class="gold-divider-thin">
-        <p class="beyit-meaning"><strong>Şerh:</strong> ${r.anlam}</p>
-        <button class="btn-copy-mini" onclick="copyTextToClipboard('${r.metin.replace(/'/g, "\\'").replace(/\n/g, " ")}')">📋 Kopyala</button>
+        <div class="tezkire-quote">${r.metin.replace(/\n/g, "<br>")}</div>
+        <p class="beyit-meaning">${r.anlam}</p>
       `;
       container.appendChild(card);
     });
@@ -1870,172 +2643,178 @@ const searchInput = document.getElementById("searchInput");
 const searchCount = document.getElementById("searchCount");
 const searchResults = document.getElementById("searchResults");
 
-searchInput.addEventListener("input", (e) => {
-  const val = e.target.value.trim();
-  if (!val) {
-    searchCount.textContent = "Aramaya başlamak için bir kelime yazınız.";
-    searchResults.innerHTML = "";
-    return;
-  }
+if (searchInput) {
+  searchInput.addEventListener("input", (e) => {
+    const query = e.target.value.trim();
+    if (!query) {
+      searchCount.textContent = "Aramaya başlamak için bir kelime yazınız.";
+      searchResults.innerHTML = "";
+      return;
+    }
 
-  const q = normText(val);
-  const sonuclar = [];
+    const qNorm = normText(query);
+    const sonuclar = [];
 
-  (CORPUS.gazeller || []).forEach(g => {
-    (g.beyitler || []).forEach(b => {
-      if (normText(b.turkce).includes(q) || normText(b.sadelesmis).includes(q)) {
+    // Gazeller
+    (CORPUS.gazeller || []).forEach(g => {
+      (g.beyitler || []).forEach(b => {
+        if (normText(b.turkce).includes(qNorm) || normText(b.sadelesmis).includes(qNorm)) {
+          sonuclar.push({
+            tur: "Gazel Beyti",
+            kaynak: `${g.baslik} (Beyit #${b.no})`,
+            metin: b.turkce,
+            anlam: b.sadelesmis
+          });
+        }
+      });
+    });
+
+    // Su Kasidesi
+    (CORPUS.su_kasidesi?.beyitler || []).forEach(b => {
+      if (normText(b.metin).includes(qNorm) || normText(b.anlam).includes(qNorm)) {
         sonuclar.push({
-          tur: "Gazel Beyti",
-          kaynak: `${g.baslik} (Beyit #${b.no})`,
-          metin: b.turkce,
-          anlam: b.sadelesmis
+          tur: "Su Kasîdesi",
+          kaynak: `Su Kasîdesi #${b.no}`,
+          metin: b.metin,
+          anlam: b.anlam
         });
       }
     });
-  });
 
-  (CORPUS.su_kasidesi?.beyitler || []).forEach(b => {
-    if (normText(b.metin).includes(q) || normText(b.anlam).includes(q)) {
-      sonuclar.push({
-        tur: "Su Kasîdesi",
-        kaynak: `Su Kasîdesi #${b.no}`,
-        metin: b.metin,
-        anlam: b.anlam
-      });
+    // Lügat
+    for (const [kavram, aciklama] of Object.entries(CORPUS.lugat || {})) {
+      if (normText(kavram).includes(qNorm) || normText(aciklama).includes(qNorm)) {
+        sonuclar.push({
+          tur: "Dîvân Lügati",
+          kaynak: `Kavram: ${kavram}`,
+          metin: kavram,
+          anlam: aciklama
+        });
+      }
     }
+
+    // Tezkireler
+    (CORPUS.tezkireler || []).forEach(t => {
+      if (normText(t.metin).includes(qNorm) || normText(t.yazar).includes(qNorm) || normText(t.eser).includes(qNorm)) {
+        sonuclar.push({
+          tur: "Tarihî Tezkire",
+          kaynak: `${t.yazar} - ${t.eser}`,
+          metin: t.metin,
+          anlam: t.anahtar_tespit
+        });
+      }
+    });
+
+    searchCount.textContent = `Toplam ${sonuclar.length} eşleşme bulundu.`;
+    searchResults.innerHTML = sonuclar.map(s => `
+      <div class="search-result-card">
+        <span class="search-tag">${s.tur}</span>
+        <h4>${s.kaynak}</h4>
+        <p class="search-text">"${s.metin}"</p>
+        <p class="search-meaning">${s.anlam}</p>
+      </div>
+    `).join("");
   });
-
-  (CORPUS.tezkireler || []).forEach(t => {
-    if (normText(t.metin).includes(q) || normText(t.yazar).includes(q) || normText(t.anahtar_tespit).includes(q)) {
-      sonuclar.push({
-        tur: "Tezkire Kaydı",
-        kaynak: `${t.yazar} - ${t.eser}`,
-        metin: t.metin,
-        anlam: t.anahtar_tespit
-      });
-    }
-  });
-
-  for (const [kavram, aciklama] of Object.entries(CORPUS.lugat || {})) {
-    if (normText(kavram).includes(q) || normText(aciklama).includes(q)) {
-      sonuclar.push({
-        tur: "Lügat Kavramı",
-        kaynak: `Kavram: ${kavram}`,
-        metin: kavram,
-        anlam: aciklama
-      });
-    }
-  }
-
-  searchCount.textContent = `"${val}" için ${sonuclar.length} sonuç bulundu:`;
-  searchResults.innerHTML = "";
-
-  sonuclar.forEach(s => {
-    const card = document.createElement("div");
-    card.className = "search-result-card";
-    card.innerHTML = `
-      <div class="result-badge">${s.tur} • ${s.kaynak}</div>
-      <div class="result-text">"${s.metin}"</div>
-      <div class="result-meaning">➔ ${s.anlam}</div>
-    `;
-    searchResults.appendChild(card);
-  });
-});
+}
 
 // ==========================================
-// 4. ARUZ VEZNİ & TAKTÎ' ANALİZÖRÜ
+// 4. ARUZ VEZNİ & TAKTÎ' ÇÖZÜMLEME
 // ==========================================
 const aruzInput = document.getElementById("aruzInput");
 const btnAruzHesapla = document.getElementById("btnAruzHesapla");
 const aruzSonuc = document.getElementById("aruzSonuc");
-const presetButtons = document.querySelectorAll(".btn-preset");
 
-presetButtons.forEach(btn => {
+document.querySelectorAll(".btn-preset").forEach(btn => {
   btn.addEventListener("click", () => {
-    aruzInput.value = btn.getAttribute("data-text");
-    btnAruzHesapla.click();
+    const text = btn.getAttribute("data-text");
+    if (text && aruzInput) {
+      aruzInput.value = text;
+      hesaplaAruzVeTakti();
+    }
   });
 });
 
-btnAruzHesapla.addEventListener("click", () => {
-  const val = aruzInput.value.trim();
-  if (!val) return;
+if (btnAruzHesapla) {
+  btnAruzHesapla.addEventListener("click", hesaplaAruzVeTakti);
+}
 
-  const takti = taktiEt(val);
+function hesaplaAruzVeTakti() {
+  const misra = aruzInput.value.trim();
+  if (!misra) {
+    showToast("Lütfen bir mısra giriniz.");
+    return;
+  }
+
+  const takti = taktiEt(misra);
   if (!takti) return;
 
   aruzSonuc.innerHTML = `
-    <div class="aruz-header">
-      <div class="aruz-meter-name">${takti.kalip}</div>
-      <div class="aruz-score-badge">Uyum: %${takti.oran}</div>
+    <div class="aruz-header-result">
+      <div>
+        <span class="aruz-meter-name">${takti.kalip}</span>
+        <span class="aruz-meter-bahr">(${takti.ad})</span>
+      </div>
+      <div class="aruz-score">Uyum: %${takti.oran}</div>
     </div>
-    <p class="aruz-bahr"><strong>Bahr:</strong> ${takti.ad}</p>
-    <div class="aruz-pattern-box">
-      <strong>Açık / Kapalı Deseni:</strong>
-      <span class="pattern-code">${takti.desen}</span>
-      <span class="pattern-legend">(. = Açık Hece, - = Kapalı Hece)</span>
+
+    <div class="takti-display-box">
+      <div class="takti-label">Taktî' Bölümlemesi:</div>
+      <div class="takti-value">${takti.taktiMetni}</div>
     </div>
-    <div class="heceler-visual">
-      ${takti.heceler.map((h, i) => `
-        <div class="hece-tag">
-          <span class="hece-str">${h}</span>
-          <span class="hece-sym ${takti.semboller[i] === "-" ? "closed" : "open"}">${takti.semboller[i]}</span>
+
+    <div class="takti-grid">
+      ${takti.cuzler.map(c => `
+        <div class="takti-col">
+          <div class="takti-cuz-title">${c.tefile}</div>
+          <div class="takti-syllables">${c.metin}</div>
+          <div class="takti-symbols">${c.semboller.join(" ")}</div>
+          <div class="takti-target">${c.hedefDesen}</div>
         </div>
       `).join("")}
     </div>
-    <div class="takti-display-box">
-      <h4>📐 Taktî' (Tef'ile Cüzlerine Ayrım):</h4>
-      <p class="takti-text">${takti.taktiMetni}</p>
-      <div class="takti-cuzler-grid">
-        ${takti.cuzler.map(c => `
-          <div class="takti-card">
-            <span class="cuz-tefile">${c.tefile}</span>
-            <span class="cuz-metin">${c.metin}</span>
-            <span class="cuz-desen">${c.semboller.join(" ")}</span>
-            <span class="cuz-target">Hedef: ${c.hedefDesen}</span>
-          </div>
-        `).join("")}
-      </div>
-    </div>
   `;
   aruzSonuc.classList.remove("hidden");
-});
+}
 
 // ==========================================
-// 5. KAFİYE VE REDİF ANALİZÖRÜ (YENİ)
+// 5. KAFİYE VE REDİF ANALİZİ
 // ==========================================
+const btnKafiyeHesapla = document.getElementById("btnKafiyeHesapla");
 const kafiyeM1 = document.getElementById("kafiyeM1");
 const kafiyeM2 = document.getElementById("kafiyeM2");
-const btnKafiyeHesapla = document.getElementById("btnKafiyeHesapla");
 const kafiyeSonuc = document.getElementById("kafiyeSonuc");
 
 if (btnKafiyeHesapla) {
   btnKafiyeHesapla.addEventListener("click", () => {
-    const m1 = (kafiyeM1?.value || "").trim();
-    const m2 = (kafiyeM2?.value || "").trim();
-    if (!m1 || !m2) return;
+    const m1 = kafiyeM1.value.trim();
+    const m2 = kafiyeM2.value.trim();
+    if (!m1 || !m2) {
+      showToast("Lütfen her iki mısrayı da giriniz.");
+      return;
+    }
 
     const res = kafiyeRedifAnaliz(m1, m2);
     if (!res) return;
 
     kafiyeSonuc.innerHTML = `
-      <div class="kafiye-report-card">
-        <div class="kafiye-header">
-          <span class="badge-gold">${res.kafiyeTuru}</span>
-          <span class="badge-blue">Revî: ${res.revi}</span>
-        </div>
-        <div class="kafiye-grid-details">
+      <div class="kafiye-result-card">
+        <div class="kafiye-grid-meta">
           <div class="k-detail-box">
-            <label>Tespit Edilen Redif:</label>
+            <span>Mısra Sonu Redif</span>
             <strong>${res.redif}</strong>
           </div>
           <div class="k-detail-box">
-            <label>Kafiye Sesi:</label>
-            <strong class="green-text">${res.kafiye}</strong>
+            <span>Kafiye Sesi</span>
+            <strong style="color: #38bdf8;">${res.kafiye}</strong>
           </div>
-        </div>
-        <div class="kafiye-explanation">
-          <p>Mısra sonlarındaki benzerlik çözümlenmiş; ortak ek ve sözcükler <em>Redif</em>, kök ses benzerliği ise <em>${res.kafiyeTuru}</em> olarak tasnif edilmiştir.</p>
+          <div class="k-detail-box">
+            <span>Kafiye Türü</span>
+            <strong>${res.kafiyeTuru}</strong>
+          </div>
+          <div class="k-detail-box">
+            <span>Revî (Kafiye Harfi)</span>
+            <strong style="color: #f59e0b;">${res.revi}</strong>
+          </div>
         </div>
       </div>
     `;
@@ -2044,67 +2823,130 @@ if (btnKafiyeHesapla) {
 }
 
 // ==========================================
-// 6. DÎVÂN LÜGATİ
+// 6. EDEBÎ SANAT TEŞHİS LABORATUVARI
+// ==========================================
+const sanatInput = document.getElementById("sanatInput");
+const btnSanatHesapla = document.getElementById("btnSanatHesapla");
+const sanatSonuc = document.getElementById("sanatSonuc");
+
+document.querySelectorAll(".btn-preset-sanat").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const text = btn.getAttribute("data-text");
+    if (text && sanatInput) {
+      sanatInput.value = text;
+      hesaplaEdebiSanat();
+    }
+  });
+});
+
+if (btnSanatHesapla) {
+  btnSanatHesapla.addEventListener("click", hesaplaEdebiSanat);
+}
+
+function hesaplaEdebiSanat() {
+  const metin = sanatInput ? sanatInput.value.trim() : "";
+  if (!metin) {
+    showToast("Lütfen incelenecek bir beyit veya mısra giriniz.");
+    return;
+  }
+
+  const res = edebiSanatAnaliz(metin);
+  if (!sanatSonuc) return;
+
+  if (!res.sanatlar.length) {
+    sanatSonuc.innerHTML = `
+      <div class="sanat-card text-center">
+        <p style="color: var(--text-secondary);">Bu beyitte belirgin bir klasik belâgat sanatı otomatik eşleşmedi. Doğrudan şerh metinlerini inceleyebilirsiniz.</p>
+      </div>
+    `;
+  } else {
+    sanatSonuc.innerHTML = `
+      <div class="sanat-card">
+        <div class="sanat-meta">
+          <strong style="color: var(--gold-light); font-size: 1.1rem;">Tespit Edilen Edebî Sanatlar (${res.tespitSayisi})</strong>
+          <span style="color: var(--text-muted); font-size: 0.9rem;">Otomatik Belâgat Çözümleyicisi</span>
+        </div>
+        <div class="sanat-pills-wrap">
+          ${res.sanatlar.map(s => `
+            <div class="sanat-item-card">
+              <div class="sanat-item-header">
+                <span class="sanat-badge">${s.sanat}</span>
+                <span class="sanat-words">[${s.kelimeler ? s.kelimeler.join(", ") : ""}]</span>
+              </div>
+              <div class="sanat-desc">${s.aciklama}</div>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `;
+  }
+  sanatSonuc.classList.remove("hidden");
+}
+
+// ==========================================
+// 7. DÎVÂN LÜGATİ
 // ==========================================
 const lugatSearch = document.getElementById("lugatSearch");
 const lugatGrid = document.getElementById("lugatGrid");
 
 function renderLugat(filter = "") {
+  if (!lugatGrid) return;
   lugatGrid.innerHTML = "";
-  const q = normText(filter.trim());
+  const fNorm = normText(filter);
 
-  for (const [kavram, aciklama] of Object.entries(CORPUS.lugat || {})) {
-    if (!q || normText(kavram).includes(q) || normText(aciklama).includes(q)) {
+  const entries = Object.entries(CORPUS.lugat || {}).sort((a, b) => a[0].localeCompare(b[0], "tr"));
+  entries.forEach(([kavram, aciklama]) => {
+    if (!fNorm || normText(kavram).includes(fNorm) || normText(aciklama).includes(fNorm)) {
       const card = document.createElement("div");
       card.className = "lugat-card";
       card.innerHTML = `
-        <h4>${kavram}</h4>
-        <p>${aciklama}</p>
+        <div class="lugat-title">${kavram}</div>
+        <div class="lugat-desc">${aciklama}</div>
       `;
       lugatGrid.appendChild(card);
     }
-  }
-}
-
-lugatSearch.addEventListener("input", (e) => renderLugat(e.target.value));
-renderLugat();
-
-// ==========================================
-// 7. TARİHÎ TEZKİRELER (YENİ SEKME/BÖLÜM)
-// ==========================================
-const tezkirelerContainer = document.getElementById("tezkirelerContainer");
-if (tezkirelerContainer) {
-  (CORPUS.tezkireler || []).forEach(t => {
-    const card = document.createElement("div");
-    card.className = "tezkire-card";
-    card.innerHTML = `
-      <div class="tezkire-header">
-        <h4>${t.yazar} – ${t.eser}</h4>
-        <span class="tezkire-badge">16. Yüzyıl</span>
-      </div>
-      <p class="tezkire-onem"><strong>Önemi:</strong> ${t.onemi}</p>
-      <blockquote class="tezkire-quote">"${t.metin}"</blockquote>
-      <p class="tezkire-tespit"><strong>Anahtar Tespit:</strong> ${t.anahtar_tespit}</p>
-    `;
-    tezkirelerContainer.appendChild(card);
   });
 }
 
+if (lugatSearch) {
+  lugatSearch.addEventListener("input", (e) => renderLugat(e.target.value.trim()));
+}
+renderLugat();
+
 // ==========================================
-// 8. BİLGİ YARIŞMASI
+// 8. TARİHÎ ŞU'ARÂ TEZKİRELERİ
+// ==========================================
+const tezkirelerContainer = document.getElementById("tezkirelerContainer");
+
+function renderTezkireler() {
+  if (!tezkirelerContainer) return;
+  tezkirelerContainer.innerHTML = (CORPUS.tezkireler || []).map(t => `
+    <div class="tezkire-card">
+      <div class="tezkire-header">
+        <h4>${t.yazar} — ${t.eser}</h4>
+        <span class="tezkire-badge">XVI. Yüzyıl Tezkiresi</span>
+      </div>
+      <div class="tezkire-onem">${t.onemi}</div>
+      <div class="tezkire-quote">"${t.metin}"</div>
+      <div class="tezkire-tespit"><strong>Anahtar Tahlil:</strong> ${t.anahtar_tespit}</div>
+    </div>
+  `).join("");
+}
+renderTezkireler();
+
+// ==========================================
+// 9. BİLGİ YARIŞMASI
 // ==========================================
 let currentQuestions = [];
 let currentIndex = 0;
 let currentScore = 0;
 
+const btnQuizBaslat = document.getElementById("btnQuizBaslat");
+const btnQuizTekrar = document.getElementById("btnQuizTekrar");
+const btnQuizNext = document.getElementById("btnQuizNext");
 const quizStartView = document.getElementById("quizStartView");
 const quizGameView = document.getElementById("quizGameView");
 const quizEndView = document.getElementById("quizEndView");
-const btnQuizBaslat = document.getElementById("btnQuizBaslat");
-const btnQuizNext = document.getElementById("btnQuizNext");
-const btnQuizTekrar = document.getElementById("btnQuizTekrar");
-
-const quizProgressFill = document.getElementById("quizProgressFill");
 const quizQuestionNumber = document.getElementById("quizQuestionNumber");
 const quizScore = document.getElementById("quizScore");
 const quizQuestionText = document.getElementById("quizQuestionText");
@@ -2112,11 +2954,15 @@ const quizOptionsList = document.getElementById("quizOptionsList");
 const quizFeedback = document.getElementById("quizFeedback");
 const quizFeedbackStatus = document.getElementById("quizFeedbackStatus");
 const quizFeedbackExplanation = document.getElementById("quizFeedbackExplanation");
+const quizProgressFill = document.getElementById("quizProgressFill");
 
 function startQuiz() {
-  const sorular = [...(CORPUS.quiz_sorulari || [])];
-  sorular.sort(() => Math.random() - 0.5);
-  currentQuestions = sorular.slice(0, 5);
+  const allQ = [...(CORPUS.quiz_sorulari || [])];
+  for (let i = allQ.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [allQ[i], allQ[j]] = [allQ[j], allQ[i]];
+  }
+  currentQuestions = allQ.slice(0, 5);
   currentIndex = 0;
   currentScore = 0;
 
@@ -2129,14 +2975,13 @@ function startQuiz() {
 
 function renderQuizQuestion() {
   quizFeedback.classList.add("hidden");
-  quizOptionsList.innerHTML = "";
-
   const q = currentQuestions[currentIndex];
-  quizProgressFill.style.width = `${((currentIndex + 1) / currentQuestions.length) * 100}%`;
-  quizQuestionNumber.textContent = `Soru ${currentIndex + 1} / ${currentQuestions.length}`;
+  quizQuestionNumber.textContent = `Soru ${currentIndex + 1} / 5`;
   quizScore.textContent = `Puan: ${currentScore}`;
   quizQuestionText.textContent = q.soru;
+  quizProgressFill.style.width = `${(currentIndex + 1) * 20}%`;
 
+  quizOptionsList.innerHTML = "";
   q.secenekler.forEach((sec, idx) => {
     const btn = document.createElement("button");
     btn.className = "quiz-option-btn";
@@ -2166,14 +3011,16 @@ function handleAnswer(selectedIndex, selectedBtn) {
   quizFeedback.classList.remove("hidden");
 }
 
-btnQuizNext.addEventListener("click", () => {
-  currentIndex++;
-  if (currentIndex < currentQuestions.length) {
-    renderQuizQuestion();
-  } else {
-    endQuiz();
-  }
-});
+if (btnQuizNext) {
+  btnQuizNext.addEventListener("click", () => {
+    currentIndex++;
+    if (currentIndex < currentQuestions.length) {
+      renderQuizQuestion();
+    } else {
+      endQuiz();
+    }
+  });
+}
 
 function endQuiz() {
   quizGameView.classList.add("hidden");
@@ -2190,15 +3037,16 @@ function endQuiz() {
   }
 }
 
-btnQuizBaslat.addEventListener("click", startQuiz);
-btnQuizTekrar.addEventListener("click", startQuiz);
+if (btnQuizBaslat) btnQuizBaslat.addEventListener("click", startQuiz);
+if (btnQuizTekrar) btnQuizTekrar.addEventListener("click", startQuiz);
 
 // ==========================================
-// 9. İSTATİSTİK & BİYOGRAFİ
+// 10. İSTATİSTİK & BİYOGRAFİ
 // ==========================================
 const statsGrid = document.getElementById("statsGrid");
 
 function renderStats() {
+  if (!statsGrid) return;
   const totalGazelBeyit = (CORPUS.gazeller || []).reduce((acc, g) => acc + (g.beyitler?.length || 0), 0);
   const totalSKBeyit = CORPUS.su_kasidesi?.beyitler?.length || 32;
   const totalLugat = Object.keys(CORPUS.lugat || {}).length;
@@ -2206,6 +3054,7 @@ function renderStats() {
   const totalMensur = (CORPUS.mensur_eserler || []).length;
   const totalTezkire = (CORPUS.tezkireler || []).length;
   const totalAruz = (CORPUS.aruz_kaliplari || []).length;
+  const totalQuiz = (CORPUS.quiz_sorulari || []).length;
 
   statsGrid.innerHTML = `
     <div class="stat-box">
@@ -2237,7 +3086,7 @@ function renderStats() {
       <span class="label">Tarihî Tezkire Kaydı</span>
     </div>
     <div class="stat-box">
-      <span class="number">${CORPUS.quiz_sorulari?.length || 0}</span>
+      <span class="number">${totalQuiz}</span>
       <span class="label">Bilgi Yarışması Sorusu</span>
     </div>
   `;

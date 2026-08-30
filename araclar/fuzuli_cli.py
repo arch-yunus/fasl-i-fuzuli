@@ -13,6 +13,8 @@ Kullanım:
     fuzuli takti [misra]
     fuzuli kafiye [misra1] [misra2]
     fuzuli sanat [beyit]
+    fuzuli musammat [misra1] [misra2]
+    fuzuli nazire [misra|kalip]
     fuzuli tezkire [ahdi|asik|latifi|kinalizade|sehi]
     fuzuli kart [fal|no]
     fuzuli sunucu [--port 8000]
@@ -324,6 +326,60 @@ def cmd_sanat(corpus: FuzuliCorpus, metin: str):
             kelimeler_str = ", ".join(s.get("kelimeler", []))
             print(f"  • {Colors.YELLOW}{Colors.BOLD}{s['sanat']:<12}{Colors.END} ➔ {Colors.GREEN}[{kelimeler_str}]{Colors.END}")
             print(f"    {Colors.DIM}{s['aciklama']}{Colors.END}")
+    print("═" * 65 + "\n")
+
+
+def cmd_musammat(corpus: FuzuliCorpus, misra1: str, misra2: Optional[str] = None):
+    m1 = misra1
+    m2 = misra2
+    if not m2 and "/" in m1:
+        parts = m1.split("/", 1)
+        m1 = parts[0].strip()
+        m2 = parts[1].strip()
+
+    res = corpus.musammat_tahlil(m1, m2)
+    print(f"\n{Colors.CYAN}{Colors.BOLD}✨ [ MUSAMMAT GAZEL (İÇ KAFİYE) TAHLİLİ ]{Colors.END}")
+    print("═" * 65)
+    print(f"1. Mısra: {m1}")
+    if m2:
+        print(f"2. Mısra: {m2}")
+    print("─" * 65)
+    if res["musammat_mi"]:
+        d = res["detay"]
+        print(f"{Colors.GREEN}{Colors.BOLD}✓ İç Kafiye / Musammat Yapısı Tespit Edildi!{Colors.END}")
+        print(f"  {Colors.BOLD}Tür         :{Colors.END} {d.get('tip', 'Musammat')}")
+        if "ortak_sesler" in d:
+            print(f"  {Colors.BOLD}Ortak Sesler:{Colors.END} {Colors.YELLOW}{d['ortak_sesler']}{Colors.END}")
+        if "ilk_yari" in d:
+            print(f"  {Colors.CYAN}1. Cüz: \"{d['ilk_yari']}\"{Colors.END}")
+            print(f"  {Colors.CYAN}2. Cüz: \"{d['ikinci_yari']}\"{Colors.END}")
+        if "1_misra_orta" in d:
+            print(f"  {Colors.BOLD}Orta Kelimeler:{Colors.END} {d['1_misra_orta']} / {d['2_misra_orta']}")
+    else:
+        print(f"{Colors.YELLOW}Belirgin bir iç kafiye veya musammat durağı bulunamadı.{Colors.END}")
+    print(f"\n{Colors.DIM}{res['aciklama']}{Colors.END}")
+    print("═" * 65 + "\n")
+
+
+def cmd_nazire(corpus: FuzuliCorpus, query: str):
+    if not query:
+        print(f"{Colors.RED}Lütfen benzeri aranacak bir mısra veya aruz kalıbı giriniz.{Colors.END}")
+        return
+
+    sonuclar = corpus.nazire_veya_akraba_beyitler(query, limit=5)
+    print(f"\n{Colors.CYAN}{Colors.BOLD}🔗 [ NAZÎRE VE AKRABA BEYİTLER EŞLEŞTİRİCİSİ ]{Colors.END}")
+    print("═" * 65)
+    print(f"{Colors.BOLD}Sorgu:{Colors.END} {query}")
+    print("─" * 65)
+    if not sonuclar:
+        print(f"{Colors.DIM}Uygun vezin veya kafiye akrabası beyit bulunamadı.{Colors.END}")
+    else:
+        for i, s in enumerate(sonuclar, 1):
+            durum = f"{Colors.GREEN}✓ Vezin Uyumlu{Colors.END}" if s.get("vezin_eslesmesi") else f"{Colors.YELLOW}Kelime Bağı{Colors.END}"
+            print(f"\n{Colors.BOLD}{i}. {s['kaynak']} [{durum}]{Colors.END}")
+            print(f"   {Colors.DIM}Vezin: {s.get('vezin')}{Colors.END}")
+            print(f"   {Colors.CYAN}\"{s['metin']}\"{Colors.END}")
+            print(f"   {Colors.DIM}Şerh: {s['anlam']}{Colors.END}")
     print("═" * 65 + "\n")
 
 
@@ -639,6 +695,15 @@ def main():
     p_sanat = subparsers.add_parser("sanat", help="Mısra veya beyitteki edebî sanatları otomatik tespit et")
     p_sanat.add_argument("metin", help="Taranacak beyit veya mısra")
 
+    # musammat
+    p_mus = subparsers.add_parser("musammat", help="Mısra veya beyitteki iç kafiye (musammat) tahlili")
+    p_mus.add_argument("misra1", help="1. Mısra (veya 'm1 / m2')")
+    p_mus.add_argument("misra2", nargs="?", default=None, help="2. Mısra")
+
+    # nazire
+    p_naz = subparsers.add_parser("nazire", help="Vezin ve kafiyece akraba/nazire beyitleri ara")
+    p_naz.add_argument("query", help="Mısra, beyit veya kalıp adı")
+
     # tezkire
     p_tez = subparsers.add_parser("tezkire", help="Tarihî şuara tezkirelerindeki Fuzûlî kayıtları")
     p_tez.add_argument("query", nargs="?", default=None, help="Tezkireci veya arama kelimesi")
@@ -703,6 +768,10 @@ def main():
         cmd_kafiye(corpus, args.misra1, args.misra2)
     elif args.command == "sanat":
         cmd_sanat(corpus, args.metin)
+    elif args.command == "musammat":
+        cmd_musammat(corpus, args.misra1, args.misra2)
+    elif args.command == "nazire":
+        cmd_nazire(corpus, args.query)
     elif args.command == "tezkire":
         cmd_tezkire(corpus, args.query)
     elif args.command == "kart":

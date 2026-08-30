@@ -30,12 +30,12 @@ class TestFuzuliCorpus(unittest.TestCase):
         self.assertIn("quiz_sorulari", self.corpus.data)
         self.assertIn("tezkireler", self.corpus.data)
 
-        self.assertTrue(len(self.corpus.gazeller) >= 10)
+        self.assertTrue(len(self.corpus.gazeller) >= 14)
         self.assertEqual(len(self.corpus.su_kasidesi.get("beyitler", [])), 32)
-        self.assertTrue(len(self.corpus.lugat) >= 80)
+        self.assertTrue(len(self.corpus.lugat) >= 100)
         self.assertEqual(len(self.corpus.tezkireler), 5)
-        self.assertEqual(len(self.corpus.aruz_kaliplari), 12)
-        self.assertEqual(len(self.corpus.quiz_sorulari), 16)
+        self.assertEqual(len(self.corpus.aruz_kaliplari), 16)
+        self.assertEqual(len(self.corpus.quiz_sorulari), 25)
 
     def test_fal_cek(self):
         """Fâl-i Fuzûlî fonksiyonunun geçerli bir beyit/söz döndüğünü test eder."""
@@ -108,11 +108,11 @@ class TestFuzuliCorpus(unittest.TestCase):
     def test_istatistikler(self):
         """İstatistik fonksiyonunun doğru metrikler döndüğünü test eder."""
         stats = self.corpus.istatistikler()
-        self.assertEqual(stats["gazel_sayisi"], 10)
+        self.assertEqual(stats["gazel_sayisi"], 14)
         self.assertEqual(stats["su_kasidesi_beyit_sayisi"], 32)
-        self.assertTrue(stats["lugat_kavram_sayisi"] >= 80)
+        self.assertTrue(stats["lugat_kavram_sayisi"] >= 100)
         self.assertEqual(stats["tezkire_sayisi"], 5)
-        self.assertEqual(stats["aruz_kalip_sayisi"], 12)
+        self.assertEqual(stats["aruz_kalip_sayisi"], 16)
         self.assertTrue(len(stats["en_cok_kullanilan_sanatlar"]) > 0)
 
     def test_disa_aktar(self):

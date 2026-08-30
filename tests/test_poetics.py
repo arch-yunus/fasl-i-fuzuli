@@ -85,6 +85,56 @@ class TestPoeticsEngine(unittest.TestCase):
         sanat_adlari = [s["sanat"] for s in res["sanatlar"]]
         self.assertIn("Tezat", sanat_adlari)
 
+    def test_edebi_sanat_husni_talil(self):
+        """Hüsn-i Ta'lîl (güzel sebebe bağlama) tespitini test eder."""
+        beyit = "Hâk-i pâyine yetem dir ömrlerdir muttasıl / Başını daşdan daşa urup gezer âvâre su"
+        res = self.corpus.edebi_sanat_analiz(beyit)
+        sanat_adlari = [s["sanat"] for s in res["sanatlar"]]
+        self.assertIn("Hüsn-i Ta'lîl", sanat_adlari)
+
+    def test_edebi_sanat_tesbih(self):
+        """Teşbih ve Teşbih-i Belîğ tespitini test eder."""
+        beyit = "Gamından şem' tek yandım sabâdan sorma ahvâlim"
+        res = self.corpus.edebi_sanat_analiz(beyit)
+        sanat_adlari = [s["sanat"] for s in res["sanatlar"]]
+        self.assertTrue(any("Teşbih" in s for s in sanat_adlari))
+
+    def test_edebi_sanat_teshis(self):
+        """Teşhis (kişileştirme) tespitini test eder."""
+        beyit = "Uyârır halkı efgānım karâ bahtım uyanmaz mı"
+        res = self.corpus.edebi_sanat_analiz(beyit)
+        sanat_adlari = [s["sanat"] for s in res["sanatlar"]]
+        self.assertIn("Teşhis", sanat_adlari)
+
+    def test_edebi_sanat_tecahuli_arif(self):
+        """Tecâhül-i Ârif (bilmezden gelme) tespitini test eder."""
+        beyit = "Beni cândan usandırdı cefâdan yâr usanmaz mı"
+        res = self.corpus.edebi_sanat_analiz(beyit)
+        sanat_adlari = [s["sanat"] for s in res["sanatlar"]]
+        self.assertIn("Tecâhül-i Ârif", sanat_adlari)
+
+    def test_edebi_sanat_istikak(self):
+        """İştikak (aynı kökten türeyiş) tespitini test eder."""
+        beyit = "Aşk derdiyle hoşem el çek ilâcımdan tabîb / Kılma dermân kim helâkim zehr-i dermândadır"
+        res = self.corpus.edebi_sanat_analiz(beyit)
+        sanat_adlari = [s["sanat"] for s in res["sanatlar"]]
+        self.assertIn("İştikak", sanat_adlari)
+
+    def test_musammat_tahlil(self):
+        """İç kafiye (musammat gazel) tahlil motorunu test eder."""
+        m1 = "Şeb-i hicrân yanar cânım döker kan çeşm-i giryânım"
+        res = self.corpus.musammat_tahlil(m1)
+        self.assertTrue(res["musammat_mi"])
+        self.assertEqual(res["detay"]["orta_kelime"], "cânım")
+        self.assertEqual(res["detay"]["son_kelime"], "giryânım")
+
+    def test_nazire_veya_akraba_beyitler(self):
+        """Vezin ve tema akrabası beyit bulma motorunu test eder."""
+        res = self.corpus.nazire_veya_akraba_beyitler("Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün", limit=3)
+        self.assertTrue(len(res) > 0)
+        self.assertIn("metin", res[0])
+        self.assertIn("kaynak", res[0])
+
     def test_tezkireler(self):
         """Tarihî tezkire kayıtlarının sorgulanmasını test eder."""
         tezkireler = self.corpus.tezkireler

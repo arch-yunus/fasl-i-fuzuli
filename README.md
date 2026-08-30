@@ -12,8 +12,8 @@
   <img src="https://img.shields.io/badge/Muhit-Bağdat_|_Hille_|_Kerbelâ-8A2BE2?style=for-the-badge" alt="Muhit"/>
   <img src="https://img.shields.io/badge/Dil-Osmanlıca_|_Azerbaycan_Türkçesi_|_Farsça_|_Arapça-blue?style=for-the-badge" alt="Diller"/>
   <img src="https://img.shields.io/badge/Python-3.9+-informational?style=for-the-badge&logo=python" alt="Python 3"/>
-  <img src="https://img.shields.io/badge/Web_UI-Vanilla_Modern_SPA-purple?style=for-the-badge" alt="Web UI"/>
-  <img src="https://img.shields.io/badge/Tests-34_Passing-brightgreen?style=for-the-badge" alt="Tests"/>
+  <img src="https://img.shields.io/badge/Web_UI-v4.0_Canvas_&_Audio_SPA-purple?style=for-the-badge" alt="Web UI"/>
+  <img src="https://img.shields.io/badge/Tests-43_Passing-brightgreen?style=for-the-badge" alt="Tests"/>
   <img src="https://img.shields.io/badge/Lisans-MIT-success?style=for-the-badge" alt="MIT License"/>
 </p>
 
@@ -24,20 +24,23 @@
 
 ---
 
-## 🌟 Fasl-ı Fuzûlî Külliyâtı ve Edebiyat Motoru v3.0
+## 🌟 Fasl-ı Fuzûlî Külliyâtı ve Edebiyat Motoru v4.0
 
 **Fasl-ı Fuzûlî**, klasik Türk ve Şark edebiyatının en büyük lirik dehası **Molla Muhammed bin Süleyman Fuzûlî**'nin (1483-1556) eserlerini, aşk felsefesini, poetikasını, vezin ve kafiye yapısını ve tasavvufi remizlerini dijital çağa taşıyan kapsamlı bir açık kaynak edebiyat ve yazılım platformudur.
 
-### ✨ Öne Çıkan Başlıca Özellikler
-- 📜 **Genişletilmiş Külliyât Veri Tabanı:** 10 Başyapıt Gazel, **32 beytin tamamı** ile Su Kasîdesi, Mesnevîler (*Leylâ vü Mecnûn*, *Beng ü Bâde*), Mensur eserler (*Şikâyetnâme*, *Hadîkatü's-Süedâ*, *Rind ü Zâhid*, *Dîbâce*) ve Hikemî Kıt'a/Rübâiler.
-- ⚖️ **Aruz Vezni & Taktî' Motoru:** Mısraları açık (.) ve kapalı (-) hecelerine ayırmanın ötesinde, klasik aruz tef'ilelerine (cüzlerine) göre takti' eden bölümleme motoru.
-- 🎶 **Kafiye ve Redif Tahlil Motoru:** İki mısra arasındaki sözcük ve ek rediflerini, revî harfini ve kafiye türünü (Yarım, Tam, Zengin Kafiye) otomatik çözümleyen algoritma.
-- 🎨 **Edebî Sanat Teşhis Motoru:** Beyitlerdeki Tezat, Tenasüp, İstifham, Nidâ, Tecrid ve Mübalağa sanatlarını anında tespit edip şerh eden analizör.
+### ✨ Öne Çıkan Başlıca Özellikler (v4.0)
+- 📜 **Genişletilmiş Külliyât Veri Tabanı:** 14 Başyapıt Gazel, **32 beytin tamamı** ile Su Kasîdesi, Mesnevîler (*Leylâ vü Mecnûn*, *Beng ü Bâde*), Mensur eserler (*Şikâyetnâme*, *Hadîkatü's-Süedâ*, *Rind ü Zâhid*, *Dîbâce*) ve Hikemî Kıt'a/Rübâiler.
+- 🎨 **Kapsamlı Edebî Sanat ve Belâgat Motoru:** Beyitlerdeki 12 klasik edebî sanatı (Tezat, Tenasüp, Hüsn-i Ta'lîl, Teşbih, Teşhis, Tecâhül-i Ârif, İştikak, Mübalağa, İstifham, Nidâ, Tecrid, Rücû') anında tespit edip şerh eden analizör (`fuzuli sanat`).
+- ⚖️ **Aruz Vezni & Taktî' Motoru:** 16 klasik aruz kalıbı; mısraları açık (.) ve kapalı (-) hecelerine ayırıp tef'ilelerine göre görsel takti' eden bölümleme motoru (`fuzuli takti`).
+- 🎶 **Kafiye ve Redif Tahlil Motoru:** İki mısra arasındaki sözcük ve ek rediflerini, revî harfini ve kafiye türünü (Yarım, Tam, Zengin Kafiye) otomatik çözümleyen algoritma (`fuzuli kafiye`).
+- ✨ **Musammat Gazel (İç Kafiye) Tahlilörü:** Mısra ortalarında iç kafiye barındıran beyitleri tespit eden tahlil motoru (`fuzuli musammat`).
+- 🔗 **Nazîre ve Akraba Beyitler Eşleştiricisi:** Verilen bir mısra veya vezne vezin ve kafiyece nazire/akraba olabilecek beyitleri eşleştiren motor (`fuzuli nazire`).
+- 🎨 **Hat & Tezhip Estetiğinde Beyit Kartı Üretici:** Seçilen beyitleri altın yaldızlı tezhip çerçevesi ve sülüs/talik tipografisiyle Canvas üzerinde render edip yüksek çözünürlüklü PNG indirme imkanı.
+- 🎶 **Mistik Ney & Sükûn Modu (Web Audio API):** Harici dosya gerektirmeksizin tarayıcıda neva/rast makamı derin irfan fonu üreten Web Audio synthesizer.
+- 📖 **Dîvân Lügati & Mazmunlar Rehberi:** 100'ü aşkın maddeyle tasavvufi remizler, arkaik kelimeler ve belâgat ıstılahları.
 - 📜 **Tarihî Şu'arâ Tezkireleri:** Ahdî (*Gülşen-i Şu'arâ*), Âşık Çelebi (*Meşâ'irü'ş-Şu'arâ*), Latîfî, Kınalızâde Hasan Çelebi ve Sehî Bey'in Fuzûlî hakkındaki birincil tarihî şerhleri.
-- 🎴 **Fâl-i Fuzûlî & Beyit Kartı:** Külliyattan rastgele hikmetli tefe'ül ve terminal / sosyal medya için estetik çerçeveli beyit kartı üretici (`fuzuli kart`).
-- 🎯 **Zenginleştirilmiş Bilgi Yarışması:** 16 soruluk genişletilmiş soru bankasıyla açıklamalı Dîvân edebiyatı quizi.
-- 🌐 **Modern İnteraktif Web Arayüzü (`fuzuli sunucu`):** Kafiye tahlili, takti' görselleştiricisi, tezkireler ve panoya kopyalama özellikli web arayüzü.
-- 🧪 **Kapsamlı Test Süiti:** 34 adet otomatik birim testi ile %100 doğruluk.
+- 🎯 **Genişletilmiş Bilgi Yarışması:** 25 soruluk zengin bankadan 5 rastgele soru, puanlama ve açıklamalı şerhler (`fuzuli yarisma`).
+- 🧪 **Kapsamlı Test Süiti:** 43 adet otomatik birim testi ile %100 doğruluk ve CI/CD entegrasyonu.
 
 ---
 
@@ -164,9 +167,10 @@ fasl-i-fuzuli/
 │   ├── api.py                     # Aruz Motoru, Arama, İstatistik ve Export API
 │   └── fuzuli_cli.py              # Zenginleştirilmiş Terminal Komut Satırı Arayüzü
 │
-├── tests/                         # 🧪 Kapsamlı Otomatik Test Süiti (20 Test)
+├── tests/                         # 🧪 Kapsamlı Otomatik Test Süiti (43 Birim Testi)
 │   ├── test_corpus.py             # API ve Veri Bütünlüğü Testleri
 │   ├── test_aruz.py               # Heceleme ve Aruz Vezni Testleri
+│   ├── test_poetics.py            # Taktî', Kafiye/Redif, 12 Edebî Sanat ve Musammat Testleri
 │   ├── test_quiz.py               # Bilgi Yarışması Soru Bankası Testleri
 │   └── test_cli.py                # Uçtan Uca CLI Testleri
 │
@@ -193,10 +197,10 @@ python -m araclar.fuzuli_cli fal
 # veya sistem genelinde:
 fuzuli fal
 
-# 4. Gazelleri listeleyin veya seçilen gazeli inceleyin
+# 4. Gazelleri listeleyin veya seçilen gazeli inceleyin (14 Başyapıt)
 python -m araclar.fuzuli_cli gazel
 python -m araclar.fuzuli_cli gazel 1
-python -m araclar.fuzuli_cli gazel beni-candan-usandirdi
+python -m araclar.fuzuli_cli gazel gozum-canim-efendim
 
 # 5. Su Kasîdesi'nden beyit okuyun (veya tüm 32 beyti listeleyin)
 python -m araclar.fuzuli_cli su-kasidesi 31
@@ -206,39 +210,45 @@ python -m araclar.fuzuli_cli su-kasidesi tum
 python -m araclar.fuzuli_cli eser sikayetname
 python -m araclar.fuzuli_cli eser leyla-vu-mecnun
 
-# 7. Aruz Vezni & Taktî' Motoru
+# 7. Aruz Vezni & Taktî' Motoru (16 Kalıp)
 python -m araclar.fuzuli_cli aruz "Beni cândan usandırdı cefâdan yâr usanmaz mı"
 python -m araclar.fuzuli_cli takti "Beni cândan usandırdı cefâdan yâr usanmaz mı"
 
 # 8. Kafiye ve Redif Tahlili
 python -m araclar.fuzuli_cli kafiye "Beni cândan usandırdı cefâdan yâr usanmaz mı / Felekler yandı âhımdan murâdım şem'i yanmaz mı"
 
-# 9. Edebî Sanat Tahlili (Tezat, Tenasüp, İstifham, vb.)
-python -m araclar.fuzuli_cli sanat "Kamu bîmârına cânân devâ-yı derd eder ihsân / Niçin kılmaz bana dermân beni bîmâr sanmaz mı"
+# 9. Musammat Gazel (İç Kafiye) Tahlilörü
+python -m araclar.fuzuli_cli musammat "Şeb-i hicrân yanar cânım döker kan çeşm-i giryânım"
 
-# 10. Tarihî Şu'arâ Tezkireleri Kayıtları
+# 10. Nazîre ve Akraba Beyitler Eşleştiricisi
+python -m araclar.fuzuli_cli nazire "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün"
+
+# 11. Edebî Sanat Tahlili (Tezat, Tenasüp, Hüsn-i Ta'lil, Teşbih, vb.)
+python -m araclar.fuzuli_cli sanat "Hâk-i pâyine yetem dir ömrlerdir muttasıl / Başını daşdan daşa urup gezer âvâre su"
+
+# 12. Tarihî Şu'arâ Tezkireleri Kayıtları
 python -m araclar.fuzuli_cli tezkire ahdi
 
-# 11. Estetik Beyit Kartı Üretici (ASCII/Unicode çerçeveli)
+# 13. Estetik Beyit Kartı Üretici (Terminal & Sosyal Medya)
 python -m araclar.fuzuli_cli kart
 
-# 12. Yerel Web Sunucusunu Başlatma
+# 14. Yerel Web Sunucusunu Başlatma
 python -m araclar.fuzuli_cli sunucu --port 8000
 
-# 13. Fuzûlî Edebiyat Bilgi Yarışması (16 Soruluk Banka)
+# 15. Fuzûlî Edebiyat Bilgi Yarışması (25 Soruluk Banka)
 python -m araclar.fuzuli_cli yarisma
 
-# 14. Külliyât İstatistiklerini görüntüleyin
+# 16. Külliyât İstatistiklerini görüntüleyin
 python -m araclar.fuzuli_cli istatistik
 
-# 15. Külliyatta canlı arama yapın veya lügatten kavram sorgulayın
+# 17. Külliyatta canlı arama yapın veya lügatten kavram sorgulayın
 python -m araclar.fuzuli_cli ara mecnun
 python -m araclar.fuzuli_cli lugat Rind
 
-# 16. İnteraktif Kabuk (REPL) modunu başlatın
+# 18. İnteraktif Kabuk (REPL) modunu başlatın
 python -m araclar.fuzuli_cli interaktif
 
-# 17. Külliyatı Markdown veya JSON olarak dışa aktarın
+# 19. Külliyatı Markdown veya JSON olarak dışa aktarın
 python -m araclar.fuzuli_cli export markdown > kulliyat_export.md
 ```
 

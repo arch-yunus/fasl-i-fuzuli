@@ -16,7 +16,10 @@
     <div class="container hero-content">
       <div class="header-top">
         <span class="badge-gold">فصل فضولی • FASL-I FUZÛLÎ</span>
-        <button id="themeToggle" class="btn-theme" title="Tema Değiştir">🌙 / ☀️</button>
+        <div class="header-actions">
+          <button id="btnNeySound" class="btn-theme" title="Mistik Ney & Sükûn Modu (Web Audio)">🎶 Ney & Sükûn</button>
+          <button id="themeToggle" class="btn-theme" title="Tema Değiştir">🌙 / ☀️</button>
+        </div>
       </div>
       <h1 class="main-title">FASL-I FUZÛLÎ</h1>
       <p class="arabic-sub">« شِعْرِ بِي عِلْمْ أَسَاسْسِز دِيوَارْ أُولُورْ وَأَسَاسْسِز دِيوَارْ غَايَتْدَه بِي اعْتِبَارْ أُولُورْ »</p>
@@ -25,11 +28,12 @@
         <span>— Molla Fuzûlî (1483 - 1556)</span>
       </blockquote>
       <div class="quick-stats-bar">
-        <div class="stat-pill"><strong>10</strong> Başyapıt Gazel</div>
+        <div class="stat-pill"><strong>14</strong> Başyapıt Gazel</div>
         <div class="stat-pill"><strong>32</strong> Su Kasîdesi Beyti</div>
-        <div class="stat-pill"><strong>12</strong> Aruz Kalıbı</div>
-        <div class="stat-pill"><strong>80+</strong> Lügat & Mazmun</div>
+        <div class="stat-pill"><strong>16</strong> Aruz Kalıbı</div>
+        <div class="stat-pill"><strong>100+</strong> Lügat & Mazmun</div>
         <div class="stat-pill"><strong>5</strong> Tarihî Tezkire</div>
+        <div class="stat-pill"><strong>25</strong> Bilgi Yarışması Sorusu</div>
       </div>
     </div>
   </header>
@@ -42,6 +46,7 @@
       <button class="nav-btn" data-tab="arama">🔍 Canlı Arama</button>
       <button class="nav-btn" data-tab="aruz">⚖️ Aruz & Taktî'</button>
       <button class="nav-btn" data-tab="kafiye">🎶 Kafiye Analizi</button>
+      <button class="nav-btn" data-tab="sanat">🎨 Edebî Sanat</button>
       <button class="nav-btn" data-tab="lugat">📖 Dîvân Lügati</button>
       <button class="nav-btn" data-tab="tezkire">📜 Tarihî Tezkireler</button>
       <button class="nav-btn" data-tab="yarisma">🎯 Bilgi Yarışması</button>
@@ -74,6 +79,8 @@
           </div>
           <div class="fal-actions">
             <button id="btnCopyFal" class="btn-preset">📋 Beyti & Anlamını Kopyala</button>
+            <button id="btnDownloadCard" class="btn-gold">🎨 Beyit Kartı İndir (PNG)</button>
+            <canvas id="cardCanvas" style="display: none;"></canvas>
           </div>
         </div>
       </div>
@@ -82,7 +89,7 @@
     <!-- Tab 2: Külliyât Okuyucu -->
     <section id="tab-kulliyat" class="tab-pane">
       <div class="sub-nav-bar">
-        <button class="sub-nav-btn active" data-sub="gazeller">Gazeller (10 Şaheser)</button>
+        <button class="sub-nav-btn active" data-sub="gazeller">Gazeller (14 Şaheser)</button>
         <button class="sub-nav-btn" data-sub="su-kasidesi">Su Kasîdesi (32 Beyit)</button>
         <button class="sub-nav-btn" data-sub="mesneviler">Mesnevîler</button>
         <button class="sub-nav-btn" data-sub="mensur">Mensur Eserler</button>
@@ -161,12 +168,39 @@
       </div>
     </section>
 
+    <!-- Tab: Edebî Sanat Teşhis Motoru -->
+    <section id="tab-sanat" class="tab-pane">
+      <div class="section-card">
+        <h2>🎨 Klasik Belâgat & Edebî Sanat Teşhis Laboratuvarı</h2>
+        <p class="desc-text">İncelemek istediğiniz bir beyit veya mısra girin; yapay zeka ve kurallı analiz motorumuz Tezat, Tenasüp, Hüsn-i Ta'lîl, Teşbih, Teşhis, Tecâhül-i Ârif, İştikak, Mübalağa, İstifham, Nidâ ve Tecrid sanatlarını anında teşhis etsin.</p>
+
+        <div class="aruz-presets">
+          <span>Örnek Beyitler:</span>
+          <button class="btn-preset-sanat" data-text="Hâk-i pâyine yetem dir ömrlerdir muttasıl / Başını daşdan daşa urup gezer âvâre su">Su Kasîdesi (Hüsn-i Ta'lîl & Teşhis)</button>
+          <button class="btn-preset-sanat" data-text="Beni cândan usandırdı cefâdan yâr usanmaz mı / Felekler yandı âhımdan murâdım şem'i yanmaz mı">Beni Candan Usandırdı (Tezat, Tecâhül-i Ârif, Mübalağa)</button>
+          <button class="btn-preset-sanat" data-text="Aşk derdiyle hoşem el çek ilâcımdan tabîb / Kılma dermân kim helâkim zehr-i dermândadır">Aşk Derdiyle Hoşem (İştikak, Tenasüp, Tezat)</button>
+          <button class="btn-preset-sanat" data-text="Gözüm cânım efendim sevdüğüm devletlü sultânım / Mürüvvetsiz mürüvvet kıl ki geldi cân lebe ânım">Gözüm Cânım Efendim (Nidâ, İştikak, Mübalağa)</button>
+        </div>
+
+        <div class="search-input-wrap">
+          <textarea id="sanatInput" class="sanat-textarea" rows="3" placeholder="Tahlil edilecek mısra veya beyti buraya yazınız veya yukarıdaki örneklerden seçiniz..."></textarea>
+        </div>
+        <div class="text-center" style="margin-top: 1rem;">
+          <button id="btnSanatHesapla" class="btn-gold">Edebî Sanatları Çözümle</button>
+        </div>
+
+        <div id="sanatSonuc" class="sanat-result-wrap hidden">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
     <!-- Tab 6: Dîvân Lügati -->
     <section id="tab-lugat" class="tab-pane">
       <div class="section-card">
         <h2>📖 Fuzûlî Dîvân Lügati & Edebî Istılahlar</h2>
-        <p class="desc-text">Dîvân şiirinde geçen tasavvufi remizler, arkaik kavramlar ve mazmunlar rehberi (80+ Madde).</p>
-        <input type="text" id="lugatSearch" class="filter-input" placeholder="Lügatte filtrele (örn: Rind, Fenâ, Serv-i Revân, Şem' ü Pervâne, Harâbât)...">
+        <p class="desc-text">Dîvân şiirinde geçen tasavvufi remizler, arkaik kavramlar ve mazmunlar rehberi (100+ Madde).</p>
+        <input type="text" id="lugatSearch" class="filter-input" placeholder="Lügatte filtrele (örn: Rind, Fenâ, Serv-i Revân, Şem' ü Pervâne, Vahdet-i Vücûd)...">
         <div id="lugatGrid" class="lugat-grid"></div>
       </div>
     </section>
@@ -191,7 +225,7 @@
         
         <div id="quizStartView">
           <div class="quiz-info-box">
-            <p>📌 16 soruluk zengin bankadan 5 rastgele soru • Her soru 20 puan • Açıklamalı şerhler</p>
+            <p>📌 25 soruluk zengin bankadan 5 rastgele soru • Her soru 20 puan • Açıklamalı şerhler</p>
           </div>
           <button id="btnQuizBaslat" class="btn-gold-pulse">Yarışmayı Başlat</button>
         </div>
